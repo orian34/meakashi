@@ -1,4 +1,4 @@
-void main()
+﻿void main()
 {
 	EnableJumpingOfReturnIcon();
 	FadeOutBGM( 0, 0, FALSE );
@@ -12,62 +12,62 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　この時の祭具殿侵入が、結局、鷹野さんたちの祟られる理由となった。",
-		   NULL, "The reason why Takano-san and Tomitake-san were cursed is because they broke into the ritual storehouse.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "C'est donc finalement le fait d'avoir pénétré dans le temple ce soir-là qui scella le destin de madame Takano et de son compagnon(?).", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　祭具殿侵入がどういう形で発覚したのかは分からない。",
-		   NULL, "I don't know how the villagers found out about it.", Line_Normal);
+		   NULL, "Mais je ne vois pas par quel mécanisme leur intrusion a pu être découverte.", Line_Normal);
 	ClearMessage();
 	PlaySE( 0, "s_page", 56, 64 );
 	DrawSceneWithMask("black", "maskright", 7, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　最初に思いつくのは、何者かに目撃されていたこと。",
-		   NULL, "Maybe somebody was watching.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "La première chose qu'il m'est venu à l'esprit est qu'il y avait eu un témoin oculaire.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　次に思いつくのは、侵入警報のようなものがあったこと。",
-		   NULL, "Maybe there was an anti-theft alarm.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Puis je me suis dit qu'il devait y avoir un système d'alarme, quelle qu'en soit la forme.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　何れにせよ、この祭具殿侵入はおそらくリアルタイムで祟りのシステムの上位者に通報されていた。",
-		   NULL, "Either way, our intrusion must've been reported to the highest level of the curse system.", Line_Normal);
+		   NULL, "Mais une chose est sûre : leur intrusion dans le temple a été découverte et rapportée aux plus hautes sphères quasiment en temps réel.", Line_Normal);
 	ClearMessage();
 	PlaySE( 0, "s_page", 56, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　なぜなら、もっとも遠い地で遺体が見つかることになる鷹野さんの殺された時間などを考えると、",
-		   NULL, "That's because, considering the distance between the village and the site where Takano-san's body was found,", Line_WaitForInput);
+		   NULL, "En effet, si l'on réfléchit au temps nécessaire pour capturer, torturer, mettre à mort et se débarrasser de madame Takano -- qui sera découverte très loin du village, dans une autre préfecture --", Line_WaitForInput);
 	OutputLine(NULL, "祭具殿を出て私たちが分かれてすぐくらいに殺されてなければならないからだ。",
-		   NULL, " she must've been killed right after we came out of the ritual storehouse.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " alors il apparaît évident que les responsables lui sont tombés dessus juste à la sortie du temple, après notre séparation.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　この手際の良さは特筆に値する。",
-		   NULL, "It was done very quickly.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Cette rapidité d'exécution est particulièrement impressionnante et mérite que l'on s'y attarde.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　相当高度な暗殺部隊が組織されているのか、さもなければ「５年目の祟りの準備」がすでにされていたからなのか。",
-		   NULL, "It's possible that a special assassination team exists for this purpose, or that the plan had been set up a long time ago.", Line_Normal);
+		   NULL, "Soit les trois clans fondateurs disposent d'une équipe d'assassins extrêmement efficaces et très entraînés, soit “les préparatifs de la malédiction de la cinquième année” étaient déjà terminés depuis longtemps et n'attendaient plus que leur victime.", Line_Normal);
 	ClearMessage();
 	PlaySE( 0, "s_page", 56, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　園崎家の暗部を担当する秘密の集団の存在も否定できないが、後者の説の方が信憑性がある。",
-		   NULL, "They might've been secret agents of the Sonozaki family, but the latter sounds more valid.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Je ne peux pas nier l'existence d'une organisation secrète qui s'occuperait du sale boulot du clan des Sonozaki, mais la deuxième hypothèse me paraît plus vraisemblable.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　しかし、だとすると、５年目の祟りは、祭具殿侵入がなかったら「本来」誰に下されていたのか、という疑問にぶつかる。",
-		   NULL, "But if so, who would have been the victim if nobody broke into the ritual storehouse?", Line_Normal);
+		   NULL, "Par contre, si elle s'avérait être exacte, elle pose la question de savoir qui était “la victime prévue normalement” si l'intrusion n'avait pas eu lieu.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	Wait( 1000 );

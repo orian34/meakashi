@@ -1,4 +1,4 @@
-void main()
+﻿void main()
 {
 	EnableJumpingOfReturnIcon();
 	FadeOutBGM( 0, 0, FALSE );
@@ -12,87 +12,87 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　鬼婆が即死していたのは、本当に計算外だった。",
-		   NULL, "I wasn't planning to kill the hag so quickly.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Je n'avais vraiment pas prévu que la vieille folle me clamserait dans les doigts.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　この時点での私は、いつか殺す相手だった問題ないと負け惜しみを言っているが、明らかに痛手だった。",
-		   NULL, "I was going to kill her anyway, but it was too soon.", Line_Normal);
+		   NULL, "Sur le coup, je me suis consolée en me disant que de toute façon, je voulais la crever un jour ou l'autre, mais c'était une erreur qui faisait mal.", Line_Normal);
 	ClearMessage();
 	PlaySE( 0, "s_page", 56, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　園崎天皇とも呼ばれる園崎本家の命令中枢は、一般にはピラミッド型だと思われているが、実際はそうではない。",
-		   NULL, "People would normally assume that the Sonozaki family operates as a hierarchy, but that's not true.", Line_Normal);
+		   NULL, "L'impératrice Sonozaki, qui était à elle seule une cellule dédiée à la prise de décision et à la communication des ordres, semblait de loin fonctionner de manière pyramidale ; or dans les faits, il n'en était rien.", Line_Normal);
 	ClearMessage();
 	PlaySE( 0, "s_page", 56, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　厳密には、省庁のような縦割り型で、それぞれの部門が小ピラミッドを形成してる。",
-		   NULL, "It's actually more like a system of government. Several ministries stem from the main family, and each forms a hierarchy of its own.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Pour être précise, elle était organisée comme la Police -- il y avait en fait plusieurs petites pyramides bien verticales, posées les unes à côté des autres, sans se toucher.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　縦割りゆえに横の連絡がない。",
-		   NULL, "These ministries don't communicate with one another.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Et comme la chaîne des ordres était verticale, les informations ne se relayaient pas “à l'horizontale”, pour ainsi dire.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　いや、それどころか自分のピラミッド以外がわからない秘密主義だと言えるだろう。",
-		   NULL, "The people who belong to a given ministry don't know what other ministries are doing. That way, the Sonozaki family's dealings are kept perfectly secret.", Line_Normal);
+		   NULL, "En fait, chaque pyramide cultivait même le goût du secret de ses activités et faisait en sorte de ne rien laisser filtrer à ses voisines.", Line_Normal);
 	ClearMessage();
 	PlaySE( 0, "s_page", 56, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　もちろん園崎家の重鎮たちは、いくつもあるピラミッドの頂点に位置する。",
-		   NULL, "Of course, the most important people in the family govern several ministries.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Alors bien sûr, certains membres des Sonozaki étaient placés au sommet de quelques unes de ces pyramides.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　自分の下位のピラミッドについては精通している。",
-		   NULL, "They know, of course, about their own ministries...", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Ils savaient tout de ce qu'il se passait dans la leur propre.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　他の親類たちが管理しているピラミッドについても、多少の情報交換は出来ている。",
-		   NULL, "And they know a little bit about the ministries their relatives run.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "De plus, les liens du sang aidant, ils avaient tout de même quelques contacts avec d'autres pyramides et pouvaient ainsi s'échanger des informations.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だが、それでも全部のピラミッドについてはわかっていない。",
-		   NULL, "But none of them know everything.", Line_Normal);
+		   NULL, "Mais ils étaient loin de pouvoir savoir ce qu'il se passait dans toutes les pyramides à la fois.", Line_Normal);
 	ClearMessage();
 	PlaySE( 0, "s_page", 56, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　陽のピラミッド、",
-		   NULL, "There are ministries that work in the open,", Line_WaitForInput);
+		   NULL, "Il y avait celle des ordres officiels,", Line_WaitForInput);
 	OutputLine(NULL, "陰のピラミッド。",
-		   NULL, " there are ministries that work unseen,", Line_WaitForInput);
+		   NULL, " Mion étant la représentante officielle de celle-ci en cas de maladie, elle était au courant de l'existence d'un bon nombre de ses pyramides, mais même elle ne les connaissait pas forcément toutes.", Line_WaitForInput);
 	OutputLine(NULL, "その他にお魎直轄の秘密の小ピラミッドがいくつか。",
-		   NULL, " and there are some smaller ones that Oryou runs herself.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Il y avait aussi plusieurs petites pyramides gérées par Oryô Sonozaki elle-même.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そのほとんどを頭首代行である魅音は知っているようだが、だからと言って、全部知っているとは限らない。",
-		   NULL, "Mion seems to know about most of them, but she doesn't necessarily know them all.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Mion étant la représentante officielle de celle-ci en cas de maladie, elle était au courant de l'existence d'un bon nombre de ses pyramides, mais même elle ne les connaissait pas forcément toutes.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　現に、最高機密である「オヤシロさまの祟り」については知らなかった。",
-		   NULL, "In fact, she didn't know about 'the curse.'", GetGlobalFlag(GLinemodeSp));
+		   NULL, "D'ailleurs, elle ne savait rien à propos de leur organisme le plus important et le plus secret, celui qui s'occupait d'organiser la “malédiction de la déesse Yashiro”.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それを思うと、鬼婆が死して永遠に口を閉ざしたのは、暗部を暴く上で致命的な痛手と言えた……。",
-		   NULL, "Considering that, the fact that the hag died before I could interrogate her is a huge loss...", Line_Normal);
+		   NULL, "Dans ces conditions, la mort prématurée et accidentelle de la vieille folle était vraiment un coup dur, car cela rendait presqu'impossible mon travail pour mettre à jour l'existence d'une organisation secrète à ses ordres...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	Wait( 1000 );

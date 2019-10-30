@@ -1,4 +1,4 @@
-void main()
+﻿void main()
 {
 	EnableJumpingOfReturnIcon();
 	FadeOutBGM( 0, 0, FALSE );
@@ -12,7 +12,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　鷹野三四とは、その後しばらく交流があった。",
-		   NULL, "I saw Miyo Takano a few times after that.", Line_Normal);
+		   NULL, "J'ai pu avoir quelques contacts avec Miyo Takano.", Line_Normal);
 	ClearMessage();
 	PlaySE( 0, "s_page", 56, 64 );
 	DrawSceneWithMask("black", "maskright", 7, 0, 300 );
@@ -21,83 +21,83 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　彼女の本質は、猟奇趣味と、それに負けないくらいの偏執的な好奇心だった。",
-		   NULL, "At her core, she was fascinated with the bizarre, and she had an insatiable curiosity that was just as strong.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Elle avait une curiosité malsaine et une passion pour les vieilles histoires morbides.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だから彼女の話は、常に話半分くらいに聞くよう心掛けなければならない。",
-		   NULL, "I have to remind myself not to take her story too seriously.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "C'est pourquoi il me faut l'écouter en me méfiant toujours de ce qu'elle me raconte.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……でないと、",
-		   NULL, "...Otherwise...", Line_ContinueAfterTyping);
+		   NULL, "Parce que sinon...", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…悟史くんが本当に、祟りで消えてしまったと信じてしまいそうになるから。",
-		   NULL, " I might start believing that Satoshi-kun disappeared because of the curse.", Line_Normal);
+		   NULL, " je vais finir par vraiment croire que Satoshi a été emporté par la malédiction.", Line_Normal);
 	ClearMessage();
 	PlaySE( 0, "s_page", 56, 64 );
 	DrawSceneWithMask("black", "maskright", 7, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　彼女の話す雛見沢村の暗部の話は、興味深い話ばかりだった。",
-		   NULL, "She talks about the dark history of Hinamizawa a lot. It's all very interesting.", Line_Normal);
+		   NULL, "Tout ce qu'elle m'a raconté sur le côté obscur de Hinamizawa était très intéressant.", Line_Normal);
 	ClearMessage();
 	PlaySE( 0, "s_page", 56, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　彼女にとっては推測や憶測でしかないはずの中には、",
-		   NULL, "Her theories are based on nothing but conjecture,", Line_WaitForInput);
+		   NULL, "Ce n'étaient que ses suppositions et ses déductions,", Line_WaitForInput);
 	OutputLine(NULL, "園崎家に籍を置く自分だからこそ真実だと分かるものも時に含まれ、その考察の鋭さには舌を巻いた。",
-		   NULL, " but some of her intuition covers facts that only members of the Sonozaki family would know.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " mais en tant que membre du clan des Sonozaki, je pouvais y discerner parfois des éléments que je savais être vrais et qu'elle n'avait pas pu découvrir par hasard.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　彼女はオヤシロさまの祟りを、古代の宗教的な儀式の延長と捉えていた。",
-		   NULL, "She thinks that Oyashiro-sama's curse is the continuation of these ancient rituals.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Elle dispose donc d'une logique de déduction proprement phénoménale.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　つまり、オヤシロさま崇拝の狂信者による犯行だ。",
-		   NULL, "In other words, she believes that the curse is performed by religious fanatics.", Line_Normal);
+		   NULL, "Elle pense que la malédiction de la déesse Yashiro est en fait le prolongement moderne d'une série de rituels religieux dont l'origine remonterait très loin dans le temps.", Line_Normal);
 	ClearMessage();
 	PlaySE( 0, "s_page", 56, 64 );
 	DrawSceneWithMask("background/hi1", "maskright", 7, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　彼女の独自の説によるならば、雛見沢村には信仰を中心とした一派があり、",
-		   NULL, "According to her theory, a religious cult once existed in Hinamizawa,", Line_WaitForInput);
+		   NULL, "En gros, la malédiction serait en fait une série de meurtres perpétrés par des fanatiques religieux.", Line_WaitForInput);
 	OutputLine(NULL, "それを中心に御三家が組み上げられているという。",
-		   NULL, " and the Three Families stemmed from it.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " D'après sa théorie, il y aurait un groupuscule de fanatiques à Hinamizawa, tous rassemblés par leur foi, et organisés selon l'architecture des trois clans fondateurs du village.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そして、明治以降に失われたという、鬼ヶ淵村の仙人たちの誇りを取り戻すために暗躍をしている、というのだ。",
-		   NULL, "She believes that they are operating behind the scenes in order to revive the dignity of the Onigafuchi people, which was lost during the Meiji Era.", Line_Normal);
+		   NULL, "Ils auraient décidé de perpétrer ces meurtres pour retrouver l'honneur de leurs ancêtres, bafoué lorsque l'ère Meiji aurait plus ou moins renié le Japon ancien en 1871.", Line_Normal);
 	ClearMessage();
 	PlaySE( 0, "s_page", 56, 64 );
 	DrawSceneWithMask("background/nort", "maskright", 7, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　三四さんの話はスケールが大きく、全体で見ると、なるほどなと思う面もある。",
-		   NULL, "Miyo-san's theories are far-reaching, and looking at them on a larger scale, they end up making a lot of sense.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Sa théorie est d'assez grande envergure, et lorsque l'on y jette un coup d'œil en prenant du recul, on peut être tenté d'y croire, car tout cela se tient.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だけど、悟史くんの失踪した理由に局所的にスポットを当てると、何の説明にもならない。",
-		   NULL, "But they can't offer any explanation for Satoshi-kun's disappearance when using them on a smaller one.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Mais si l'on se prête au jeu et que l'on cherche la réponse à certaines questions restées en suspens, comme par exemple la raison de la disparition de Satoshi, on n'obtient aucune lumière et on se rend compte donc qu'elle ne tient pas vraiment debout.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　目の粗い説でしかなかった。",
-		   NULL, "Her theories are just too broad.", Line_Normal);
+		   NULL, "Cela reste de simples théories.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	Wait( 1000 );
