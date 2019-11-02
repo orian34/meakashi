@@ -2436,10 +2436,8 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…これは園崎本家のトップシークレットだが、",
 		   NULL, "Évidemment, ce sont des choses classées confidentiel sinon top secret,", Line_WaitForInput);
-	OutputLine(NULL, "…何でも、当時の建設大臣の孫を誘拐して脅迫したとか、しないとか…。",
-		   NULL, " mais il paraît que mon père aurait fait enlever le petit-fils du ministre de l'urbanisation...", Line_WaitForInput);
-	OutputLine(NULL, "　孫は、誘拐から何日かして、ひょっこりと発見された。",
-		   NULL, " A REMOVE", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "…何でも、当時の建設大臣の孫を誘拐して脅迫したとか、しないとか…。　孫は、誘拐から何日かして、ひょっこりと発見された。",
+		   NULL, " mais il paraît que mon père aurait fait enlever le petit-fils du ministre de l'urbanisation...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
