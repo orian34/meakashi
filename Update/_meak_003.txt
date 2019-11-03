@@ -127,13 +127,8 @@
 	PlayBGM( 0, "Nazo", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　私が町を離れる時。",
+	OutputLine(NULL, "　私が町を離れる時。　祟りはすでに二年連続で起きていた。",
 		   NULL, "Lorsque j'avais quitté la ville, celle-ci avait déjà été frappée deux fois, à un an d'intervalle.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　祟りはすでに二年連続で起きていた。",
-		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DrawSceneWithMask("background/ryuuketu1", "maskaa", 1, 0, 300 );
@@ -281,7 +276,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　夏祭の会場でもあり、村の集会場所として開放もされている神社の管理人としては、そういう性格の神主さんは、適材適所であったかもしれない。",
-		   NULL, "Il avait servi de concierge du sanctuaire shintoïste pendant de nombreuses années, et tant que que celui-ci n'avait servi que de local de rencontres pour le troisième âge, ou comme lieu des rares cérémonies religieuses, il avait été parfait.", Line_Normal);
+		   NULL, "Il avait servi de concierge du sanctuaire shintoïste pendant de nombreuses années, et tant que celui-ci n'avait servi que de local de rencontres pour le troisième âge, ou comme lieu des rares cérémonies religieuses, il avait été parfait.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
