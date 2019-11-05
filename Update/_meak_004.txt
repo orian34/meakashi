@@ -204,10 +204,8 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　あなたは非を認めた上で謝罪し、掛かるバイクの修繕料と慰謝料を直ちに即金でお支払いいただきたい。",
-		   NULL, "Nous désirerions donc que vous eussiez bien l'obligeance de reconnaître vos torts et que vous prissiez immédiatement les frais de réparations de nos véhicules à votre charge.", Line_WaitForInput);
-	OutputLine(NULL, "……とまぁ、多分こんな感じかな。",
-		   NULL, " A REMOVE", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "　あなたは非を認めた上で謝罪し、掛かるバイクの修繕料と慰謝料を直ちに即金でお支払いいただきたい。……とまぁ、多分こんな感じかな。",
+		   NULL, "Nous désirerions donc que vous eussiez bien l'obligeance de reconnaître vos torts et que vous prissiez immédiatement les frais de réparations de nos véhicules à votre charge.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -217,10 +215,8 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　ご意見賜れれば光栄かと存じますので、どうかよろしくお願いいたします…。",
-		   NULL, "Je vous saurais gré de rapidement nous faire parvenir votre décision, Mademoiselle.", Line_WaitForInput);
-	OutputLine(NULL, "ってな感じだと思う。",
-		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "　ご意見賜れれば光栄かと存じますので、どうかよろしくお願いいたします…。ってな感じだと思う。",
+		   NULL, "Je vous saurais gré de rapidement nous faire parvenir votre décision, Mademoiselle.", Line_Normal);
 	ClearMessage();
 	PlaySE( 0, "wa_018", 56, 64 );
 
@@ -991,13 +987,8 @@
 	DrawSceneWithMask("background/sora", "maskup", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　その一連のやりとりでこっそりと気付く。",
+	OutputLine(NULL, "　その一連のやりとりでこっそりと気付く。　…彼は、お姉の、園崎魅音の友人なのだ。",
 		   NULL, "La conversation put m'apprendre que c'était l'un des amis de ma sœur.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　…彼は、お姉の、園崎魅音の友人なのだ。",
-		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
