@@ -1382,7 +1382,7 @@
 	OutputLine(NULL, "　悟史くんはむくれながら、私に頭を撫でられるままに委ね、少し赤くなりながら俯いていた。",
 		   NULL, "Il finit par céder et baissa simplement la tête, acceptant ma main sur sa tête, puis Ô MES AÏEUX IL ROUGIT !", Line_WaitForInput);
 	OutputLine(NULL, "……あ〜〜ん、こいつカワイイよ〜〜☆",
-		   NULL, " Rah, mais il est trop choupimignon, je veux le même à la maison☆", Line_Normal);
+		   NULL, " Rah, mais il est trop choupimignon, je veux le même à la maison☆.", Line_Normal);
 	ClearMessage();
 	DrawSceneWithMask("background/tirasi1", "maskleft", 1, 0, 300 );
 
@@ -1394,7 +1394,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ピアノ教えます、××まで。",
-		   NULL, "'Piano Lessons. Call XX.", Line_WaitForInput);
+		   NULL, "'Lessons de Piano. Appelez XX.", Line_WaitForInput);
 	OutputLine(NULL, "そろばん教室生徒募集…。",
 		   NULL, " Classe de boulier pour apprendre à compter de tête ! Inscrivez-vous !", Line_WaitForInput);
 	OutputLine(NULL, "少年野球チーム、メンバー募集。",
