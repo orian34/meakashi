@@ -326,7 +326,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s06/02/150200003", 256, TRUE);
 	OutputLine(NULL, "「………気分が優れないの？」",
-		   NULL, "— Ca ne va pas ?", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— Ça ne va pas ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
@@ -590,7 +590,7 @@
 	OutputLine(NULL, "　沙都子という妹がどれだけ悟史くんの重荷になっているやら。",
 		   NULL, "Cette Satoko est vraiment un gros poids mort pour lui.", Line_WaitForInput);
 	OutputLine(NULL, "…それを思うと、自分の口から出した言葉が白々しくてたまらなかった。",
-		   NULL, " Je me demande si mes paroles seront convainquantes. ", Line_Normal);
+		   NULL, " Je me demande si mes paroles seront convainquantes.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -1577,13 +1577,8 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　…悟史くんが野球に来ないことを悲しんでいた私。",
+	OutputLine(NULL, "　…悟史くんが野球に来ないことを悲しんでいた私。　…だが、それでも悟史くんは雛見沢に住まい続けている。",
 		   NULL, "J'étais triste de ne plus voir Satoshi à l'entraînement, mais...", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　…だが、それでも悟史くんは雛見沢に住まい続けている。",
-		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2009,7 +2004,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……四年目がないなんて保証はどこにもない。",
-		   NULL, "... Personne ne peut affirmer qu'il n'aura pas une quatrième fois.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "... Personne ne peut affirmer qu'il n'y aura pas une quatrième fois.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
