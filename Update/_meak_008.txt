@@ -719,20 +719,6 @@
 	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, TRUE );
 	DrawScene("black", 1000 );
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　沙都子は短い悲鳴をあげ、何が起こったのかわからないような表情をしていた。",
-		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
-
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　涙をぼろぼろとこぼしながら、かたかたと震えながら。",
-		   NULL, "A REMOVE", Line_WaitForInput);
-	OutputLine(NULL, "…どうして私に悪意をぶつけられなければならないのか、理解できずにいた。",
-		   NULL, " A REMOVE", Line_Normal);
-	ClearMessage();
-
 	ModDrawCharacter(1, 4, "portrait/normal/sa1b_naku_b1_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene("background/gk3", 400 );
 
@@ -1308,13 +1294,8 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　多分、図星だったのかもしれない。",
-		   NULL, "Je pense que j'avais mis le doigt exactement là où ça faisait mal, parce qu'il se mit dans une colère indescriptible.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　私のその言葉に対する悟史くんの怒り方は、尋常じゃなかった。",
-		   NULL, "A REMOVE", Line_Normal);
+	OutputLine(NULL, "　多分、図星だったのかもしれない。　私のその言葉に対する悟史くんの怒り方は、尋常じゃなかった。",
+		   NULL, "Je pense que j'avais mis le doigt exactement là où ça faisait mal, parce qu'il se mit dans une colère indescriptible.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
@@ -2138,7 +2119,7 @@
 	OutputLine(NULL, "　ならばそれは「思っただけ」でなく、明白な命令に他ならない。",
 		   NULL, "Donc quand elle se plaignait, elle savait pertinemment que c'était comme si elle donnait un ordre.", Line_WaitForInput);
 	OutputLine(NULL, "……鬼婆が、園崎本家が北条家に対する陰湿な攻撃を命令したに他ならない。",
-		   NULL, " ... C'est donc la vieille folle qui a ordonné de bizuthage collectif des Hôjô.", Line_Normal);
+		   NULL, " ... C'est donc la vieille folle qui a ordonné le bizutage collectif des Hôjô.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
