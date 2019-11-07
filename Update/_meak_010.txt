@@ -398,12 +398,8 @@
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　悟史も可能な限り、叔母と沙都子が摩擦を起さないように努力した。",
-		   NULL, "Bien sûr, Satoshi fit tout son possible pour éviter les frictions entre sa sœur et sa tante.", Line_WaitForInput);
-	OutputLine(NULL, "取繕った。",
-		   NULL, " A REMOVE", Line_WaitForInput);
-	OutputLine(NULL, "誤魔化した。",
-		   NULL, " A REMOVE", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "　悟史も可能な限り、叔母と沙都子が摩擦を起さないように努力した。取繕った。誤魔化した。",
+		   NULL, "Bien sûr, Satoshi fit tout son possible pour éviter les frictions entre sa sœur et sa tante.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
