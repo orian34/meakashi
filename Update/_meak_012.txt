@@ -420,7 +420,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　………この奥に何があるかは、…私も漠然とした噂では知っていた。",
-		   NULL, "... La rumeur et les histoires m'avaient appris ce qu'il y avait là-bas, au plus profond de la forêt.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "... La rumeur et les histoires m'avaient apprise ce qu'il y avait là-bas, au plus profond de la forêt.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	//VoiceMatching
@@ -1380,13 +1380,8 @@
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
-	OutputLine(NULL, "　………何の罪もない悟史くんまで、",
-		   NULL, " Peut-être que lui aussi serait embarqué là-dedans ?", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "……巻き込まれるかもしれないよ？",
-		   NULL, "A REMOVE", Line_Normal);
+	OutputLine(NULL, "　………何の罪もない悟史くんまで、……巻き込まれるかもしれないよ？",
+		   NULL, " Peut-être que lui aussi serait embarqué là-dedans ?", Line_Normal);
 	ClearMessage();
 
 	DrawScene("black", 400 );
@@ -1673,7 +1668,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私は震える左手を……小指を、…器具のおぞましいくちばしに当て、…爪の間に………………割り込ませる。",
-		   NULL, "Les doigts tremblants, je plaçai le bec de l'appareil sous l'ongle du petit doigt de ma main gauche, puis l'intoduisis sous l'ongle, le plus loin possible.", Line_Normal);
+		   NULL, "Les doigts tremblants, je plaçai le bec de l'appareil sous l'ongle du petit doigt de ma main gauche, puis l'introduisis sous l'ongle, le plus loin possible.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2163,7 +2158,7 @@
 	OutputLine(NULL, "それはあまりに信じられない光景。",
 		   NULL, " C'était incroyable, au sens propre du terme.", Line_WaitForInput);
 	OutputLine(NULL, "痛みだけでなく、恐ろしさまでが私に襲いかかる。",
-		   NULL, " C'était une vision cauchemaresque...", Line_Normal);
+		   NULL, " C'était une vision cauchemardesque...", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2549,13 +2544,8 @@
 	SetValidityOfInput( TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　自分以外の人間が執行する刑が、これほどに無慈悲であることを初めて知る。",
-		   NULL, "... Toutefois, tout ne fut pas négatif.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　目を奪われた私には、襲い来る痛みに対し歯を食いしばることもできなかった。",
-		   NULL, "A REMOVE", Line_Normal);
+	OutputLine(NULL, "　自分以外の人間が執行する刑が、これほどに無慈悲であることを初めて知る。　目を奪われた私には、襲い来る痛みに対し歯を食いしばることもできなかった。",
+		   NULL, "... Toutefois, tout ne fut pas négatif.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
