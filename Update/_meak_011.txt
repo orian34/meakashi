@@ -193,7 +193,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600827", 256, TRUE);
 	OutputLine(NULL, "お姉は芝居が下手なんだから、変に意識するとかえって勘繰られますからね？」",
-		   NULL, "Ca risque d'attirer l'attention plus qu'autre chose.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Ça risque d'attirer l'attention plus qu'autre chose.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -682,13 +682,8 @@
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　悟史くんがバイトを始めた理由。",
+	OutputLine(NULL, "　悟史くんがバイトを始めた理由。それは、沙都子がこの先にあるおもちゃ屋で売っている、巨大なぬいぐるみを欲しがったからだ。",
 		   NULL, "Satoko avait voulu l'énorme peluche en vente dans le magasin de jouets un peu plus loin.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　それは、沙都子がこの先にあるおもちゃ屋で売っている、巨大なぬいぐるみを欲しがったからだ。",
-		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
