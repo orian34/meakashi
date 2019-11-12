@@ -775,7 +775,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……悟史くんは辛かった日々の全てから、解放されたのだ。",
-		   NULL, "Il en donc enfin libre. L'enfer de son quotidien est enfin terminé.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Il est donc enfin libre. L'enfer de son quotidien est enfin terminé.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -964,7 +964,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s06/10/151000130", 256, TRUE);
 	OutputLine(NULL, "…園崎さんが帰ってきてくれたら、ぜひ女子マネージャーの制服をメイドさんな格好にしようと思ってまして。」",
-		   NULL, " Et quand tu reviendras, je pense instaurer l'uniforme de soubrette pour la  manager, j'ai déjà commandé le tien.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Et quand tu reviendras, je pense instaurer l'uniforme de soubrette pour la manager, j'ai déjà commandé le tien.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1043,13 +1043,8 @@
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　突然、野太い声が割り込んでくる。",
+	OutputLine(NULL, "　突然、野太い声が割り込んでくる。　監督のからっとした笑い声とは全然違う、脂ぎった嫌な品のない笑い。",
 		   NULL, "Soudain, contrastant avec la voix douce du chef, un rire gras, rauque, vicieux, nous interrompit.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　監督のからっとした笑い声とは全然違う、脂ぎった嫌な品のない笑い。",
-		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 	PlayBGM( 0, "semi", 56, 0 );
@@ -1089,7 +1084,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　互いに良く思いあっていないことは一目瞭然だった。",
-		   NULL, "Toute cette haine contenue dans le regard, malgré ces beaux sourires fallatieux. Que du bonheur...", Line_Normal);
+		   NULL, "Toute cette haine contenue dans le regard, malgré ces beaux sourires fallacieux. Que du bonheur...", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1248,16 +1243,11 @@
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601051", 256, TRUE);
 	OutputLine(NULL, "「…………男の爪が綺麗でも気色悪いだけです。」",
 		   NULL, "— ... ... Un homme qui fait attention à ses ongles, c'est plus dérangeant qu'autre chose, vous savez.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　大石は、違いない違いないと言いながら頭を掻いて笑った。",
-		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　……大石は、興宮署で一番のキレ者で、雛見沢も含めこの地域の裏事情にも詳しい。",
+	OutputLine(NULL, "　大石は、違いない違いないと言いながら頭を掻いて笑った。　……大石は、興宮署で一番のキレ者で、雛見沢も含めこの地域の裏事情にも詳しい。",
 		   NULL, "... L'inspecteur Ôishi était réputé être le meilleur élément du commissariat d'Okinomiya, et très au courant de ce qu'il se passait à Hinamizawa.", Line_Normal);
 	ClearMessage();
 
@@ -1520,7 +1510,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　連れて来られたのは取調室のような狭い部屋ではなく、捜査一課と書かれた職場だった。",
-		   NULL, "Il me conduisit non pas vers une salle étroite pour me cuisiner avec un interrogatoire musclé, mais devant un bureau orné de la plaque de la Section d'Investigation n°  1.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Il me conduisit non pas vers une salle étroite pour me cuisiner avec un interrogatoire musclé, mais devant un bureau orné de la plaque de la Section d'Investigation n°1.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -3100,12 +3090,7 @@
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　涙ってね…？",
-		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　……流すことで、…心の中の悲しみを、少しでも外へ洗い流すために流れるんだよ……？",
+	OutputLine(NULL, "　涙ってね…？　……流すことで、…心の中の悲しみを、少しでも外へ洗い流すために流れるんだよ……？",
 		   NULL, "Les larmes, ça sert à condenser la peine, la souffrance et la tristesse dans notre cœur, et à la faire couler dehors, pour s'en débarrasser.", Line_Normal);
 	ClearMessage();
 
@@ -3249,7 +3234,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　北条悟史は同月２０日に発生した、撲殺事件の容疑者の可能性が高いとして、警察は逃亡を図ったものと見て、その行方を追っている。",
-		   NULL, "Oui, il est vivant !", Line_ContinueAfterTyping);
+		   NULL, "Il est possible qu'il se soit enfui, étant le suspect principal pour le meurtre ayant eu lieu quatre jours auparavant.", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 1, 0, FALSE );
 	OutputLineAll(NULL, "", Line_WaitForInput);
