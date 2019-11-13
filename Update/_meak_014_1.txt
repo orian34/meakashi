@@ -267,13 +267,8 @@
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　雛見沢村連続怪死事件は、通称「オヤシロさまの祟り」と呼ばれる。",
+	OutputLine(NULL, "　雛見沢村連続怪死事件は、通称「オヤシロさまの祟り」と呼ばれる。　悟史くんの事件が、連続怪死事件に組み込まれた。",
 		   NULL, "Les meurtres de Hinamizawa sont désignés sous le terme plus général de “la malédiction de la déesse Yashiro” par chez nous.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　悟史くんの事件が、連続怪死事件に組み込まれた。",
-		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -1210,13 +1205,8 @@
 	OutputLine(NULL, "「悟史くんは心のどこかで。",
 		   NULL, "« Parce que Satoshi, quelque part dans son cœur,", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s06/02/150200065", 256, TRUE);
-	OutputLine(NULL, "……雛見沢を捨てて、どこかへ逃げ出したいと思ってるから。」",
+	OutputLine(NULL, "……雛見沢を捨てて、どこかへ逃げ出したいと思ってるから。」　竜宮レナは、そう言った。",
 		   NULL, " a envie de s'enfuir très loin d'ici. »", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　竜宮レナは、そう言った。",
-		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -1566,13 +1556,8 @@
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　私は初め、この事件は４年目に連なりはしても、単独のものだと信じてきた。",
-		   NULL, "Depuis le début, j'ai toujours pensé que le meurtre de la quatrième année était là un peu par hasard, dans la série certes, mais sans aucun rapport avec les trois précédents.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　過去３年の連続事件とは無縁の、まったく別の事件だと思ってきた。",
-		   NULL, "A REMOVE", Line_Normal);
+	OutputLine(NULL, "　私は初め、この事件は４年目に連なりはしても、単独のものだと信じてきた。　過去３年の連続事件とは無縁の、まったく別の事件だと思ってきた。",
+		   NULL, "Depuis le début, j'ai toujours pensé que le meurtre de la quatrième année était là un peu par hasard, dans la série certes, mais sans aucun rapport avec les trois précédents.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2336,10 +2321,10 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601209", 256, TRUE);
 	OutputLine(NULL, "「さっきの話を聞かせて下さい。",
-		   NULL, "—  Vous pourriez m'en dire un peu plus ?", Line_WaitForInput);
+		   NULL, "— Vous pourriez m'en dire un peu plus ?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601210", 256, TRUE);
 	OutputLine(NULL, "２人犠牲者が出るといいましたね？",
-		   NULL, "  Vous m'avez affirmé qu'il y avait toujours deux victimes,", Line_WaitForInput);
+		   NULL, " Vous m'avez affirmé qu'il y avait toujours deux victimes,", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601211", 256, TRUE);
 	OutputLine(NULL, "　１人が祟りで、もう１人が…えっと、生贄とか言いましたか？」",
 		   NULL, " une de par la malédiction propre, et une autre... donnée en sacrifice, c'est bien cela ?", GetGlobalFlag(GLinemodeSp));
