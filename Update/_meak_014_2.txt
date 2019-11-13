@@ -1178,13 +1178,8 @@
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　私たちは互いを抱きしめたまま……、まどろみに落ちていく。",
-		   NULL, "Encore enlacées, avachies sur le sol, ma sœur et moi sombrâmes corps et âme dans les profondeurs ténébreuses d'un sommeil sans nom, inexorablement prises dans la tourmente du tourbillon de nos pensées...", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　全てを、抱きしめたまま。",
-		   NULL, "A REMOVE", Line_Normal);
+	OutputLine(NULL, "　私たちは互いを抱きしめたまま……、まどろみに落ちていく。　全てを、抱きしめたまま。",
+		   NULL, "Encore enlacées, avachies sur le sol, ma sœur et moi sombrâmes corps et âme dans les profondeurs ténébreuses d'un sommeil sans nom, inexorablement prises dans la tourmente du tourbillon de nos pensées...", Line_Normal);
 	ClearMessage();
 
 	CallScript( "&eyeCamp" );
