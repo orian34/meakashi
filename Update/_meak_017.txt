@@ -49,13 +49,8 @@
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　みんなで片付けをし、仕切るのが大好きな叔母さま連中は、台所を占領してガンガン食器類を洗っていた。",
-		   NULL, "Tout le monde aida à ranger ; les femmes donnèrent ordre aux hommes de plier les tables et les chaises et de les ranger dans les agrès, pendant qu'elles expédiaient la vaisselle à vitesse grand V.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　男性陣も、広間いっぱいに出された机をどんどん畳んで、奥の納戸に片付けている。",
-		   NULL, "A REMOVE", Line_Normal);
+	OutputLine(NULL, "　みんなで片付けをし、仕切るのが大好きな叔母さま連中は、台所を占領してガンガン食器類を洗っていた。　男性陣も、広間いっぱいに出された机をどんどん畳んで、奥の納戸に片付けている。",
+		   NULL, "Tout le monde aida à ranger ; les femmes donnèrent ordre aux hommes de plier les tables et les chaises et de les ranger dans les agrès, pendant qu'elles expédiaient la vaisselle à vitesse grand V.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -603,7 +598,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s06/02/150200168", 256, TRUE);
 	OutputLine(NULL, "「そうならば魅ぃちゃんは大丈夫。",
-		   NULL, "Tu n'as jamais eu ça, toi ? Non ? Alors, toi, tu n'as rien à craindre, Mii.", Line_WaitForInput);
+		   NULL, "— Tu n'as jamais eu ça, toi ? Non ? Alors, toi, tu n'as rien à craindre, Mii.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s06/02/150200169", 256, TRUE);
 	OutputLine(NULL, "……オヤシロさまには怒られない。」",
 		   NULL, " La déesse Yashiro ne se mettra pas en colère contre toi.", Line_Normal);
