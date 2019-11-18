@@ -326,7 +326,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　さすがに私の方が悪そうだったので、即座に謝る。",
-		   NULL, "Comme c'était sûrement de ma faute, je me retrounai immédiatement pour m'excuser.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Comme c'était sûrement de ma faute, je me retournai immédiatement pour m'excuser.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -892,17 +892,8 @@
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　塗料のむせ返るようなシンナーの臭いでいっぱいだった",
-		   NULL, "... Et puis, ce n'était pas impossible, en fait.", Line_ContinueAfterTyping);
-	SetSpeedOfMessage( TRUE, 16 );
-	OutputLine(NULL, "……",
-		   NULL, "A REMOVE", Line_ContinueAfterTyping);
-	SetSpeedOfMessage( FALSE, 0 );
-	SetValidityOfInput( FALSE );
-	Wait( 500 );
-	SetValidityOfInput( TRUE );
-	OutputLine(NULL, "なんて、できない想像じゃない。",
-		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "　塗料のむせ返るようなシンナーの臭いでいっぱいだった……なんて、できない想像じゃない。",
+		   NULL, "... Et puis, ce n'était pas impossible, en fait.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -941,9 +932,9 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　たまたまいないのか、希薄で私が気付けないのか。",
-		   NULL, "Je ne sais pas si c'était le hasard, ou si ma question ne l'intéressait pas, mais il ne répondit pas. ", Line_WaitForInput);
+		   NULL, "Je ne sais pas si c'était le hasard, ou si ma question ne l'intéressait pas,", Line_WaitForInput);
 	OutputLine(NULL, "……それとも、無感情なのか。",
-		   NULL, "A REMOVE", Line_Normal);
+		   NULL, " mais il ne répondit pas. ", Line_Normal);
 	ClearMessage();
 	DrawSceneWithMask("black", "maskdown", 1, 0, 300 );
 
@@ -964,12 +955,7 @@
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　でも、…その一年後のこの夜に。",
-		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　……祭具殿の中を見る機会に恵まれるなんて。",
+	OutputLine(NULL, "　でも、…その一年後のこの夜に。　……祭具殿の中を見る機会に恵まれるなんて。",
 		   NULL, "Mais qui eût cru que ce soir, un an après les faits, j'aurais l'occasion d'entrer dans le temple interdit ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
@@ -1378,13 +1364,8 @@
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　もし悟史くんに返事ができるなら。",
+	OutputLine(NULL, "　もし悟史くんに返事ができるなら。　……私は聞きたい。",
 		   NULL, "S'il pouvait me répondre, j'aurais vraiment voulu lui poser des questions.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　……私は聞きたい。",
-		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -1553,13 +1534,8 @@
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　悟史くんがオヤシロさまの祟りの４年目の犠牲者だと言うなら。",
+	OutputLine(NULL, "　悟史くんがオヤシロさまの祟りの４年目の犠牲者だと言うなら。　オヤシロさまの祟りをなぞろうとする、「人間」の犠牲者なのだ。",
 		   NULL, "Puisque les gens racontent que Satoshi est victime de la quatrième malédiction, cela signifie qu'il est le quatrième à avoir été supprimé par des fanatiques de la déesse qui essaient de la copier.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　オヤシロさまの祟りをなぞろうとする、「人間」の犠牲者なのだ。",
-		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2359,7 +2335,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s06/09/150900152", 256, TRUE);
 	OutputLine(NULL, "「…カクモ無惨且ツ残虐非道ヲ………。」",
-		   NULL, "— ...[le] corps présente [d]es traces de sévices inhumains, du jamais vu de mémoire d'homme.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— ...[le] corps présente des traces de sévices inhumains, du jamais vu de mémoire d'homme.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	SetSpeedOfMessage( TRUE, 128 );
@@ -2558,13 +2534,8 @@
 	PlaySE( 4, "wa_023", 56, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　だって、……今、悟史くんが来てくれたとしても。",
-		   NULL, "En même temps, même s'il avait été là, j'avais été incapable de savoir exactement à qui avaient appartenu les bruits bizarres du temple...", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　…………本当に悟史くんなのか、………それ以外の何者なのか、……見分けなんかつかなかったに違いないから…………。",
-		   NULL, "A REMOVE", Line_Normal);
+	OutputLine(NULL, "　だって、……今、悟史くんが来てくれたとしても。　…………本当に悟史くんなのか、………それ以外の何者なのか、……見分けなんかつかなかったに違いないから…………。",
+		   NULL, "En même temps, même s'il avait été là, j'avais été incapable de savoir exactement à qui avaient appartenu les bruits bizarres du temple...", Line_Normal);
 	ClearMessage();
 	DrawScene("background/jysa1", 1000 );
 
