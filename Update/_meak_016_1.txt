@@ -23,7 +23,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だから、私は睡魔に負けるまでずっとずっと…悟史くんに話しかけていた。",
-		   NULL, "C'est pourquoi je me mis à lui parler, toute la nuit, pour ne par perdre mon combat face au marchand de sable.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "C'est pourquoi je me mis à lui parler, toute la nuit, pour ne pas perdre mon combat face au marchand de sable.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -123,13 +123,7 @@
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　…でも一夜だけでも会えたから。",
-		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
-
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　……そう諦めかけた時。",
+	OutputLine(NULL, "　…でも一夜だけでも会えたから。　……そう諦めかけた時。",
 		   NULL, "Alors que j'étais en train d'essayer de me consoler en me disant que je l'avais au moins revu le temps d'une nuit...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	FadeOutBGM( 2, 300, FALSE );
