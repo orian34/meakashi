@@ -10,7 +10,7 @@ void dialog000()
 		   NULL, "— En plus, elle a un joli rack...", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s06/00/huryoc15008", 256, TRUE);
 	OutputLine(NULL, "　どうじゃこの後…むげへへへへへへ！！」",
-		   NULL, " Sans les habits, moi je dis, ça peut le faire,", Line_Normal);
+		   NULL, " Sans les habits, moi je dis, ça peut le faire !", Line_Normal);
 	ClearMessage();
 }
 
@@ -19,10 +19,10 @@ void dialog001()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>不良</color>", NULL, "<color=#f5e6d3>Délinquant</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s06/00/huryoa15019", 256, TRUE);
 	OutputLine(NULL, "「おお、俺んさ、一度可愛こチャンはべらせて町のべりたくてさぁ！！",
-		   NULL, "hin hin hin...", Line_WaitForInput);
+		   NULL, "— Hé, hé, moi ce que je préfère dans les films de boules, c'est la scène où ils se déshabillent !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s06/00/huryoa15020", 256, TRUE);
 	OutputLine(NULL, "　はぁはぁ！」",
-		   NULL, " — Hé, hé, moi ce que je préfère dans les films de boules, c'est la scène où ils se déshabillent !", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Hin hin hin...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>不良</color>", NULL, "<color=#f5e6d3>Délinquant</color>", NULL, Line_ContinueAfterTyping); }
@@ -318,5 +318,5 @@ void dialog008()
 		   NULL, "J'ai vos noms, et vous en allez en chier !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100063", 256, TRUE);
 	OutputLine(NULL, "貴様らが真の萌え文化を理解できるまで今日は寝られないと思ええ！！！",
-		   NULL, " Ce soir, vous ne partirez pas avant d'avoir réussi,", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Ce soir, vous ne partirez pas avant d'avoir réussi !", GetGlobalFlag(GLinemodeSp));
 }
