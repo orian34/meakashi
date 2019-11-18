@@ -531,15 +531,8 @@
 	DrawSceneWithMask("black", "maskright", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　私は単車の元へ戻る。",
-		   NULL, "Je me relevai et marchai à travers les buissons pour revenir à ma mobylette.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　……雑草の茂みを踏み分けながら。",
-		   NULL, "A REMOVE", Line_WaitForInput);
-	OutputLine(NULL, "……ざくざくざく。",
-		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "　私は単車の元へ戻る。　……雑草の茂みを踏み分けながら。……ざくざくざく。",
+		   NULL, "Je me relevai et marchai à travers les buissons pour revenir à ma mobylette.", Line_Normal);
 	ClearMessage();
 
 	FadeOutBGM( 0, 300, FALSE );
