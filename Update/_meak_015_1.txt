@@ -147,12 +147,7 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　小遣いを節約するくらいの経済観念は私にもある。",
-		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　上機嫌な私は両腕を振り回すように、ぐるっと踵を返す。",
+	OutputLine(NULL, "　小遣いを節約するくらいの経済観念は私にもある。　上機嫌な私は両腕を振り回すように、ぐるっと踵を返す。",
 		   NULL, "Aussitôt, je tournai les talons, dans la joie et l'allégresse, mes deux bras emportés par l'élan,", Line_WaitForInput);
 	OutputLine(NULL, "さながら小さなつむじ風。",
 		   NULL, " comme un tourbillon.", Line_Normal);
@@ -1041,7 +1036,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　持ち前のデリカシーのなさと遠慮のなさで、早くもクラスの人気者（？）なのだとか。",
-		   NULL, "Son plus grand atout, c'était son sang-gêne et son manque de politesse -- il avait tapé l'incruste chez tout le monde sans faire son timide, et du coup s'était fait très vite de nombreux amis.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Son plus grand atout, c'était son sans-gêne et son manque de politesse -- il avait tapé l'incruste chez tout le monde sans faire son timide, et du coup s'était fait très vite de nombreux amis.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -1419,13 +1414,8 @@
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　……だが、魅音の表情はいつの間にか陰っていて。",
+	OutputLine(NULL, "　……だが、魅音の表情はいつの間にか陰っていて。　薄い笑顔がひどく儚く見えた。",
 		   NULL, "Mais en fait, je remarquai soudain son expression abattue et son sourire forcé.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　薄い笑顔がひどく儚く見えた。",
-		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -1650,7 +1640,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601358", 256, TRUE);
 	OutputLine(NULL, "　ん〜、萌えの典型パターンのひとつかもです。",
-		   NULL, "Je pense qu'avec sa, tu devrais réveiller sa PASSION.", Line_WaitForInput);
+		   NULL, "Je pense qu'avec ça, tu devrais réveiller sa PASSION.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601359", 256, TRUE);
 	OutputLine(NULL, "…私も圭ちゃんに実践してみるかな。」",
 		   NULL, " Hmm, en fait, le plus facile serait que je te montre sur lui l'effet que ça peut faire.", GetGlobalFlag(GLinemodeSp));
@@ -1733,7 +1723,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それに比べたら、魅音たちの関係なんてどれほど恵まれているか。",
-		   NULL, "Mion avait tellement de chance comparé à moi...", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Mion avait tellement de chance comparée à moi...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -1996,7 +1986,7 @@
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "………祟りで消され、",
-		   NULL, " vous l'avez effacer.", Line_ContinueAfterTyping);
+		   NULL, " vous l'avez effacé.", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
