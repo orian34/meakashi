@@ -916,12 +916,12 @@
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……よもや自分の親戚では、",
-		   NULL, " Ils avaient peur que la honte ne s'abattît sur leur famille.", Line_ContinueAfterTyping);
+		   NULL, " Ils avaient peur", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…孫では…と恐れていたからだ。",
-		   NULL, " A REMOVE", GetGlobalFlag(GLinemodeSp));
+		   NULL, " que la honte ne s'abattît sur leur famille.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1130,11 +1130,8 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　予期せぬ緊急の判断が求められた際には公由家か園崎家の頭首の判断を仰ぐこと、",
-		   NULL, "Et si quelque chose d'urgent devait nécessiter une décision à l'improviste, téléphoner sur-le-champ soit au chef des Kimiyoshi, soit au chef des Sonozaki... ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "を確認し、会合は閉会となった…。",
-		   NULL, "A REMOVE", Line_Normal);
+	OutputLine(NULL, "　予期せぬ緊急の判断が求められた際には公由家か園崎家の頭首の判断を仰ぐこと、を確認し、会合は閉会となった…。",
+		   NULL, "Et si quelque chose d'urgent devait nécessiter une décision à l'improviste, téléphoner sur-le-champ soit au chef des Kimiyoshi, soit au chef des Sonozaki... ", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -2195,7 +2192,7 @@
 	Wait( 90 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "な",
-		   NULL, "piffrer", Line_Continue);
+		   NULL, " piffrer", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
 	// (backup) SetValidityOfInput( TRUE );
@@ -2265,7 +2262,7 @@
 	Wait( 90 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "た",
-		   NULL, "tout mis", Line_Continue);
+		   NULL, " tout mis", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
 	// (backup) SetValidityOfInput( TRUE );
@@ -2320,7 +2317,7 @@
 	Wait( 90 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "許",
-		   NULL, "ont", Line_Continue);
+		   NULL, " ont", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
 	// (backup) SetValidityOfInput( TRUE );
@@ -2340,7 +2337,7 @@
 	Wait( 90 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "お",
-		   NULL, "pendant", Line_Continue);
+		   NULL, " pendant", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
 	// (backup) SetValidityOfInput( TRUE );
@@ -2350,7 +2347,7 @@
 	Wait( 90 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "の",
-		   NULL, "avec les raclures", Line_Continue);
+		   NULL, " avec les raclures", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
 	// (backup) SetValidityOfInput( TRUE );
@@ -2394,7 +2391,7 @@
 	Wait( 90 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "せ",
-		   NULL, " ce qu'il", Line_Continue);
+		   NULL, "ce qu'il", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
 	// (backup) SetValidityOfInput( TRUE );
@@ -2414,7 +2411,7 @@
 	Wait( 90 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "前",
-		   NULL, " un", Line_Continue);
+		   NULL, " a", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
 	// (backup) SetValidityOfInput( TRUE );
@@ -2444,7 +2441,7 @@
 	Wait( 90 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "つ",
-		   NULL, " qu'il", Line_Continue);
+		   NULL, " un", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
 	// (backup) SetValidityOfInput( TRUE );
@@ -2474,17 +2471,17 @@
 	Wait( 90 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "た",
-		   NULL, " est-", Line_Continue);
+		   NULL, "est-", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "ち",
-		   NULL, " ce", Line_Continue);
+		   NULL, "ce", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "一",
-		   NULL, " a", Line_Continue);
+		   NULL, " qu'il", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
 	// (backup) SetValidityOfInput( TRUE );
@@ -2514,7 +2511,7 @@
 	Wait( 90 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "め",
-		   NULL, " ce", Line_Continue);
+		   NULL, "ce", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
 	// (backup) SetValidityOfInput( TRUE );
@@ -3093,7 +3090,7 @@
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　やはり圭一は綿流しの夜の事件のことは何も知らなかった。",
+	OutputLine(NULL, "　やはり圭一は綿流しの夜の事件のことは何も知らなかった。　圭一は、鷹野さんたちの死が報道されてない以上、信用できないの一点張りで拒否を貫こうとした。",
 		   NULL, "Je le savais... Keiichi n'était au courant de rien. Il me soutint mordicus que tant que les médias n'en parleraient pas, il ne pouvait décemment pas croire à ces affabulations.", Line_Normal);
 	ClearMessage();
 
@@ -3104,11 +3101,6 @@
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601858", 256, TRUE);
 	OutputLine(NULL, "…過去にそうだったから。」",
 		   NULL, " C'était comme ça aussi les autres années.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　圭一は、鷹野さんたちの死が報道されてない以上、信用できないの一点張りで拒否を貫こうとした。",
-		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -3457,20 +3449,13 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　村中にそれが蔓延し、雛見沢の人間全員が、敵を共通認識した時。",
-		   NULL, "Et lorsque tout le village, c'est-à-dire tous les habitants, eurent enfin une conscience collective de leurs ennemis, alors seulement, leur unité forma une entité commune et indivisible, agissant selon une seule même volonté, et capable de passer à l'acte.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Et lorsque tout le village, c'est-à-dire tous les habitants, eurent enfin une conscience collective de leurs ennemis, ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　初めて雛見沢はまるごとでひとつの意思を持った「殺人執行者」となる。",
-		   NULL, "A REMOVE", Line_Normal);
+	OutputLine(NULL, "　初めて雛見沢はまるごとでひとつの意思を持った「殺人執行者」となる。　お魎はこれら２つの要素、すなわち「連帯した地域性」と「価値観（敵）の共有」を組み合わせ、敵を選定しては、それを村全体の敵として刷り込み、蔓延させていった。",
+		   NULL, "alors seulement, leur unité forma une entité commune et indivisible, agissant selon une seule même volonté, et capable de passer à l'acte.", Line_Normal);
 	ClearMessage();
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　お魎はこれら２つの要素、すなわち「連帯した地域性」と「価値観（敵）の共有」を組み合わせ、",
-		   NULL, "A REMOVE", Line_WaitForInput);
-	OutputLine(NULL, "敵を選定しては、それを村全体の敵として刷り込み、蔓延させていった。",
-		   NULL, " A REMOVE", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -3990,13 +3975,8 @@
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　だが、鎖はかなりきつく短く締め上げている。",
-		   NULL, "Je l'avais mise suffisamment courte pour forcer le maire à se tenir toujours sur la pointe des pieds, faute de quoi il ne pourrait plus respirer.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　…公由は、背伸びをし続けていなければ、呼吸することもままならないのだ。",
-		   NULL, "A REMOVE", Line_Normal);
+	OutputLine(NULL, "　だが、鎖はかなりきつく短く締め上げている。　…公由は、背伸びをし続けていなければ、呼吸することもままならないのだ。",
+		   NULL, "Je l'avais mise suffisamment courte pour forcer le maire à se tenir toujours sur la pointe des pieds, faute de quoi il ne pourrait plus respirer.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -4789,7 +4769,7 @@
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……見つけてくれたんだね……。",
-		   NULL, " Tu m'as enfin retrouvé...", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Tu m'as enfin retrouvée...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -5068,14 +5048,8 @@
 	PlayBGM( 0, "msys30", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　一年前のあの日。",
-		   NULL, "Peu à peu, il me revint en tête l'air cruel de l'héritière du clan, celui que j'avais vu l'année dernière, ce jour-là, lorsqu'elle m'avait réclamé trois ongles.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
-
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　……私に対して、爪を剥がすけじめを強要した時の、あの冷酷な次期頭首としての魅音がありありと蘇る。",
-		   NULL, "A REMOVE", Line_Normal);
+	OutputLine(NULL, "　一年前のあの日。　……私に対して、爪を剥がすけじめを強要した時の、あの冷酷な次期頭首としての魅音がありありと蘇る。",
+		   NULL, "Peu à peu, il me revint en tête l'air cruel de l'héritière du clan, celui que j'avais vu l'année dernière, ce jour-là, lorsqu'elle m'avait réclamé trois ongles.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
