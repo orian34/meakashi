@@ -1788,11 +1788,11 @@
 	OutputLine(NULL, "　一夜だけ替わってあげたはずなのにッ！！！",
 		   NULL, "Nous n'étions censées échanger nos places que pour une soirée !", Line_WaitForInput);
 	OutputLine(NULL, "　いっつも魅音ばかりいい目を見てて…詩音が可哀想だからって思って！",
-		   NULL, " Je voulais juste être gentille, pour une fois, parce qu'elle n'avait jamais de chance !", Line_WaitForInput);
+		   NULL, " Je voulais juste être gentille,", Line_WaitForInput);
 	OutputLine(NULL, "　それだけのことだったのに！！！",
-		   NULL, " A REMOVE", Line_WaitForInput);
+		   NULL, " pour une fois,", Line_WaitForInput);
 	OutputLine(NULL, "　私がいい姉だったから、妹のわがままを聞いてあげただけなのにッ！！",
-		   NULL, " A REMOVE", Line_Normal);
+		   NULL, " parce qu'elle n'avait jamais de chance !", Line_Normal);
 	ClearMessage();
 	DrawScene("background/aka1", 400 );
 
