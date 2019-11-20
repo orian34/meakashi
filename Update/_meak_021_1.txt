@@ -1381,12 +1381,12 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だけど、……もう意地悪な叔母もいないし、意地悪な叔父もいない。",
-		   NULL, "Il n'aurait plus eu son hystérique de tante, ni son connard d'oncle, ni même le parasite énorme qui lui servait de sœur.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Il n'aurait plus eu son hystérique de tante, ni son connard d'oncle,", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…妹に生まれたというだけの理由で、悟史くんに寄生しているも同然だった重荷の沙都子ももういない。",
-		   NULL, "A REMOVE", Line_Normal);
+		   NULL, "ni même le parasite énorme qui lui servait de sœur.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1712,20 +1712,13 @@
 	DrawSceneWithMask("background/so_d1_01", "maskright", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　この辺は町が遠い田舎だし、冬は豪雪に閉じ込められることもある。",
+	OutputLine(NULL, "　この辺は町が遠い田舎だし、冬は豪雪に閉じ込められることもある。　だから大きな冷蔵庫が２つ３つあるなんてのは当り前のことだった。",
 		   NULL, "Dans ce petit village reclus de tout, souvent enseveli sous la neige en hiver, il n'était pas rare d'avoir plusieurs réfrigérateurs de grande taille -- on n'était jamais assez prudent.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　だから大きな冷蔵庫が２つ３つあるなんてのは当り前のことだった。",
-		   NULL, "Et dans ceux d'ici, je trouvai de quoi tenir pendant très longtemps sans avoir à aller faire de courses à l'extérieur.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　中には当分食っていけるだけの充分な備えがある。",
-		   NULL, "A REMOVE", Line_WaitForInput);
-	OutputLine(NULL, "…買い物に行かなくて済むのはとても助かった。",
-		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "　中には当分食っていけるだけの充分な備えがある。…買い物に行かなくて済むのはとても助かった。",
+		   NULL, "Et dans ceux d'ici, je trouvai de quoi tenir pendant très longtemps sans avoir à aller faire de courses à l'extérieur.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
