@@ -310,13 +310,8 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100245", 256, TRUE);
-	OutputLine(NULL, "「……本宅って何だ？」",
-		   NULL, "— La demeure principale ? De quoi elle parle ?", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　圭一がハシゴの上から尋ねてくる。",
-		   NULL, "A REMOVE", Line_Normal);
+	OutputLine(NULL, "「……本宅って何だ？」　圭一がハシゴの上から尋ねてくる。",
+		   NULL, "— La demeure principale ? De quoi elle parle ?", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
@@ -625,15 +620,9 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　あいつが悟史くんを心身ともに追い詰めた！",
+	OutputLine(NULL, "　あいつが悟史くんを心身ともに追い詰めた！　追い詰めたからどんどん話がおかしくなって、それで全部が狂ってしまったんだ。",
 		   NULL, "C'est parce qu'elle le poussait à bout de nerfs qu'il a commencé à dire des choses bizarres et que tout s'est emballé.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
-
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　追い詰めたからどんどん話がおかしくなって、それで全部が狂ってしまったんだ。",
-		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そう、全ての因果関係を辿れば、沙都子が一番許せないんだ！！",
@@ -675,7 +664,7 @@
 		   NULL, " pour savoir qui était responsable de quoi ! ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "あいつがいたから、悟史くんは叔母を殺さなくてはならなくなって、それで、そこを御三家にうまく利用されて、祟りの片棒を担がされた挙句、消されてしまった…ッ！！！",
-		   NULL, "C'était de sa faute à elle, c'est à cause d'elle qu'il a été obligé de tuer leur tante ! Et c'est pour ça que les trois clans se sont servis de lui, et qu'ils s'en sont débarrassés !", Line_Normal);
+		   NULL, "C'était de sa faute à elle, c'est à cause d'elle qu'il a été obligé de tuer leur tante ! Et c'est pour ça que les trois clans se sont servis de lui, et qu'ils s'en sont débarrassé !", Line_Normal);
 	ClearMessage();
 	DrawScene("black", 400 );
 
