@@ -65,7 +65,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s06/02/150200203", 256, TRUE);
 	OutputLine(NULL, "「……学校は、…休んだよ。」",
-		   NULL, " — Eh bien... on fait bleu.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— Eh bien... on fait bleu.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
@@ -1413,7 +1413,7 @@
 		   NULL, "— Ben c'est exactement ça pour moi et ma sœur.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150602519", 256, TRUE);
 	OutputLine(NULL, "仲が良いとか悪いとか、そういう尺度では測れない関係。」",
-		   NULL, " Ca ne se mesure pas.", Line_Normal);
+		   NULL, " Ça ne se mesure pas.", Line_Normal);
 	ClearMessage();
 	DrawScene("background/sora", 400 );
 
@@ -1573,7 +1573,7 @@
 		   NULL, "— ... C'est parce que tu ne sais pas ce que c'est.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150602526", 256, TRUE);
 	OutputLine(NULL, "　双子なんて、昔は人をからかったりしてそこそこに面白かったけど。",
-		   NULL, " On s'amusaient à tourner les gens en bourrique autrefois. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, " On s'amusait à tourner les gens en bourrique autrefois. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150602527", 256, TRUE);
 	OutputLine(NULL, "…こうして互いがはっきりと異なる個性を持った今では、かえって邪魔なだけ。」",
@@ -2544,7 +2544,7 @@
 
 	if (GetGlobalFlag(GLanguage) == 1) {
 		Item[0] = "À ce moment-là, je pris conscience du regard que Keiichi me lançait";
-		Item[1] = "Puis, je me suis retourné pour faire face à Keiichi";
+		Item[1] = "Puis, je me suis retournée pour faire face à Keiichi";
 	} else {
 		Item[0] = "その時、私は圭一の視線に気がついた";
 		Item[1] = "そして私は、圭一に振り返った ";
