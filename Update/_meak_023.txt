@@ -577,7 +577,7 @@
 		   NULL, "— Ahhahahahahahaha !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150602303", 256, TRUE);
 	OutputLine(NULL, "　泣くのはあんたの専売特許だね。",
-		   NULL, " Aaah, c'est vrai, pleurer, c'était ton fonds de commerce.", Line_WaitForInput);
+		   NULL, " Aaah, c'est vrai, pleurer, c'était ton fond de commerce.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150602304", 256, TRUE);
 	OutputLine(NULL, "泣けばにーにーが来てくれる？",
 		   NULL, " Tu crois peut-être que si tu pleures, ton Totoche va venir te sauver ? Tu crois qu'il va arriver comme par magie, pour me casser la figure ?", Line_WaitForInput);
@@ -768,15 +768,8 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　はぁ！",
 		   NULL, "Satoko ahanait,", Line_WaitForInput);
-	OutputLine(NULL, "　はぁ！",
-		   NULL, " mais gémissait à peine.", Line_WaitForInput);
-	OutputLine(NULL, "　はあ！！",
-		   NULL, " A REMOVE", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　一息に腹の底の全てをぶちまけ、私は荒い息を漏らした。",
-		   NULL, "A REMOVE", Line_Normal);
+	OutputLine(NULL, "　はぁ！　はあ！！　一息に腹の底の全てをぶちまけ、私は荒い息を漏らした。",
+		   NULL, " mais gémissait à peine.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
@@ -2194,7 +2187,7 @@
 		   NULL, "Nous avons même des légendes racontant comment le village s'est fait attaquer par une bande d'ogres affamés !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150602372", 256, TRUE);
 	OutputLine(NULL, "　私もまた伝承の鬼たちのように猛威を振るい、そしてオヤシロさまの裁きを待とう。",
-		   NULL, " — Je sais ce que je vais faire, je vais tuer le plus de monde possible, et je vais attendre la sentence et le jugement de la déesse Yashiro.", Line_WaitForInput);
+		   NULL, " Je sais ce que je vais faire, je vais tuer le plus de monde possible, et je vais attendre la sentence et le jugement de la déesse Yashiro.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150602373", 256, TRUE);
 	OutputLine(NULL, "それでこそ、雛見沢村に相応しい災禍と言えるだろうね！！！",
 		   NULL, " Je pense que c'est la plus belle chose que je puisse faire par ici, tu ne trouves pas ? ", GetGlobalFlag(GLinemodeSp));
@@ -2880,7 +2873,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150602427", 256, TRUE);
 	OutputLine(NULL, "「……ぅっく……、",
-		   NULL, "— sniff...", Line_Continue);
+		   NULL, "— Sniff...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1800 );
 	// (backup) SetValidityOfInput( TRUE );
