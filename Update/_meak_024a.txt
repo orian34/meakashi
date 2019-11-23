@@ -227,7 +227,7 @@
 //r一応もしかしたら、…なんて、心積もりはしていた。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "一応もしかしたら、…なんて、心積もりはしていた。",
-			NULL, "Je m'étais persuadé qu'il n'avait aucun moyen de deviner.", GetGlobalFlag(GLinemodeSp));
+			NULL, "Je m'étais persuadée qu'il n'avait aucun moyen de deviner.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //rそれでも、……やっぱり少しだけ、驚いた。
@@ -426,7 +426,7 @@
 //rおもちゃ屋のときも、同じことを言ったっけなぁ？
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "おもちゃ屋のときも、同じことを言ったっけなぁ？",
-			NULL, "C'est exactement ce qu'il avait dit la dernière fois, au magasin de jouet.", GetGlobalFlag(GLinemodeSp));
+			NULL, "C'est exactement ce qu'il m'avait dit la dernière fois, au magasin de jouet.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //rはははははははははは。いいね、いいねぇ！　すごいよ、大正解じゃん？
@@ -507,7 +507,7 @@
 //rふと手を伸ばし、圭一の汗と血にまみれべっとりとなった髪に触れる。その途端、圭一は虫でも払うように嫌悪感あらわな表情で首を振ると、きっ、と鋭い眼光で睨み返してきた。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "ふと手を伸ばし、圭一の汗と血にまみれべっとりとなった髪に触れる。その途端、圭一は虫でも払うように嫌悪感あらわな表情で首を振ると、きっ、と鋭い眼光で睨み返してきた。",
-			NULL, "Je tendis la main pour atteindre les cheveux de Keiichi, ils étaient pleins de sueurs et maculés de sang. Keiichi remua la tête avec dégoût, comme pour faire fuir une mouche - puis il me lança un regard de défiance.", GetGlobalFlag(GLinemodeSp));
+			NULL, "Je tendis la main pour atteindre les cheveux de Keiichi, ils étaient pleins de sueur et maculés de sang. Keiichi remua la tête avec dégoût, comme pour faire fuir une mouche - puis il me lança un regard de défiance.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //圭一rvS06/01/150100396.「触るなっ！kvS06/01/150100397.　…この鬼め…！！！kvS06/01/150100398.　返せッ！！kvS06/01/150100399.　魅音を返せよ！！！kvS06/01/150100400.　俺の最高の友人だった…魅音を返せぇえぇえええッ！！！」
@@ -526,7 +526,7 @@
 			NULL, " Rends-moi Mion !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100400", 256, TRUE);
 	OutputLine(NULL, "　俺の最高の友人だった…魅音を返せぇえぇえええッ！！！」",
-			NULL, " Rends-moi ma meilleure amie !  Rends-moi Mion !!!", GetGlobalFlag(GLinemodeSp));
+			NULL, " Rends-moi ma meilleure amie ! Rends-moi Mion !!!", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //r全身の自由を奪われながら、血を吐くような咆哮で叫び続けている。
@@ -538,7 +538,7 @@
 //r…すでに悪魔に魂を売って鬼と化したはずの私だったが、こうも悪し様に拒絶されると、少しだけカケラのように残った感情がざわめくのを覚えた。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…すでに悪魔に魂を売って鬼と化したはずの私だったが、こうも悪し様に拒絶されると、少しだけカケラのように残った感情がざわめくのを覚えた。",
-			NULL, "... J'étais censé avoir vendu mon âme au diable et être devenu un démon, mais devant un rejet si amer, je sentis les restes émiettés de mes émotions vibrer en moi.", Line_Normal);
+			NULL, "... J'étais censée avoir vendu mon âme au diable et être devenue un démon, mais devant un rejet si amer, je sentis les restes émiettés de mes émotions vibrer en moi.", Line_Normal);
 	ClearMessage();
 
 	DrawScene("background/aka2", 1000 );
@@ -632,7 +632,7 @@
 //rなんで、詩音だけこんなにも、素敵な相手とめぐり合うことができたんだ。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "なんで、詩音だけこんなにも、素敵な相手とめぐり合うことができたんだ。",
-			NULL, "Pourquoi c'est toujours Shion ? Pourquoi c'est elle qui a rencontrée une personne aussi merveilleuse ?", GetGlobalFlag(GLinemodeSp));
+			NULL, "Pourquoi c'est toujours Shion ? Pourquoi c'est elle qui a rencontré une personne aussi merveilleuse ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //r悟史くんは、私と詩音を曖昧にしか区別できなかった。
@@ -656,7 +656,7 @@
 //rそして、その結果。………この私を、否定した。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "そして、その結果。………この私を、否定した。",
-			NULL, "De ce fait... Lui aussi m'a abandonné.", Line_Normal);
+			NULL, "De ce fait... Lui aussi m'a abandonnée.", Line_Normal);
 	ClearMessage();
 
 //r憎い。腹立たしい。疎ましい。妬ましい。……だから、殺してやりたい。
@@ -818,7 +818,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150602601", 256, TRUE);
 	OutputLine(NULL, "「鬼の私が教えるのも変だけれど。",
-			NULL, "C'est ironique que ce soit le démon qui t'en parle, mais tu sais,", Line_WaitForInput);
+			NULL, "— C'est ironique que ce soit le démon qui t'en parle, mais tu sais,", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150602602", 256, TRUE);
 	OutputLine(NULL, "…あんたが全てをおかしくしてしまった元凶」",
 			NULL, " c'est toi qui as tout chamboulé.", GetGlobalFlag(GLinemodeSp));
@@ -1015,7 +1015,7 @@
 //rいまさら人間らしい感傷も、ためらいも必要ない。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "いまさら人間らしい感傷も、ためらいも必要ない。",
-			NULL, "Il n'y a pas de places pour les émotions humaines, encore moins pour l'hésitation.", GetGlobalFlag(GLinemodeSp));
+			NULL, "Il n'y a pas de place pour les émotions humaines, encore moins pour l'hésitation.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //rそして――――。
@@ -1027,7 +1027,7 @@
 //rぼりぼりッ、がりがりッ、ぼりぼりッ、がりがりッ、ぼりぼりッ、がりがりッ………ぷち……ッ！
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "ぼりぼりッ、がりがりッ、ぼりぼりッ、がりがりッ、ぼりぼりッ、がりがりッ………ぷち……ッ！",
-			NULL, "*gratte* *gratte* *gratte* *gratte*… kurf kurrrrrf kurf kurf", Line_Normal);
+			NULL, "*gratte* *gratte* *gratte* *gratte*… kurf kurrrrrf kurf kurf !", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
