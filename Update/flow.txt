@@ -201,7 +201,7 @@ void Game()
 		StoreValueToLocalWork(NewTipsCount, 1);
 
 		StoreValueToLocalWork( ChapterNumber, 1 );
-		SavePoint("Ch.1 終わり", "End of Chapter 1");
+		SavePoint("Ch.1 終わり", "Fin du chapitre 1");
 
 		CallSection("ViewTips");
 
@@ -221,7 +221,7 @@ void Game()
 		StoreValueToLocalWork(NewTipsCount, 1);
 
 		StoreValueToLocalWork( ChapterNumber, 2 );
-		SavePoint("Ch.2 終わり", "End of Chapter 2");
+		SavePoint("Ch.2 終わり", "Fin du chapitre 2");
 
 		CallSection("ViewTips");
 
@@ -242,7 +242,7 @@ void Game()
 		StoreValueToLocalWork(NewTipsCount, 1);
 
 		StoreValueToLocalWork( ChapterNumber, 3 );
-		SavePoint("Ch.3 終わり", "End of Chapter 3");
+		SavePoint("Ch.3 終わり", "Fin du chapitre 3");
 
 		CallSection("ViewTips");
 
@@ -263,7 +263,7 @@ void Game()
 		StoreValueToLocalWork(NewTipsCount, 2);
 
 		StoreValueToLocalWork( ChapterNumber, 4 );
-		SavePoint("Ch.4 終わり", "End of Chapter 4");
+		SavePoint("Ch.4 終わり", "Fin du chapitre 4");
 
 		CallSection("ViewTips");
 
@@ -284,7 +284,7 @@ void Game()
 		StoreValueToLocalWork(NewTipsCount, 1);
 
 		StoreValueToLocalWork( ChapterNumber, 5 );
-		SavePoint("Ch.5 終わり", "End of Chapter 5");
+		SavePoint("Ch.5 終わり", "Fin du chapitre 5");
 
 		CallSection("ViewTips");
 
@@ -305,7 +305,7 @@ void Game()
 		StoreValueToLocalWork(NewTipsCount, 1);
 
 		StoreValueToLocalWork( ChapterNumber, 6 );
-		SavePoint("Ch.6 終わり", "End of Chapter 6");
+		SavePoint("Ch.6 終わり", "Fin du chapitre 6");
 
 		CallSection("ViewTips");
 
@@ -326,7 +326,7 @@ void Game()
 		StoreValueToLocalWork(NewTipsCount, 2);
 
 		StoreValueToLocalWork( ChapterNumber, 7 );
-		SavePoint("Ch.7 終わり", "End of Chapter 7");
+		SavePoint("Ch.7 終わり", "Fin du chapitre 7");
 
 		CallSection("ViewTips");
 
@@ -344,7 +344,7 @@ void Game()
 		StoreValueToLocalWork(NewTipsCount, 3);
 
 		StoreValueToLocalWork( ChapterNumber, 8 );
-		SavePoint("Ch.8 終わり", "End of Chapter 8");
+		SavePoint("Ch.8 終わり", "Fin du chapitre 8");
 
 		CallSection("ViewTips");
 
@@ -367,7 +367,7 @@ void Game()
 		StoreValueToLocalWork(NewTipsCount, 3);
 
 		StoreValueToLocalWork( ChapterNumber, 9 );
-		SavePoint("Ch.9 終わり", "End of Chapter 9");
+		SavePoint("Ch.9 終わり", "Fin du chapitre 9");
 
 		CallSection("ViewTips");
 
@@ -388,7 +388,7 @@ void Game()
 		StoreValueToLocalWork(NewTipsCount, 2);
 
 		StoreValueToLocalWork( ChapterNumber, 10 );
-		SavePoint("Ch.10 終わり", "End of Chapter 10");
+		SavePoint("Ch.10 終わり", "Fin du chapitre 10");
 
 		CallSection("ViewTips");
 
@@ -410,7 +410,7 @@ void Game()
 		StoreValueToLocalWork(NewTipsCount, 1);
 
 		StoreValueToLocalWork( ChapterNumber, 11 );
-		SavePoint("Ch.11 終わり", "End of Chapter 11");
+		SavePoint("Ch.11 終わり", "Fin du chapitre 11");
 
 		CallSection("ViewTips");
 
@@ -433,7 +433,7 @@ void Game()
 		StoreValueToLocalWork(NewTipsCount, 2);
 
 		StoreValueToLocalWork( ChapterNumber, 12 );
-		SavePoint("Ch.12 終わり", "End of Chapter 12");
+		SavePoint("Ch.12 終わり", "Fin du chapitre 12");
 
 		CallSection("ViewTips");
 
@@ -463,7 +463,7 @@ void Game()
 		StoreValueToLocalWork(NewTipsCount, 1);
 
 		StoreValueToLocalWork( ChapterNumber, 13 );
-		SavePoint("Ch.13 終わり", "End of Chapter 13");
+		SavePoint("Ch.13 終わり", "Fin du chapitre 13");
 
 		CallSection("ViewTips");
 

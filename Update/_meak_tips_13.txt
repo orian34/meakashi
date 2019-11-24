@@ -1,4 +1,4 @@
-void main()
+﻿void main()
 {
 	EnableJumpingOfReturnIcon();
 	FadeOutBGM( 0, 0, FALSE );
@@ -12,69 +12,69 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私が地下拷問室と呼んでいたあの場所は、正しくは地下祭具殿と呼ばれているらしい。",
-		   NULL, "That underground torture room is officially called the underground ritual storehouse.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Ce que j'appelais la salle de torture souterraine s'appelait en fait le temple souterrain des reliques sacrées.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ということは、拷問室と祭具殿は同義語だということなのか。",
-		   NULL, "So, do \"torture room\" and \"ritual storehouse\" mean the same thing?", Line_Normal);
+		   NULL, "Donc en fait, les deux expressions étaient synonymes l'une de l'autre.", Line_Normal);
 	ClearMessage();
 	PlaySE( 0, "s_page", 56, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　鷹野さんの説では、明治以降も綿流しを始めとする血生臭い風習は、御三家に密かに引き継がれているという。",
-		   NULL, "According to Takano-san's theory, bloody rituals, including Watanagashi, have been passed down among the Three Families even after the Meiji Era.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Dans la théorie de madame Takano, les traditions sanglantes seraient passées de génération en génération dans les familles des clans fondateurs depuis le début de l'ère Meiji.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そして、許されるならばいつでもその儀式を執り行える準備があるのだとか。",
-		   NULL, "The rituals are always ready to be performed.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Et les clans seraient toujours prêts à commencer l'une ou l'autre cérémonie, si la nécessité devait s'en faire sentir.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　祭具、つまり祭る（祀る）という言葉の対に拷問がある以上、",
-		   NULL, "Their form of worship always revolved around torture,", Line_WaitForInput);
+		   NULL, "Puisque donc, manifestement, les rites du culte sont mis en parallèle avec la torture,", Line_WaitForInput);
 	OutputLine(NULL, "雛見沢の源流に、人間を虐め殺す文化があることは否定できない。",
-		   NULL, " so Hinamizawa's history involved a great deal of human slaughter.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " on peut difficilement réfuter qu'à Hinamizawa, depuis toujours, il existe une certaine culture du supplice et de la mise à mort.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　鷹野さんの説は正しい。",
-		   NULL, "Takano-san's theory is correct.", Line_Normal);
+		   NULL, "La théorie de madame Takano s'avère juste sur ce point.", Line_Normal);
 	ClearMessage();
 	PlaySE( 0, "s_page", 56, 64 );
 	DrawSceneWithMask("black", "maskright", 7, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そして象徴的な祭具殿と違い、園崎本家の地下祭具殿は確かに常時使用可能な状態で維持されていた。",
-		   NULL, "The underground storehouse at the Sonozaki house looked well maintained.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "De plus, à l'inverse du temple très symbolique érigé dans le sanctuaire des Furude, le temple souterrain construit dans les terres des Sonozaki est réellement prêt à l'emploi.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ここにおいても鷹野さんの説は正しい。",
-		   NULL, "Takano-san is right about that, too.", Line_Normal);
+		   NULL, "Encore une fois, la théorie de madame Takano s'avère juste.", Line_Normal);
 	ClearMessage();
 	PlaySE( 0, "s_page", 56, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　公由家の倉は知らないが、園崎家、古手家がこうして「祭具」を祀るのだから、近い規模の物を秘蔵しているに違いない。",
-		   NULL, "Since the Sonozaki family and the Furude family both have ritual storehouses, the Kimiyoshi family must have one, too.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Je n'ai jamais visité la remise des Kimiyoshi, mais si les deux autres clans fondateurs ont des “reliques sacrées” chez eux, alors le troisième a de fortes chances de posséder quelque chose de similaire.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そう、現代の御三家にも脈々と、残酷な風習が受け継がれているのだ。",
-		   NULL, "After all, these ancient and brutal customs are still handed down through the generations.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Dans les trois clans fondateurs, des coutumes cruelles et sanguinaires se perpétuent à travers les âges, même aujourd'hui encore.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　この呪われた村で、村ぐるみで今も奇怪な何かが行なわれている事実に備えろ…。",
-		   NULL, "I should remain armed with the knowledge that occult events are still secretly being performed in this cursed village...", Line_Normal);
+		   NULL, "Tous les éléments sont réunis pour prouver que les habitants de ce maudit village peuvent très bien être tous complices et mettre à exécution des actes sordides et barbares...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	Wait( 1000 );

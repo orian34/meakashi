@@ -1,4 +1,4 @@
-void main()
+﻿void main()
 {
 }
 
@@ -6,7 +6,7 @@ void dialog000()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　秘密の地下の入口があり、園崎家に刃向かう者に制裁を加えるための部屋があると言われている。",
-		   NULL, "I'd heard there was a hidden entrance to a room where they used to punish the enemies of the family.", Line_Normal);
+		   NULL, "Il y avait une entrée souterraine secrète, qui menait à une salle de torture dans laquelle les ennemis du clan étaient exécutés.", Line_Normal);
 	ClearMessage();
 }
 
@@ -15,7 +15,7 @@ void dialog001()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600916", 256, TRUE);
 	OutputLine(NULL, "「……これが噂の、地下実験室ってやつですね？」",
-		   NULL, "\"...So, this is the underground laboratory, huh?\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— ... Voilà donc la fameuse salle de torture dont tout le monde parle ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
@@ -24,7 +24,7 @@ void dialog002()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600921", 256, TRUE);
 	OutputLine(NULL, "「やかましいッ、終いまで聞きなよ馬鹿野郎ッ！！！！」",
-		   NULL, "\"Shut the fuck up!! Let me finish!!!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— Bon EH la vioque, maintenant tu la FERMES et tu ÉCOUTES !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 }

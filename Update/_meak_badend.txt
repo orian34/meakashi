@@ -1,4 +1,4 @@
-void main()
+﻿void main()
 {
 
 
@@ -15,7 +15,7 @@ void main()
 //s0.a0.r昭和５８年６月。|y
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "昭和５８年６月。",
-			NULL, "June, 1983.", Line_ContinueAfterTyping);
+			NULL, "Juin 1983.", Line_ContinueAfterTyping);
 	FadeOutBGM( 1, 0, FALSE );
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -25,7 +25,7 @@ void main()
 //s0.a0.r鹿骨市雛見沢村で、連続失踪事件が発生した。|y
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "鹿骨市雛見沢村で、連続失踪事件が発生した。",
-			NULL, "A case of serial disappearances occurred in Hinamizawa Village, Shishibone City, XX Prefecture.", Line_ContinueAfterTyping);
+			NULL, "Série de disparitions à Hinamizawa, district de Shishibone, dans la préfecture de ****.", Line_ContinueAfterTyping);
 	FadeOutBGM( 1, 0, FALSE );
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -35,7 +35,7 @@ void main()
 //s0.a0.r容疑者は、園崎詩音。|y
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "容疑者は、園崎詩音。",
-			NULL, "The suspect is Shion Sonozaki (1X years old).", Line_ContinueAfterTyping);
+			NULL, "Le suspect est Shion Sonozaki (1* ans).", Line_ContinueAfterTyping);
 	FadeOutBGM( 1, 0, FALSE );
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -45,7 +45,7 @@ void main()
 //s0.a0.r容疑者は６月１９日から２１日までの間に雛見沢村住民４人（園崎お魎・公由喜一郎・古手梨花・北条沙都子）を拉致、監禁して殺害した疑い。|y
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "容疑者は６月１９日から２１日までの間に雛見沢村住民４人（園崎お魎・公由喜一郎・古手梨花・北条沙都子）を拉致、監禁して殺害した疑い。",
-			NULL, "Allegedly, she abducted five Hinamizawan residents (Oryou Sonozaki, Shion Sonozaki, Kiichirou Kimiyoshi, Rika Furude, and Satoko Houjou) and imprisoned them from June 19th through the 21st.", Line_ContinueAfterTyping);
+			NULL, "On pense que le suspect a enlevé, séquestré, torturé puis assassiné cinq habitants du village -- Oryô Sonozaki, Shion Sonozaki, Kiichirô Kimiyoshi, Rika Furude et Satoko Hôjô -- entre le 19 et le 21 juin.", Line_ContinueAfterTyping);
 	FadeOutBGM( 1, 0, FALSE );
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -55,7 +55,7 @@ void main()
 //s0.a0.r事件は当初、情報不足のため初動捜査で遅れをとったが、偶然的、電撃的に解決した。|y
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "事件は当初、情報不足のため初動捜査で遅れをとったが、偶然的、電撃的に解決した。",
-			NULL, "Preliminary investigation into the incident was delayed at the time due to insufficient evidence, but by chance, the case was solved rather abruptly.", Line_ContinueAfterTyping);
+			NULL, "L'affaire semblait mal partie à cause du manque d'informations, mais le hasard permit de la résoudre.", Line_ContinueAfterTyping);
 	FadeOutBGM( 1, 0, FALSE );
 	OutputLineAll(NULL, "", Line_Normal);
 	ClearMessage();
@@ -67,7 +67,7 @@ void main()
 //s0.a0.r２２日午前中、園崎邸前を巡回していた警邏車両は邸内よりの悲鳴を聞き、緊急措置として邸内へ突入。|y
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "２２日午前中、園崎邸前を巡回していた警邏車両は邸内よりの悲鳴を聞き、緊急措置として邸内へ突入。",
-			NULL, "On the morning of the 22nd, a patrol vehicle stationed outside the Sonozaki mansion heard screams from within, and personnel infiltrated the premises as an emergency measure.", Line_ContinueAfterTyping);
+			NULL, "Le matin du 23 juin, la patrouille de police qui passait complètement par hasard devant la propriété des Sonozaki a entendu des cris provenant de l'intérieur du bâtiment et s'est rendue sur place pour porter secours.", Line_ContinueAfterTyping);
 	FadeOutBGM( 1, 0, FALSE );
 	OutputLineAll(NULL, "", Line_Normal);
 	ClearMessage();
@@ -79,7 +79,7 @@ void main()
 //s0.a0.r失踪中の容疑者の姉（園崎魅音）とクラスメイト２名（竜宮礼奈・前原圭一）を保護した。|y
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "失踪中の容疑者の姉（園崎魅音）とクラスメイト２名（竜宮礼奈・前原圭一）を保護した。",
-			NULL, "The suspect's missing elder sister (Mion Sonozaki) and two of her classmates (Keiichi Maebara and Reina Ryuugu) were taken into custody.", Line_ContinueAfterTyping);
+			NULL, "La police a retrouvé l'une des supposées victimes, la sœur du suspect, Mion Sonozaki, ainsi que deux de ses camarades de classe, Keiichi Maebara et Rena Ryûgû.", Line_ContinueAfterTyping);
 	FadeOutBGM( 1, 0, FALSE );
 	OutputLineAll(NULL, "", Line_Normal);
 	ClearMessage();
@@ -92,7 +92,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
 	OutputLine(NULL, "ただし、先行して邸宅内にて説得を行っていたクラスメイト、前原圭一は容疑者の抵抗を受けて刺傷を負った模様。救急病院へと搬送されたが、軽傷との診断。",
-			NULL, "However, Keiichi Maebara who had previously been lured into the crime scene had sustained stab wounds perpetrated by the suspect. He was immediately transferred to an emergency unit, but they were diagnosed as a minor injury. ", Line_ContinueAfterTyping);
+			NULL, "Cependant, Keiichi Maebara, qui avait été préalablement attiré sur le lieu du crime, présentait des signes de blessures par arme blanche. Il a immédiatement été transféré dans une unité d'urgence, où ses blessures ont été diagnostiquées sans conséquences. ", Line_ContinueAfterTyping);
 	FadeOutBGM( 1, 0, FALSE );
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -102,7 +102,7 @@ void main()
 //s0.a0.r容疑者とは直前まで最も会話交渉を行う機会が多かったものと見て、心労が回復次第、事情聴取を行う予定。|y
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "容疑者とは直前まで最も会話交渉を行う機会が多かったものと見て、心労が回復次第、事情聴取を行う予定。",
-			NULL, "Having been the one with the utmost opportunity to engage in conversation with the suspect until the very end, he will be subject to interrogation once he has recovered from the shock.", Line_ContinueAfterTyping);
+			NULL, "Ayant eu le plus de chances de s'entretenir avec le suspect, il sera soumis à un interrogatoire une fois qu'il aura récupéré du choc.", Line_ContinueAfterTyping);
 	FadeOutBGM( 1, 0, FALSE );
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -113,7 +113,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-4>", Line_Continue); }
 	OutputLine(NULL, "なお、容疑者は前述の前原圭一が拘束されていた場所から離れること約２ｍの場所で、喉に擦過傷を負って倒れていたところを捕縛。こちらも救急病院へと搬送したが、２２日１３時４８分、死亡が確認された。",
-			NULL, "Furthermore, the apprehended suspect was found collapsed at a place approximately 2 meters away from where Keiichi Maebara was restrained, and sustained scratch wounds on her throat. She was also transferred to an emergency facility, but was pronounced dead at 13:48 on the 22nd. ", Line_ContinueAfterTyping);
+			NULL, "En outre, le suspect appréhendé a été retrouvé effondré à environ 2 mètres du lieu de rétention de Keiichi Maebara et présentait des blessures à la gorge. Elle a également été transférée dans un centre d'urgence, mais sa mort a été prononcée le 22 juin à 13h48. ", Line_ContinueAfterTyping);
 	FadeOutBGM( 1, 0, FALSE );
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -123,7 +123,7 @@ void main()
 //s0.a0.r司法解剖の結果、直接の死因は出血多量による出血性ショックであるとの診断。|y
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "司法解剖の結果、直接の死因は出血多量による出血性ショックであるとの診断。",
-			NULL, "The official autopsy determines that the immediate cause of death was hemorrhagic shock due to excessive blood loss. ", Line_ContinueAfterTyping);
+			NULL, "L'autopsie a déterminé que le décès a été causé par un choc hémorragique dû à une perte de sang excessive. ", Line_ContinueAfterTyping);
 	FadeOutBGM( 1, 0, FALSE );
 	OutputLineAll(NULL, "", Line_Normal);
 	ClearMessage();
@@ -134,7 +134,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-4>", Line_Continue); }
 	OutputLine(NULL, "失踪者たちを殺害したと思われる園崎邸内の離れ地下奥、秘密部屋からは、失踪者４人（園崎お魎・公由喜一郎・古手梨花・北条沙都子）の毛髪、皮膚片、血液などを発見。",
-			NULL, "Hair, pieces of skin, and blood of the four missing people (Oryou Sonozaki, Kiichirou Kimiyoshi, Rika Furude, and Satoko Houjou) were recovered from the hidden chamber that was discovered in the outbuilding basement of the Sonozaki family property, where they were supposedly killed. ", Line_ContinueAfterTyping);
+			NULL, "Des cheveux, des morceaux de peau et du sang des quatre personnes disparues (Oryô Sonozaki, Kiichirô Kimiyoshi, Rika Furude et Satoko Hôjô) ont été retrouvés dans une pièce secrète découverte dans le sous-sol de la propriété de la famille Sonozaki, où ils ont supposément été tués. ", Line_ContinueAfterTyping);
 	FadeOutBGM( 1, 0, FALSE );
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -144,7 +144,7 @@ void main()
 //s0.a0.r秘密部屋内で失踪者たちが暴行を受けたものと断定した。|y
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "秘密部屋内で失踪者たちが暴行を受けたものと断定した。",
-			NULL, "It was concluded that the victims were assaulted in that hidden chamber.", Line_ContinueAfterTyping);
+			NULL, "Il a été conclu que les victimes avaient été agressées dans cette pièce.", Line_ContinueAfterTyping);
 	FadeOutBGM( 1, 0, FALSE );
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -154,7 +154,7 @@ void main()
 //s0.a0.rその遺体は、保護された園崎魅音の証言により、古井戸の底から発見された。|y
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "その遺体は、保護された園崎魅音の証言により、古井戸の底から発見された。",
-			NULL, "The victims' bodies were discovered at the bottom of an old well, as per the testimony of the victim, Mion Sonozaki", Line_ContinueAfterTyping);
+			NULL, "Les corps des victimes ont été découverts au fond d'un ancien puits, comme indiqué dans le témoignage de l'une d'entres elles, Mion Sonozaki.", Line_ContinueAfterTyping);
 	FadeOutBGM( 1, 0, FALSE );
 	OutputLineAll(NULL, "", Line_Normal);
 	ClearMessage();
@@ -164,7 +164,7 @@ void main()
 //s0.a0.rまた、ほのめかしたとされる近年の連続怪死事件への関与も捜査が続けられているが、園崎詩音が直接、または間接的に関わったという証拠は発見されていない。|y
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "また、ほのめかしたとされる近年の連続怪死事件への関与も捜査が続けられているが、園崎詩音が直接、または間接的に関わったという証拠は発見されていない。",
-			NULL, "In addition, investigations continue into any possible connection to the Series of Mysterious Deaths in recent years, but no evidence of Shion Sonozaki's direct or indirect involvement has been found.", Line_ContinueAfterTyping);
+			NULL, "De plus, l'enquête explore toutes les connexions possibles avec la série de morts mystérieuses de ces dernières années, mais aucune preuve de l'implication directe ou indirecte de Shion Sonozaki n'a été trouvée.", Line_ContinueAfterTyping);
 	FadeOutBGM( 1, 0, FALSE );
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -175,7 +175,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
 	OutputLine(NULL, "事件の動機には今もなお不明な点が多く、また、園崎家、雛見沢村住民の極度の非協力もあり、その解明には膨大な時間を要することが予想される。",
-			NULL, "There are still many obscurities to the motive behind the incident, and due to extreme non-cooperation from the Sonozaki family and residents of Hinamizawa, a large amount of time will be required to clarify matters on this front.", Line_ContinueAfterTyping);
+			NULL, "Il existe encore de nombreuses zones d'ombres quant au motif de l’incident et, en raison du manque total de coopération de la famille Sonozaki et des habitants d'Hinamizawa, il faudra beaucoup de temps pour les mettre en lumière.", Line_ContinueAfterTyping);
 	FadeOutBGM( 1, 0, FALSE );
 	OutputLineAll(NULL, "", Line_Normal);
 	ClearMessage();
@@ -187,7 +187,7 @@ void main()
 //s0.a0.r地域に詳しい地元警察の見解では、雛見沢村内の信仰に対する冒涜行為を巡る、内部懲罰、リンチ事件ではないかと見ている。|y
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "地域に詳しい地元警察の見解では、雛見沢村内の信仰に対する冒涜行為を巡る、内部懲罰、リンチ事件ではないかと見ている。",
-			NULL, "The local police who are familiar with the region offer that this may have been an internal lynching incident, as punishment for sacrilegious acts carried out against Hinamizawa's religious beliefs.", Line_ContinueAfterTyping);
+			NULL, "La police locale, qui connaît bien la région, affirme qu'il pourrait s'agir d'un lynchage interne. Une punition des actes hérétiques commis contre les croyances religieuses de Hinamizawa.", Line_ContinueAfterTyping);
 	FadeOutBGM( 1, 0, FALSE );
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -197,7 +197,7 @@ void main()
 //s0.a0.r地域性に根ざした特殊な事件であることは間違いなく、県警本部は慎重な捜査を命じた。|y
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "地域性に根ざした特殊な事件であることは間違いなく、県警本部は慎重な捜査を命じた。",
-			NULL, "It has been established that the incident is unique and rooted in the regional community beliefs, and a cautious investigation has been ordered by the prefectural police.", Line_ContinueAfterTyping);
+			NULL, "Il a été établi que l'incident est profondément enraciné dans les convictions de la communauté locale. Une enquête minutieuse a été requise par la police préfectorale.", Line_ContinueAfterTyping);
 	FadeOutBGM( 1, 0, FALSE );
 	OutputLineAll(NULL, "", Line_Normal);
 	ClearMessage();
@@ -209,13 +209,13 @@ void main()
 //s0.a0.r容疑者の妹で、もっとも監禁期間の長いと思われる失踪者（園崎魅音）から重要な手掛かりを得られるのではないかと期待したが、|yk|y事件後に激しい精神的ショックを負ったものとみられ、心身の治癒のために事情聴取は一定期間見送る予定。|y
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "容疑者の妹で、もっとも監禁期間の長いと思われる失踪者（園崎魅音）から重要な手掛かりを得られるのではないかと期待したが、",
-			NULL, "We expected to gain valuable hints from the missing person and the suspect's sister, Mion Sonozaki, who was under confinement for the longest time period,", Line_ContinueAfterTyping);
+			NULL, "Nous nous attendions à obtenir de précieuses informations de la part d'une des victimes et sœur du suspect, Mion Sonozaki, dont la période de captivité fut la plus longue.", Line_ContinueAfterTyping);
 	FadeOutBGM( 1, 0, FALSE );
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	PlayBGM( 1, "type", 56, 0 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "|y事件後に激しい精神的ショックを負ったものとみられ、心身の治癒のために事情聴取は一定期間見送る予定。",
-			NULL, " but it was observed that she had sustained severe mental trauma from the incident, and her inquiry has been postponed in favor of her psychological and physical recovery.", Line_ContinueAfterTyping);
+			NULL, " Mais il a été constaté qu'elle avait subi un traumatisme psychique important à la suite de l'incident. Son interrogatoire a été reporté au profit de son rétablissement.", Line_ContinueAfterTyping);
 	FadeOutBGM( 1, 0, FALSE );
 	OutputLineAll(NULL, "", Line_Normal);
 	ClearMessage();
@@ -225,7 +225,7 @@ void main()
 //s0.a0.r主治医の診断では、重症ではあるものの回復の見込みがあるらしく、現在、友人たちの協力でリハビリ治療を行っている。|y
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "主治医の診断では、重症ではあるものの回復の見込みがあるらしく、現在、友人たちの協力でリハビリ治療を行っている。",
-			NULL, "According to her primary care physician, although her condition is fairly serious, there is a strong prospect of recovery, and she is at present undergoing rehabilitation with support from her close friends.", Line_ContinueAfterTyping);
+			NULL, "Selon son médecin traitant, bien que son état de santé soit assez grave, les chances de guérison sont grandes et elle est actuellement en rééducation avec le soutien de ses amis proches.", Line_ContinueAfterTyping);
 	FadeOutBGM( 1, 0, FALSE );
 	OutputLineAll(NULL, "", Line_Normal);
 	ClearMessage();
@@ -237,157 +237,157 @@ void main()
 //r…あれから、数週間が過ぎた。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…あれから、数週間が過ぎた。",
-			NULL, "... Several weeks have passed since then.", GetGlobalFlag(GLinemodeSp));
+			NULL, "… Plusieurs semaines se sont écoulées depuis les faits.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //r俺はあの後、レナが呼んでくれた大石さんたちに救い出された。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "俺はあの後、レナが呼んでくれた大石さんたちに救い出された。",
-			NULL, "After that incident, I was rescued by Ooishi-san and his team whom Rena had summoned.", GetGlobalFlag(GLinemodeSp));
+			NULL, "Après cet incident, j'ai été sauvé par Ôishi et son équipe que Rena avait prévenus.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //r真っ白になってしまった俺の意識以外には、何の外傷もない。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "真っ白になってしまった俺の意識以外には、何の外傷もない。",
-			NULL, "I had no other after-effects aside from my consciousness that had been wiped white.", GetGlobalFlag(GLinemodeSp));
+			NULL, "En dehors de ma perte de conscience, je n'ai pas eu d'effets secondaires.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //rあるといえば、…むしろ胸のうちにこそ、酷く深い傷痕が残されていた…。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "あるといえば、…むしろ胸のうちにこそ、酷く深い傷痕が残されていた…。",
-			NULL, "If I were to have any at all... it would have to be the deep scars that had been left inside my heart. ", Line_Normal);
+			NULL, "Cependant, les profondes cicatrices laissées dans mon cœur sont, elles, bien réelles. ", Line_Normal);
 	ClearMessage();
 
 //r…俺は病院で検査を受けながら、大石さんにあれこれと質問を受けた。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…俺は病院で検査を受けながら、大石さんにあれこれと質問を受けた。",
-			NULL, "As I was being examined at the hospital, I was subjected to various queries from Ooishi-san.", GetGlobalFlag(GLinemodeSp));
+			NULL, "Alors que j'étais examiné à l'hôpital, Ôishi m'a posé beaucoup de questions sur les évènements.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //rとりあえずわかる範囲で答えてみたが、…それが彼の求めていたものだったかまではわからないし、その責任を負う義務もなかった。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "とりあえずわかる範囲で答えてみたが、…それが彼の求めていたものだったかまではわからないし、その責任を負う義務もなかった。",
-			NULL, "I tried to answer him with whatever little I knew... but I had no idea if it met his expectations and neither did I bear any responsibility to do so.", GetGlobalFlag(GLinemodeSp));
+			NULL, "J'ai essayé de lui répondre du mieux que je le pouvais... mais je n'avais aucune idée de si cela avait suffi à satisfaire ses attentes. Mais après tout, je ne pouvais pas porter à moi seul la responsabilité de l'avancement de l'enquête.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //r聞いた話では、…詩音は警察が突入した時には出血多量でもう、息をしていなかったらしい。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "聞いた話では、…詩音は警察が突入した時には出血多量でもう、息をしていなかったらしい。",
-			NULL, "From what I had heard, Shion had already lost too much blood by the time the had police arrived... and she had stopped breathing.", GetGlobalFlag(GLinemodeSp));
+			NULL, "D'après ce que j'ai entendu dire, Shion avait déjà perdu trop de sang au moment où la police était arrivée... elle avait cessé de respirer.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //r急いで救急車を呼びつけて診療所に運び込んだが、手当てをする間もなく息を引き取ったそうだ…。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "急いで救急車を呼びつけて診療所に運び込んだが、手当てをする間もなく息を引き取ったそうだ…。",
-			NULL, "They urgently called for an ambulance and took her to the clinic, but there was barely any time for first aid and she took her last breath... ", Line_Normal);
+			NULL, "Ils ont appelé d'urgence une ambulance et l'ont emmenée à la clinique, mais elle a rendu son dernier souffle avant même que les premiers soins soient achevés… ", Line_Normal);
 	ClearMessage();
 
 //r不幸中の幸いとしては、牢に閉じ込められていた魅音が無事、警察に保護されたことだった。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "不幸中の幸いとしては、牢に閉じ込められていた魅音が無事、警察に保護されたことだった。",
-			NULL, "The silver lining was that Mion who had been captive in her cell, was safe, and taken into custody by the police.", GetGlobalFlag(GLinemodeSp));
+			NULL, "Le seul point positif dans tout ça, c'est que Mion, qui avait été captive dans sa cellule, était en sécurité, prise en charge par la police.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //r気を失う直前まで俺は、詩音が激情にかられて魅音を殺すのでは、と案じていたが、…最悪の結末を回避できたことだけは、素直に嬉しかった。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "気を失う直前まで俺は、詩音が激情にかられて魅音を殺すのでは、と案じていたが、…最悪の結末を回避できたことだけは、素直に嬉しかった。",
-			NULL, "Up until the moment I lost consciousness, I was afraid that Shion may fly into a rage and murder Mion... but I was just glad we had managed to avoid the worst-case scenario. ", GetGlobalFlag(GLinemodeSp));
+			NULL, "Jusqu'au dernier instant avant de perdre connaissance, j'avais peur que Shion laisse parler sa rage et assassine Mion... Au final, j'étais simplement heureux d'avoir échappé à ce cas de figure. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //rただ、…救出された時の魅音は激しい衰弱状態で、特に心には大きな傷を負ってしまっていた。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "ただ、…救出された時の魅音は激しい衰弱状態で、特に心には大きな傷を負ってしまっていた。",
-			NULL, "Only... when Mion was rescued, she was emaciated and had sustained severe psychological trauma.", GetGlobalFlag(GLinemodeSp));
+			NULL, "Seulement... quand Mion a été sauvée, elle était particulièrement maigre et avait subi un trauma psychologique majeur.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //r…救出時は警察からの問いかけにも、全く応じることがなかったらしい。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…救出時は警察からの問いかけにも、全く応じることがなかったらしい。",
-			NULL, "...Apparently at the time of her rescue, she had been completely unable to respond to the police's questions.", Line_Normal);
+			NULL, "Apparemment, au moment de son sauvetage, elle était complètement incapable de répondre aux questions de la police.", Line_Normal);
 	ClearMessage();
 
 //r現在魅音は、心身の治療のため穀倉にある大きな病院に入院している。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "現在魅音は、心身の治療のため穀倉にある大きな病院に入院している。",
-			NULL, "Right now, Mion is admitted at a large hospital in the vicity and undergoing treatment for her psychological and physical injuries.", GetGlobalFlag(GLinemodeSp));
+			NULL, "À l'heure actuelle, Mion a été admise dans un grand hôpital. Elle suit un traitement pour guérir à la fois ses blessures psychologiques et physiques.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //r俺とレナで見舞いに行っても、最初の頃は俯いて、すっかりやつれて、…酷い有様だった。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "俺とレナで見舞いに行っても、最初の頃は俯いて、すっかりやつれて、…酷い有様だった。",
-			NULL, "In the beginning, when Rena and I went to visit, her eyes were downcast in desolation and she looked completely worn out... it was a horrible state to be in.", GetGlobalFlag(GLinemodeSp));
+			NULL, "Au début, quand Rena et moi sommes allés lui rendre visite, ses yeux étaient fixés vers le sol, plongée dans la désolation. De plus, elle avait l'air complètement épuisée… Je ne souhaite à personne de finir dans cet état.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //rそれでも最近は、ようやく少しだけ笑顔を見せてくれる程度には、元気を取り戻しつつある。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "それでも最近は、ようやく少しだけ笑顔を見せてくれる程度には、元気を取り戻しつつある。",
-			NULL, "But despite it all, as of late, she is on her way to recovery... finally well enough to show us a few smiles.", GetGlobalFlag(GLinemodeSp));
+			NULL, "Malgré tout, elle commence tout doucement à se rétablir... assez pour nous montrer quelques sourires.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //rもっとも、沙都子や梨花ちゃん、もちろん詩音のことは一切話題に上げたことがない…。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "もっとも、沙都子や梨花ちゃん、もちろん詩音のことは一切話題に上げたことがない…。",
-			NULL, "Of course, we have been careful to not bring up Satoko or Rika-chan, and especially Shion...", Line_Normal);
+			NULL, "Bien sûr, nous avons pris soin de ne surtout pas évoquer Satoko ou Rika... et encore moins Shion...", Line_Normal);
 	ClearMessage();
 
 //r警察は事件発生から数日にわたって、園崎家の地下祭具殿の現場検証を行った。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "警察は事件発生から数日にわたって、園崎家の地下祭具殿の現場検証を行った。",
-			NULL, "The police later conducted an on-site investigation at the Sonozaki House's underground storehouse, several days after the incident took place. ", GetGlobalFlag(GLinemodeSp));
+			NULL, "Plusieurs jours après l'incident, la police a ensuite mené une enquête sur le site souterrain de la résidence Sonozaki. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //r特に、詩音が沙都子や梨花ちゃんの遺体を投げ捨てたと言っていた井戸は、県警の鑑識捜査員も含めて念入りに調査された結果、…詩音の証言通りに、『彼女たち』は発見された。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "特に、詩音が沙都子や梨花ちゃんの遺体を投げ捨てたと言っていた井戸は、県警の鑑識捜査員も含めて念入りに調査された結果、…詩音の証言通りに、『彼女たち』は発見された。",
-			NULL, "Particularly, the well inside which Satoko and Rika-chan's bodies were disposed of by Shion was carefully surveyed by the prefectural forensic investigators... and true to Shion's testimony, 'the girls' were discovered.", GetGlobalFlag(GLinemodeSp));
+			NULL, "En particulier, le puits dans lequel les corps de Satoko et de Rika ont été jetés a été soigneusement examiné par les enquêteurs... et conformément au témoignage de Shion, "les filles" y ont été découvertes.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //r井戸の底は泥が堆積していたため、発見には数日の時間を要したらしい。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "井戸の底は泥が堆積していたため、発見には数日の時間を要したらしい。",
-			NULL, "Apparently, sediment had accumulated at the bottom of the well, and hence the discovery had taken several days.", GetGlobalFlag(GLinemodeSp));
+			NULL, "Apparemment, des sédiments s'étaient accumulés au fond du puits ce qui a ralenti les recherches de quelques jours.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //r沙都子たちの他にも、明らかに数年、数十年は経過したと思われる白骨も見つかったそうだが、それに関しては俺の知るところではない。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "沙都子たちの他にも、明らかに数年、数十年は経過したと思われる白骨も見つかったそうだが、それに関しては俺の知るところではない。",
-			NULL, "Along with Satoko and the other victims, skeletal remains that were several years, even several decades old were found, but it's not like I would know much about that.", GetGlobalFlag(GLinemodeSp));
+			NULL, "Avec Satoko et les autres victimes, des restes de squelettes datant de plusieurs années, voire de plusieurs décennies, ont été retrouvés. Je n'en saurais probablement jamais davantage.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //r俺も、現場検証のために一度その場所に連れ戻されたが、特に何か重要なものを発見する助けにはならなかった…。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "俺も、現場検証のために一度その場所に連れ戻されたが、特に何か重要なものを発見する助けにはならなかった…。",
-			NULL, "Even I was once summoned back to that place to assist with the crime scene investigation, but I didn't really help them find anything important...", Line_Normal);
+			NULL, "Même si j'ai déjà été convoqué sur les lieux du crime pour participer à l'enquête, je n'ai pas été d'une grande aide.", Line_Normal);
 	ClearMessage();
 
 //r自宅には連日、興宮の園崎家、つまり魅音と詩音の両親が大勢の子分を連れて、何度も謝罪にやってきた。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "自宅には連日、興宮の園崎家、つまり魅音と詩音の両親が大勢の子分を連れて、何度も謝罪にやってきた。",
-			NULL, "The Sonozaki Family in Okinomiya, in other words, Mion and Shion's parents, came home everyday several times along with many of their followers to formally apologize.", GetGlobalFlag(GLinemodeSp));
+			NULL, "La famille Sonozaki d'Okinomiya, en d'autres termes, les parents de Mion et de Shion, sont passés plusieurs fois par jour à la maison, accompagnés d'un grand nombre de leurs fidèles, pour s'excuser officiellement.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //rそして両親がいくら断っても、毎日慰謝料と称して百万円単位の札束をいくつも積んでいく。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "そして両親がいくら断っても、毎日慰謝料と称して百万円単位の札束をいくつも積んでいく。",
-			NULL, "And no matter how much my parents refused, they kept piling up bank notes worth millions of yen as compensation.", GetGlobalFlag(GLinemodeSp));
+			NULL, "Et peu importe à quel point mes parents refusaient, ils ont continué à accumuler des billets de banque d’une valeur de plusieurs millions de yens, à titre de compensation.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //rその額が日々積み重なり、ある程度の額が貯まったある日、…今度はそこに、手紙の入った封筒も添えられていた。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "その額が日々積み重なり、ある程度の額が貯まったある日、…今度はそこに、手紙の入った封筒も添えられていた。",
-			NULL, "And once that money had piled up and reached a certain amount... on the same day, there came an envelope with a letter instead.", GetGlobalFlag(GLinemodeSp));
+			NULL, "Et puis, une fois une certaine somme finalement atteinte… Le même jour, une enveloppe avec une lettre est arrivée.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //r…その手紙に、何が書かれていたのか、わからない。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…その手紙に、何が書かれていたのか、わからない。",
-			NULL, "I have no idea what was written in that letter.", GetGlobalFlag(GLinemodeSp));
+			NULL, "Je n'avais pas la moindre idée de son contenu.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //rただ、両親は俺を抜きにして二晩も話し込み、…雛見沢から引越すことを、決めた。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "ただ、両親は俺を抜きにして二晩も話し込み、…雛見沢から引越すことを、決めた。",
-			NULL, "But, my parents had discussed amongst themselves for two nights straight without consulting me... and decided we would move away from Hinamizawa.", Line_Normal);
+			NULL, "Mais, mes parents avaient discuté entre eux deux nuits de suite sans me consulter... et ils avaient décidé de quitter Hinamizawa.", Line_Normal);
 	ClearMessage();
 
 	ModSetLayerFilter(1, 256, "none");
@@ -398,72 +398,72 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s06/02/330200374", 256, TRUE);
 	OutputLine(NULL, "「…そっか。",
-			NULL, "\"...I see.", Line_WaitForInput);
+			NULL, "— … Je vois...", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s06/02/330200375", 256, TRUE);
 	OutputLine(NULL, "引っ越しちゃうんだね。",
-			NULL, " You're moving away, huh?", Line_WaitForInput);
+			NULL, " Tu déménages, hein ?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s06/02/330200376", 256, TRUE);
 	OutputLine(NULL, "…いつ？」",
-			NULL, " ...When are you going?\"", GetGlobalFlag(GLinemodeSp));
+			NULL, " … Et tu pars quand ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //圭一rvS06/01/330100409.「来月の終わり。kvS06/01/330100410.雛見沢には結局、…半年もいつかなかったことになるな」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/330100409", 256, TRUE);
 	OutputLine(NULL, "「来月の終わり。",
-			NULL, "\"The end of next month.", Line_WaitForInput);
+			NULL, "— À la fin du mois prochain.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/330100410", 256, TRUE);
 	OutputLine(NULL, "雛見沢には結局、…半年もいつかなかったことになるな」",
-			NULL, " In the end, I guess I wasn't able to stay in Hinamizawa for even six months.\"", GetGlobalFlag(GLinemodeSp));
+			NULL, " Au final, je ne serais même pas resté 6 mois à Hinamizawa.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //レナrvS06/02/330200377.「…寂しくなるね。kvS06/02/330200378.きっと魅ぃちゃんも、悲しむよ…？」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s06/02/330200377", 256, TRUE);
 	OutputLine(NULL, "「…寂しくなるね。",
-			NULL, "\"...It's going to be lonely around here.", Line_WaitForInput);
+			NULL, "— … Ça va être bien calme par ici.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s06/02/330200378", 256, TRUE);
 	OutputLine(NULL, "きっと魅ぃちゃんも、悲しむよ…？」",
-			NULL, " Even Mii-chan would be sad, you know?\"", GetGlobalFlag(GLinemodeSp));
+			NULL, " Même Mii va être triste, tu sais ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //圭一rvS06/01/330100411.「…悪い。kvS06/01/330100412.魅音にも、…正直話すべきか、…迷ってる」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/330100411", 256, TRUE);
 	OutputLine(NULL, "「…悪い。",
-			NULL, "\"...I'm sorry.", Line_WaitForInput);
+			NULL, "— … Désolé.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/330100412", 256, TRUE);
 	OutputLine(NULL, "魅音にも、…正直話すべきか、…迷ってる」",
-			NULL, " I don't know if I should talk to Mion about this or not... I feel lost.\"", Line_Normal);
+			NULL, " Je ne sais pas si je devrais en parler à Mion… Je suis perdu.", Line_Normal);
 	ClearMessage();
 
 //rそれを聞いてレナは、『絶対、話すべきだよ』と強く、言い切った。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "それを聞いてレナは、『絶対、話すべきだよ』と強く、言い切った。",
-			NULL, "Once Rena had heard me say that, she strongly insisted, \"I had to tell her, no matter what.\"", GetGlobalFlag(GLinemodeSp));
+			NULL, "À peine avais-je fini ma phrase que Rena s'empressa d'insister lourdement pour que je lui en fasse part.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //レナrvS06/02/330200379.「…確かに、今魅ぃちゃんにそれを告げるのは、酷なのかもしれない。kvS06/02/330200380.…でも、圭一くんが黙っていなくなっちゃうほうがきっと、魅ぃちゃんは辛いと思う。kvS06/02/330200381.だから、…一緒に話しに行こう？　ね？」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s06/02/330200379", 256, TRUE);
 	OutputLine(NULL, "「…確かに、今魅ぃちゃんにそれを告げるのは、酷なのかもしれない。",
-			NULL, "\"I'm sure you may feel it's an awful thing to tell her,", Line_WaitForInput);
+			NULL, "— Je sais que tu penses que c'est horrible de lui annoncer ça,", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s06/02/330200380", 256, TRUE);
 	OutputLine(NULL, "…でも、圭一くんが黙っていなくなっちゃうほうがきっと、魅ぃちゃんは辛いと思う。",
-			NULL, " but I'm sure Mii-chan will be more hurt if you quietly disappear without letting her know.", Line_WaitForInput);
+			NULL, " mais si tu disparaissais sans la prévenir, Mii serait bien plus blessée. J'en suis certaine.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s06/02/330200381", 256, TRUE);
 	OutputLine(NULL, "だから、…一緒に話しに行こう？　ね？」",
-			NULL, " So... how about we go tell her together? Okay?\"", GetGlobalFlag(GLinemodeSp));
+			NULL, " Alors… si on allait lui dire, tous les deux ? D'accord ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //圭一rvS06/01/330100413.「…。kvS06/01/330100414.ああ、そうだな」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/330100413", 256, TRUE);
 	OutputLine(NULL, "「…。",
-			NULL, "\"...", Line_WaitForInput);
+			NULL, "— …", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/330100414", 256, TRUE);
 	OutputLine(NULL, "ああ、そうだな」",
-			NULL, " Yeah, you're right.\"", Line_Normal);
+			NULL, " C'est vrai, t'as raison.", Line_Normal);
 	ClearMessage();
 
 	DrawScene("black", 1000 );
@@ -476,45 +476,45 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/330300188", 256, TRUE);
 	OutputLine(NULL, "「……。",
-			NULL, "\"...", Line_WaitForInput);
+			NULL, "— …", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/330300189", 256, TRUE);
 	OutputLine(NULL, "そっかぁ…。",
-			NULL, " Oh, I see...", Line_WaitForInput);
+			NULL, " Oh, je vois…", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/330300190", 256, TRUE);
 	OutputLine(NULL, "圭ちゃん、雛見沢からいなくなっちゃうんだ…」",
-			NULL, " So Kei-chan's going away from Hinamizawa, huh...\"", GetGlobalFlag(GLinemodeSp));
+			NULL, " Donc, Kei va partir loin d'Hinamizawa, hein…", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //r俺から引越しの話を聞かされても、…魅音は寂しそうに呟いたが、それほど驚かなかった。きっと、心のどこかでその可能性を、ある程度覚悟していたからなのかもしれない…。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "俺から引越しの話を聞かされても、…魅音は寂しそうに呟いたが、それほど驚かなかった。きっと、心のどこかでその可能性を、ある程度覚悟していたからなのかもしれない…。",
-			NULL, "Even though she had heard it from me... Mion whispered those words sadly, but she didn't seem that surprised. Surely, she had mentally prepared herself for this outcome somewhere inside her heart... ", GetGlobalFlag(GLinemodeSp));
+			NULL, "Quand bien même je lui avais annoncé de vive voix... Mion murmura tristement ces mots, mais elle ne semblait pas surprise. Elle s'était probablement déjà préparée à cette issue. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //圭一rvS06/01/330100415.「……。kvS06/01/330100416.すまん。kvS06/01/330100417.けど俺、いつか雛見沢に戻ってくるつもりだ。kvS06/01/330100418.…約束する」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/330100415", 256, TRUE);
 	OutputLine(NULL, "「……。",
-			NULL, "\"...", Line_WaitForInput);
+			NULL, "— …", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/330100416", 256, TRUE);
 	OutputLine(NULL, "すまん。",
-			NULL, " Sorry.", Line_WaitForInput);
+			NULL, " Désolé.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/330100417", 256, TRUE);
 	OutputLine(NULL, "けど俺、いつか雛見沢に戻ってくるつもりだ。",
-			NULL, " But you know what, I plan on returning to Hinamizawa someday.", Line_WaitForInput);
+			NULL, " Mais tu sais quoi, je compte bien revenir un jour.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/330100418", 256, TRUE);
 	OutputLine(NULL, "…約束する」",
-			NULL, " ...I promise.\"", GetGlobalFlag(GLinemodeSp));
+			NULL, " … C'est une promesse.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //魅音rvS06/03/330300191.「…いいよ、無理しなくても。kvS06/03/330300192.ここに来ても、…きっと圭ちゃんにいいことなんて、何もないんだから…」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/330300191", 256, TRUE);
 	OutputLine(NULL, "「…いいよ、無理しなくても。",
-			NULL, "\"...It's alright. You don't have to force yourself.", Line_WaitForInput);
+			NULL, "— … C'est bon, tu sais. T'as pas à te forcer.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/330300192", 256, TRUE);
 	OutputLine(NULL, "ここに来ても、…きっと圭ちゃんにいいことなんて、何もないんだから…」",
-			NULL, " Even if you come back, there probably isn't anything good for you here...\"", Line_Normal);
+			NULL, " Et puis, même si tu reviens, il n'y a surement rien de bon pour toi ici…", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -524,99 +524,99 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s06/02/330200382", 256, TRUE);
 	OutputLine(NULL, "「…魅ぃちゃん」",
-			NULL, "\"...Mii-chan.\"", GetGlobalFlag(GLinemodeSp));
+			NULL, "— … Mii.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //r俺もレナも、そんなことはない、と言いたかった。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "俺もレナも、そんなことはない、と言いたかった。",
-			NULL, "Both Rena and I wanted to say it wasn't so.", GetGlobalFlag(GLinemodeSp));
+			NULL, "Rena et moi voulions lui dire que ce n'était pas le cas.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //rだけど、…こんな悲惨な事件があって、俺たちよりもはるかに辛い思いをしている魅音に向かって、…言葉だけの慰めに何の意味がある？
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "だけど、…こんな悲惨な事件があって、俺たちよりもはるかに辛い思いをしている魅音に向かって、…言葉だけの慰めに何の意味がある？",
-			NULL, "But... after such a tragic incident, what verbal consolation could we offer that would help... to Mion who had suffered a much greater pain than we ever had?", GetGlobalFlag(GLinemodeSp));
+			NULL, "Mais… après un incident aussi tragique, comment de simples mots pourrait suffire à l'aider ?… Mion endure une douleur bien plus grande que la notre.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //rだから俺たちは、…何も言えずにただ、黙り込むしかできなかった。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "だから俺たちは、…何も言えずにただ、黙り込むしかできなかった。",
-			NULL, "And so we just stood there... unable to say anything, just wallowing in silence.", Line_Normal);
+			NULL, "Alors nous en sommes restés là, incapables de dire quoi que ce soit.", Line_Normal);
 	ClearMessage();
 
 //魅音rvS06/03/330300193.「…私も、東京に行こうかなぁ」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/330300193", 256, TRUE);
 	OutputLine(NULL, "「…私も、東京に行こうかなぁ」",
-			NULL, "\"Maybe I should just go to Tokyo as well.\"", GetGlobalFlag(GLinemodeSp));
+			NULL, "— Peut être que je devrais m'installer à Tokyo moi aussi.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //圭一rvS06/01/330100419.「…え？」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/330100419", 256, TRUE);
 	OutputLine(NULL, "「…え？」",
-			NULL, "\"...huh?\"", GetGlobalFlag(GLinemodeSp));
+			NULL, "— … Hein ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //魅音rvS06/03/330300194.「来週、退院できるらしいんだけど、…ここにいても、いいことあんまりないし。kvS06/03/330300195.東京でなくても、どこか遠く…私のことも、雛見沢のことも知らない土地に行きたい」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/330300194", 256, TRUE);
 	OutputLine(NULL, "「来週、退院できるらしいんだけど、…ここにいても、いいことあんまりないし。",
-			NULL, "\"I heard I'll be discharged from the hospital next week... and there isn't anything much for me around here either.", GetGlobalFlag(GLinemodeSp));
+			NULL, "— J'ai entendu dire que je sortirais de l'hôpital la semaine prochaine ... et il n'y a plus rien pour moi ici non plus.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/330300195", 256, TRUE);
 	OutputLine(NULL, "東京でなくても、どこか遠く…私のことも、雛見沢のことも知らない土地に行きたい」",
-			NULL, "Even if it isn't Tokyo, I just want it to be somewhere far away... where nobody knows about me, nor Hinamizawa.", GetGlobalFlag(GLinemodeSp));
+			NULL, "Même si ce n'est pas Tokyo, je veux juste que ce soit quelque part au loin… où personne ne sait rien de moi ni de Hinamizawa.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //魅音rvS06/03/330300196.「やり直せるなんて、都合のいいことは考えてないけど…もう、疲れちゃった。kvS06/03/330300197.全部、…投げ出したいよ。あはは…」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/330300196", 256, TRUE);
 	OutputLine(NULL, "「やり直せるなんて、都合のいいことは考えてないけど…もう、疲れちゃった。",
-			NULL, "I'm not really thinking about something convenient like 'starting over'... I'm just exhausted.", Line_WaitForInput);
+			NULL, "Ce n'est pas quelque chose de bien commode comme "recommencer à zéro"... Je suis juste épuisée.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/330300197", 256, TRUE);
 	OutputLine(NULL, "全部、…投げ出したいよ。あはは…」",
-			NULL, " I just want to throw everything away. Ahaha...\"", GetGlobalFlag(GLinemodeSp));
+			NULL, " J'ai juste envie de tout envoyer chier. Ahaha…", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //圭一rvS06/01/330100420.「魅音…」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/330100420", 256, TRUE);
 	OutputLine(NULL, "「魅音…」",
-			NULL, "\"Mion...\"", Line_Normal);
+			NULL, "— Mion…", Line_Normal);
 	ClearMessage();
 
 //r魅音は、些細なやり取りのズレをきっかけに、御三家代表の園崎家頭首を背負う立場に追いやられた。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "魅音は、些細なやり取りのズレをきっかけに、御三家代表の園崎家頭首を背負う立場に追いやられた。",
-			NULL, "Mion had been forced to carry the name of the next head of the Sonozaki family and the representative of the Three Great Families, all due to a small misunderstanding.", GetGlobalFlag(GLinemodeSp));
+			NULL, "Mion avait été contrainte de porter le nom du prochain chef de la famille Sonozaki et du représentant des Trois Grandes Familles, le tout à cause d'un petit malentendu.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //rそして不本意な重責に戸惑いと疲れを感じつつ、…それでも懸命に、その役目を果たそうと頑張ってきたのだろう。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "そして不本意な重責に戸惑いと疲れを感じつつ、…それでも懸命に、その役目を果たそうと頑張ってきたのだろう。",
-			NULL, "Despite feeling uncertain and weary about her unplanned responsibility, she had nevertheless been earnest and given her all to fulfill her duties.", GetGlobalFlag(GLinemodeSp));
+			NULL, "Bien qu'accablée par le doute et la fatigue de cette responsabilité imprévue, elle s’était néanmoins montrée sérieuse et avait tout donné pour s’acquitter de sa tâche.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //rしかし、その結末が、こんな形になって…。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "しかし、その結末が、こんな形になって…。",
-			NULL, "But to think, all of that had been concluded in such a manner...", GetGlobalFlag(GLinemodeSp));
+			NULL, "Qui aurait pu s'imaginer une telle conclusion…", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //rもはや心が折れないほうが不思議なくらいの、途方もない衝撃だったと思う。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "もはや心が折れないほうが不思議なくらいの、途方もない衝撃だったと思う。",
-			NULL, "It was such a tremendous loss that it's almost a surprise she hasn't completely lost her mind.", GetGlobalFlag(GLinemodeSp));
+			NULL, "Compte tenu de tout ça, c'est presque une surprise qu'elle n'ait pas complètement perdu la tête.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //rこんな弱気の発言をする魅音を、誰が責められるというのか…？
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "こんな弱気の発言をする魅音を、誰が責められるというのか…？",
-			NULL, "Who can really blame Mion anymore for making such a faint-hearted remark...?", Line_Normal);
+			NULL, "Qui peut vraiment reprocher à Mion de faire une remarque aussi timorée ?", Line_Normal);
 	ClearMessage();
 
 	FadeOutBGM(2, 300, FALSE);
@@ -624,19 +624,19 @@ void main()
 //r…………。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…………。",
-			NULL, ".........", GetGlobalFlag(GLinemodeSp));
+			NULL, "…", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //rだから、俺は。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "だから、俺は。",
-			NULL, "And so I...", GetGlobalFlag(GLinemodeSp));
+			NULL, "Et c'est pour ça…", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //r残されたこの場所での時間を、せめて少しでも彼女のために使いたいと思った。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "残されたこの場所での時間を、せめて少しでも彼女のために使いたいと思った。",
-			NULL, "...wanted to devote even a little bit of my remaining time here, for her.", Line_Normal);
+			NULL, "… que je voulais utiliser le peu de temps qu'il me reste avec elle.", Line_Normal);
 	ClearMessage();
 
 	PlayBGM( 2, "msys06", 56, 0 );
@@ -645,13 +645,13 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/330100421", 256, TRUE);
 	OutputLine(NULL, "「……。",
-			NULL, "\"...", Line_WaitForInput);
+			NULL, "— …", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/330100422", 256, TRUE);
 	OutputLine(NULL, "そうだな、魅音。",
-			NULL, " That's right, Mion.", Line_WaitForInput);
+			NULL, " Au fait, Mion.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/330100423", 256, TRUE);
 	OutputLine(NULL, "一緒にどこか、…行くか？」",
-			NULL, " You wanna go out somewhere together?\"", Line_Normal);
+			NULL, " Tu veux qu'on sorte tous ensemble quelque part ?", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -661,37 +661,37 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/330300198", 256, TRUE);
 	OutputLine(NULL, "「……へ？",
-			NULL, "\"......huh?", Line_WaitForInput);
+			NULL, "— … Hein ?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/330300199", 256, TRUE);
 	OutputLine(NULL, "　ど、どこへ…？」",
-			NULL, " ...w...where?\"", GetGlobalFlag(GLinemodeSp));
+			NULL, " ...O-où... Où ça ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //圭一rvS06/01/330100424.「決まってるだろ、旅行だよ。kvS06/01/330100425.俺がここにいられる期間はもうあまりないけど、…だったらせめて、少しでもいい思い出を取り返しておかないとな」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/330100424", 256, TRUE);
 	OutputLine(NULL, "「決まってるだろ、旅行だよ。",
-			NULL, "\"You know, like a trip or something.", Line_WaitForInput);
+			NULL, "— N'importe, un voyage ou quelque chose du genre.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/330100425", 256, TRUE);
 	OutputLine(NULL, "俺がここにいられる期間はもうあまりないけど、…だったらせめて、少しでもいい思い出を取り返しておかないとな」",
-			NULL, " I don't have a lot of time left here, so I thought we should at least recover some good memories.", GetGlobalFlag(GLinemodeSp));
+			NULL, " Il ne me reste plus beaucoup de temps ici, alors j'ai pensé qu'on devrait au moins se reconstruire des bons souvenirs ensemble.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //圭一rvS06/01/330100426.「東京…は、ちょっと遠いけど、大きな街とかに足を伸ばして、うまい飯とか買い物とかさ。kvS06/01/330100427.…どうだ？」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/330100426", 256, TRUE);
 	OutputLine(NULL, "「東京…は、ちょっと遠いけど、大きな街とかに足を伸ばして、うまい飯とか買い物とかさ。",
-			NULL, "Tokyo's... kinda far away, but how about another big city, where we could try some good food and do some shopping?", Line_WaitForInput);
+			NULL, "Tokyô… ce n’est pas la porte à côté. Mais pourquoi pas une autre grande ville, avec de la bonne bouffe et des magasins ?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/330100427", 256, TRUE);
 	OutputLine(NULL, "…どうだ？」",
-			NULL, " ...Well?\"", GetGlobalFlag(GLinemodeSp));
+			NULL, " … T'en dis quoi ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //魅音rvS06/03/330300200.「ど、どうって言われても…」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/330300200", 256, TRUE);
 	OutputLine(NULL, "「ど、どうって言われても…」",
-			NULL, "\"W...Well, I don't know...\"", Line_Normal);
+			NULL, "— Euh… Eh bien, je sais pas trop…", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -701,35 +701,35 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s06/02/330200383", 256, TRUE);
 	OutputLine(NULL, "「…うん！",
-			NULL, "\"...Yeah!", Line_WaitForInput);
+			NULL, "— … Ouais !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s06/02/330200384", 256, TRUE);
 	OutputLine(NULL, "　それ、とってもいいと思うな！",
-			NULL, " I think that sounds wonderful!", Line_WaitForInput);
+			NULL, " Je pense que c'est une merveilleuse idée !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s06/02/330200385", 256, TRUE);
 	OutputLine(NULL, "　行っておいでよ、魅ぃちゃん。ね？」",
-			NULL, " You should go, Mii-chan. Okay?\"", GetGlobalFlag(GLinemodeSp));
+			NULL, " Tu devrais y aller, Mii. D'accord ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //魅音rvS06/03/330300201.「け、けど…。kvS06/03/330300202.ってレナ、一緒に来てくれないの？」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/330300201", 256, TRUE);
 	OutputLine(NULL, "「け、けど…。",
-			NULL, "\"B-But...", Line_WaitForInput);
+			NULL, "— M-mais…", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/330300202", 256, TRUE);
 	OutputLine(NULL, "ってレナ、一緒に来てくれないの？」",
-			NULL, " wait, Rena... aren't you coming with us?\"", GetGlobalFlag(GLinemodeSp));
+			NULL, " Attends Rena… Tu ne viens pas avec nous ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //rそれを聞いて、俺も怪訝な思いになる。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "それを聞いて、俺も怪訝な思いになる。",
-			NULL, "After hearing that, even I grow puzzled.", GetGlobalFlag(GLinemodeSp));
+			NULL, "Même moi j'étais perplexe.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //r俺は、３人で遊びに行こうと誘ったつもりなんだが…？
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "俺は、３人で遊びに行こうと誘ったつもりなんだが…？",
-			NULL, "Hadn't I suggested all three of us hang out together...?", Line_Normal);
+			NULL, "J'ai pourtant suggéré que l'on passe du temps tous ensemble, non ?", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -739,16 +739,16 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s06/02/330200386", 256, TRUE);
 	OutputLine(NULL, "「あははは！",
-			NULL, "\"Ahahaha!", Line_WaitForInput);
+			NULL, "— Ahahaha !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s06/02/330200387", 256, TRUE);
 	OutputLine(NULL, "　だって、レナは馬になんて蹴られたくないもん。",
-			NULL, " Well, I don't really want to be the third wheel.", Line_WaitForInput);
+			NULL, " À vrai dire, je n’ai pas vraiment envie de tenir la chandelle.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s06/02/330200388", 256, TRUE);
 	OutputLine(NULL, "だから、二人きりでどうぞっ♪",
-			NULL, " So you two should go all by yourselves♪", Line_WaitForInput);
+			NULL, " Donc, vous devriez y aller tous les deux ♪", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s06/02/330200389", 256, TRUE);
 	OutputLine(NULL, "　あ、お土産買ってきてくれると嬉しいな。はぅ～☆」",
-			NULL, " Ah, I'll be looking forward to souvenirs. Hau～☆\"", Line_Normal);
+			NULL, " Ah, faites-vous de beaux souvenirs. Hau～☆ !", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -758,57 +758,57 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/330300203", 256, TRUE);
 	OutputLine(NULL, "「～～っ？！」",
-			NULL, "\"～～?!\"", GetGlobalFlag(GLinemodeSp));
+			NULL, "— !?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //rぼんっ、と魅音の顔が勢いよく紅潮する。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "ぼんっ、と魅音の顔が勢いよく紅潮する。",
-			NULL, "Boom~! Mion blushes vigorously.", GetGlobalFlag(GLinemodeSp));
+			NULL, "Mion rougit instantanément.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //r…レナの言っている意味がよくわからなかったので反応は遅れたが、久しぶりに見る魅音の生気を帯びた表情に一瞬、俺の胸も高鳴った。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…レナの言っている意味がよくわからなかったので反応は遅れたが、久しぶりに見る魅音の生気を帯びた表情に一瞬、俺の胸も高鳴った。",
-			NULL, "I was slow to react because I didn't understand what Rena was getting at... but seeing Mion's face imbued with color after a long time, my heartbeat grew faster for a moment.", GetGlobalFlag(GLinemodeSp));
+			NULL, "J'ai pris du temps avant de réagir car je ne voyais pas vraiment où Rena voulait en venir... Mais voyant le visage écarlate de Mion, mon cœur finit par s'emballer.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //rいや、…言い出した時はそんなつもりじゃなかったんだけど、…これって、見方によってはデートのお誘いだよな？
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "いや、…言い出した時はそんなつもりじゃなかったんだけど、…これって、見方によってはデートのお誘いだよな？",
-			NULL, "No... it wasn't what I implied when I suggested the idea, but depending on the point of view, wouldn't this be an invitation to a date?", GetGlobalFlag(GLinemodeSp));
+			NULL, "Non... Ce n'était pas le but recherché quand j'ai suggéré cette idée. Mais... j'imagine, que l'on peut prendre ça pour une invitation à un rendez-vous ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //圭一r-vS06/01/330100428.（いかん、…ちょっと、調子に乗りすぎたかも…？）
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/330100428", 256, TRUE);
 	OutputLine(NULL, "（いかん、…ちょっと、調子に乗りすぎたかも…？）",
-			NULL, "(No, I'm probably getting way ahead of myself...)", Line_Normal);
+			NULL, "(Non, je me fais probablement des films…)", Line_Normal);
 	ClearMessage();
 
 //rさすがに、そうと感じてからは気恥ずかしさが一挙にこみ上げてきたが、…ここまできて、俺から引き下がるわけにもいかない。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "さすがに、そうと感じてからは気恥ずかしさが一挙にこみ上げてきたが、…ここまできて、俺から引き下がるわけにもいかない。",
-			NULL, "Indeed, after seeing it that way, I was overcome with embarrassment... but there was no way I could back out after coming this far.", GetGlobalFlag(GLinemodeSp));
+			NULL, "Dans ce contexte-là, il faut bien l'avouer, j'étais complètement gêné… mais il n'était pas question de faire marche arrière maintenant.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //rえぇい、これも魅音のためだ！　腹をくくれ前原圭一！！
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "えぇい、これも魅音のためだ！　腹をくくれ前原圭一！！",
-			NULL, "Gah, this was all for Mion's sake! Pull yourself together, Keiichi Maebara!!", GetGlobalFlag(GLinemodeSp));
+			NULL, "Allez, tout ça c'est pour le bien de Mion ! Ressaisis-toi, Keiichi Maebara !!", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //圭一rvS06/01/330100429.「えっと、…どうだ魅音？kvS06/01/330100430.　あ、もちろん医者と親御さんにはちゃんと了解を取るつもりだぜ？kvS06/01/330100431.　あんまり無理はさせないつもりだから、…考えておいてくれよ」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/330100429", 256, TRUE);
 	OutputLine(NULL, "「えっと、…どうだ魅音？",
-			NULL, "\"Erm... well how about it, Mion?", Line_WaitForInput);
+			NULL, "— Hum… Eh bien, t'en penses quoi, Mion ?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/330100430", 256, TRUE);
 	OutputLine(NULL, "　あ、もちろん医者と親御さんにはちゃんと了解を取るつもりだぜ？",
-			NULL, " Ah, of course it'll be after getting permission from the doctor and your parents.", Line_WaitForInput);
+			NULL, " Ah, bien sûr, ce sera après avoir obtenu l'autorisation du médecin et de tes parents.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/330100431", 256, TRUE);
 	OutputLine(NULL, "　あんまり無理はさせないつもりだから、…考えておいてくれよ」",
-			NULL, " I'll make sure you don't tire yourself out... so think about it, okay?\"", Line_Normal);
+			NULL, " Je ferai en sorte que ça ne soit pas trop fatigant pour toi… Alors réfléchis-y, d'accord ?", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -818,23 +818,23 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/330300204", 256, TRUE);
 	OutputLine(NULL, "「…え、えっと。",
-			NULL, "\"...uh...ummm.", Line_WaitForInput);
+			NULL, "—  Hu… Hum.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/330300205", 256, TRUE);
 	OutputLine(NULL, "う、うん…わ、わかった…。",
-			NULL, " O-okay... I-I gotcha....", Line_WaitForInput);
+			NULL, " O-ok… J'ai compris.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/330300206", 256, TRUE);
 	OutputLine(NULL, "か、考えておく、ねっ…？」",
-			NULL, " I-I'll, uh, think about it... okay...?\"", GetGlobalFlag(GLinemodeSp));
+			NULL, " Je-je vais, euh, y réfléchir… ok ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //レナrvS06/02/330200390.「はぅ～、魅ぃちゃんが久々にかぁいいよ～！kvS06/02/330200391.　嬉しいな、嬉しいな！　はぅはぅ、はぅ～☆」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s06/02/330200390", 256, TRUE);
 	OutputLine(NULL, "「はぅ～、魅ぃちゃんが久々にかぁいいよ～！",
-			NULL, "\"Hauu～ Mii-chan looks so kyute today for a change!", Line_WaitForInput);
+			NULL, "— Hauu～ Mii est tellement mimi aujourd'hui par rapport à d'habitude !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s06/02/330200391", 256, TRUE);
 	OutputLine(NULL, "　嬉しいな、嬉しいな！　はぅはぅ、はぅ～☆」",
-			NULL, " I'm so happy, I'm so happy! Hau hau, Hauuuuuu~!☆\"", Line_Normal);
+			NULL, " Je suis si contente, si contente ! Hau hau, Hauuuuuu~!☆", Line_Normal);
 	ClearMessage();
 
 	DrawScene("black", 1000 );
@@ -847,19 +847,19 @@ void main()
 //r……。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "……。",
-			NULL, ".........", GetGlobalFlag(GLinemodeSp));
+			NULL, "…", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //rその後俺たちは、いつものように当たり障りのない、学校や近所での出来事で夕方まで話しこんだ。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "その後俺たちは、いつものように当たり障りのない、学校や近所での出来事で夕方まで話しこんだ。",
-			NULL, "After that, we spent the day talking about harmless stuff that happened at school or in the neighbourhood until it was evening.", GetGlobalFlag(GLinemodeSp));
+			NULL, "Après cela, nous avons passé la journée à parler de choses sans importance qui se passaient à l’école ou dans le quartier.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //rただ、…魅音の調子が少しだけ昔に戻ったように思えて、それが俺には嬉しかった。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "ただ、…魅音の調子が少しだけ昔に戻ったように思えて、それが俺には嬉しかった。",
-			NULL, "I felt like Mion had regained some of her spirit and acted a bit like she used to, so I was happy.", Line_Normal);
+			NULL, "J'avais l'impression que Mion commençait à retrouver sa force mentale et agissait un peu comme avant. Ça me rendait heureux.", Line_Normal);
 	ClearMessage();
 
 	FadeOutBGM(2, 1000, FALSE);
@@ -868,13 +868,13 @@ void main()
 //r魅音からのＯＫの連絡が来たのは、それから数日後。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "魅音からのＯＫの連絡が来たのは、それから数日後。",
-			NULL, "After a few days, Mion had contacted me to say she was okay with my plan.", GetGlobalFlag(GLinemodeSp));
+			NULL, "Quelques jours plus tard, Mion m'a contacté pour me dire qu'elle acceptait mon invitation.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //rそして魅音の親御さんと、俺の両親を説得するのに数日を使ってから、俺たちは日帰りで新幹線の駅がある大都市の町へ遊びに行くことになった。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "そして魅音の親御さんと、俺の両親を説得するのに数日を使ってから、俺たちは日帰りで新幹線の駅がある大都市の町へ遊びに行くことになった。",
-			NULL, "And after spending a few more days to convince my folks and Mion's parents, we set off on a day's trip to a metropolis that had one of those bullet train stations.", Line_Normal);
+			NULL, "Et après avoir passé quelques jours de plus à convaincre mes parents ainsi que les parents de Mion, nous sommes partis pour une journée de voyage dans une métropole reliée au réseau ferroviaire Shinkansen.", Line_Normal);
 	ClearMessage();
 
 	DrawScene("background/neki1", 1000 );
@@ -885,54 +885,54 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/330300207", 256, TRUE);
 	OutputLine(NULL, "「…わぁ～！",
-			NULL, "\"...Woah~!", Line_WaitForInput);
+			NULL, "— Waouh~ !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/330300208", 256, TRUE);
 	OutputLine(NULL, "しばらく見ないうちにここって、すごく大きくなったんだね～！」",
-			NULL, "I haven't been here in a while, but it's grown so much!\"", GetGlobalFlag(GLinemodeSp));
+			NULL, "Je ne suis pas venue ici depuis un moment, mais ça a tellement changé !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //r駅前に出るなり、人と自動車で溢れかえった光景を眺め見た魅音が、ため息混じりに感想を漏らす。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "駅前に出るなり、人と自動車で溢れかえった光景を眺め見た魅音が、ため息混じりに感想を漏らす。",
-			NULL, "As soon as she stepped out of the station, Mion set eyes on a scenery sprawling with people and cars. She shared her feelings in excitement as she looked on admiringly.", GetGlobalFlag(GLinemodeSp));
+			NULL, "À peine sortie de la gare, Mion découvrit un paysage couvert de gens et de voitures. Les yeux pleins d'étoiles, elle partaga son excitation avec enthousiasme.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //r聞けば魅音は、よほどの用事がない限り村の外、それもこの程度の大きな町にも出掛けることがなかったらしい。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "聞けば魅音は、よほどの用事がない限り村の外、それもこの程度の大きな町にも出掛けることがなかったらしい。",
-			NULL, "From what I heard, unless it's on very important business, Mion rarely gets to leave the village... let alone come out to a big city like this.", GetGlobalFlag(GLinemodeSp));
+			NULL, "D'après ce que j'ai entendu dire, à moins que ce soit une affaire très importante, Mion a rarement l'occasion de quitter le village... Et encore moins de se rendre dans une grande ville comme celle-ci.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //rそれだけに、見るもの全てが珍しく、新鮮に感じられるようで、まるで子どものようにはしゃぎまわっていた。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "それだけに、見るもの全てが珍しく、新鮮に感じられるようで、まるで子どものようにはしゃぎまわっていた。",
-			NULL, "Because of that, everything she saw looked fresh and fascinating to her, and she pranced around merrily, almost like a child.", Line_Normal);
+			NULL, "De ce fait, tout ce qu'elle voyait était nouveau et fascinant pour elle. À la voir se promener aussi gaiement elle ressemblait presque à une petite fille.", Line_Normal);
 	ClearMessage();
 
 //魅音rvS06/03/330300209.「ね、ね、圭ちゃん？kvS06/03/330300210.　これからどこに行くの？」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/330300209", 256, TRUE);
 	OutputLine(NULL, "「ね、ね、圭ちゃん？",
-			NULL, "\"Hey, hey, Kei-chan?", Line_WaitForInput);
+			NULL, "— Hey, hey Kei !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/330300210", 256, TRUE);
 	OutputLine(NULL, "　これからどこに行くの？」",
-			NULL, " ...where are we going after this?\"", GetGlobalFlag(GLinemodeSp));
+			NULL, " … On fait quoi maintenant ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //圭一rvS06/01/330100432.「そうだなぁ。kvS06/01/330100433.魅音の好みから考えて、…あそこはどうだ？」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/330100432", 256, TRUE);
 	OutputLine(NULL, "「そうだなぁ。",
-			NULL, "\"Let's see...", Line_WaitForInput);
+			NULL, "— Voyons voir…", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/330100433", 256, TRUE);
 	OutputLine(NULL, "魅音の好みから考えて、…あそこはどうだ？」",
-			NULL, " judging by your preferences... how about there?\"", GetGlobalFlag(GLinemodeSp));
+			NULL, " te connaissant… que dis-tu de ça ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //rそして、事前に下調べしておいた俺が指差したのは、…駅前商店街の一角に大きくそびえ立つ、綺麗な装飾が施されたゲームセンターだった。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "そして、事前に下調べしておいた俺が指差したのは、…駅前商店街の一角に大きくそびえ立つ、綺麗な装飾が施されたゲームセンターだった。",
-			NULL, "The place I was pointing to—one I had checked out in advance—was a massive beautifully decorated game arcade that towered over a corner of the station shopping square. ", Line_Normal);
+			NULL, "L'endroit que je désignais - et que j'avais repéré en avance - était une immense salle d'arcade magnifiquement décorée qui dominait un coin de la place commerçante de la gare. ", Line_Normal);
 	ClearMessage();
 
 	FadeOutBGM(1, 1000, FALSE);
@@ -945,303 +945,303 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/330100434", 256, TRUE);
 	OutputLine(NULL, "「…ふぅ～！",
-			NULL, "\"...Phew~!", Line_WaitForInput);
+			NULL, "— … Woow !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/330100435", 256, TRUE);
 	OutputLine(NULL, "　なかなか盛大に遊びまわったな！」",
-			NULL, " We sure had one hell of a time, huh?\"", GetGlobalFlag(GLinemodeSp));
+			NULL, " On s'est vraiment éclaté, pas vrai ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //魅音rvS06/03/330300211.「あっはっはっはっ、面白かったぁ！kvS06/03/330300212.　あんなにゲームで遊んだの、ほんとに久しぶりだよ～！」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/330300211", 256, TRUE);
 	OutputLine(NULL, "「あっはっはっはっ、面白かったぁ！",
-			NULL, "\"Aha ha ha ha, I had so much fun!", Line_WaitForInput);
+			NULL, "— Aha ha ha ha, ouais c'était marrant !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/330300212", 256, TRUE);
 	OutputLine(NULL, "　あんなにゲームで遊んだの、ほんとに久しぶりだよ～！」",
-			NULL, " It's been a long time since I played so many games at once!\"", GetGlobalFlag(GLinemodeSp));
+			NULL, " Ça fait super longtemps que j'avais pas joué à autant de jeux d'un coup !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //rベンチに腰を下ろすと、魅音は満面の笑みで缶ジュースを勢いよく飲み干す。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "ベンチに腰を下ろすと、魅音は満面の笑みで缶ジュースを勢いよく飲み干す。",
-			NULL, "As I sat down on the bench, Mion was gleefully draining her can of juice with a huge smile.", GetGlobalFlag(GLinemodeSp));
+			NULL, "Alors que je m'asseyais sur le banc, Mion vidait joyeusement sa canette de jus de fruits avec un grand sourire.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //rその表情には、入院中常に付きまとっていた影のようなものは全くなく、俺のよく知っている魅音がそこにはいた。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "その表情には、入院中常に付きまとっていた影のようなものは全くなく、俺のよく知っている魅音がそこにはいた。",
-			NULL, "That expression was unlike the gloomy one Mion had worn at the hospital—next to me was the Mion I knew well.", Line_Normal);
+			NULL, "Cette expression était bien différente de celle que Mion avait l'habitude d'afficher à l'hôpital. À côté de moi se trouvait la Mion que je connaissais bien.", Line_Normal);
 	ClearMessage();
 
 //r…あれから、俺たちはそこにあるゲーム機全てを制覇する勢いで、周囲の目も気にせず大いに盛り上がった。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…あれから、俺たちはそこにあるゲーム機全てを制覇する勢いで、周囲の目も気にせず大いに盛り上がった。",
-			NULL, "Earlier, we'd had a blast, vowing to conquer all the game consoles in the vicinity and made quite the ruckus, without caring about the people watching.", GetGlobalFlag(GLinemodeSp));
+			NULL, "Un peu plus tôt, nous nous sommes complètement lâchés, se mettant au défi de vaincre tous les jeux à proximité dans le chaos le plus total, sans se soucier des spectateurs.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //r魅音も、普段見慣れないゲーム機で遊ぶのが楽しかったようで、盛大に笑い転げたり、むきになって勝負にこだわったりと、大暴れだった。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "魅音も、普段見慣れないゲーム機で遊ぶのが楽しかったようで、盛大に笑い転げたり、むきになって勝負にこだわったりと、大暴れだった。",
-			NULL, "Mion was enjoying herself playing on consoles she wasn't used to, and had gone on a rampage; laughing out loud, getting worked up and challenging me to matches.", GetGlobalFlag(GLinemodeSp));
+			NULL, "Mion s'amusait à jouer sur des consoles auxquelles elle n'était pas habituée. Elle était déchaînée : elle riait aux éclats, s'énervait toute seule et ne manquait pas une occasion de me provoquer en duel.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //圭一rvS06/01/330100436.「……」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/330100436", 256, TRUE);
 	OutputLine(NULL, "「……」",
-			NULL, "\"......\"", GetGlobalFlag(GLinemodeSp));
+			NULL, "— …", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //rもっとも、…俺はプレイの合間、何度となく『もしも』ということを考えていた。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "もっとも、…俺はプレイの合間、何度となく『もしも』ということを考えていた。",
-			NULL, "Although, I couldn't help thinking about \"what ifs\" as I was playing with her.", GetGlobalFlag(GLinemodeSp));
+			NULL, "Et pourtant, je ne pouvais pas m'empêcher de me dire…", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //rここにいるのが俺たち二人だけじゃなく、レナも、沙都子も、梨花ちゃんも一緒だったら、どんなに楽しくて、幸せだっただろう…と。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "ここにいるのが俺たち二人だけじゃなく、レナも、沙都子も、梨花ちゃんも一緒だったら、どんなに楽しくて、幸せだっただろう…と。",
-			NULL, "About how much fun it would've been if only it weren't just the two of us, but also Rena, Satoko and Rika-chan as well.", GetGlobalFlag(GLinemodeSp));
+			NULL, "Que cette situation aurait été encore plus amusante si Rena, Satoko et Rika avaient été avec nous.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //rおそらく魅音も、そう感じていたに違いない。だからこそ、大袈裟に騒いだりふざけたりして、…寂しさを紛らわそうとしているんだと、途中から俺は気付いていた。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "おそらく魅音も、そう感じていたに違いない。だからこそ、大袈裟に騒いだりふざけたりして、…寂しさを紛らわそうとしているんだと、途中から俺は気付いていた。",
-			NULL, "I'm sure Mion must've been thinking the same thing. Which was also why I outdid myself, making so much noise, trying to battle the loneliness... when I had realized.", Line_Normal);
+			NULL, "Je suis certain que Mion a dû penser à la même chose. C’est aussi la raison pour laquelle je me suis autant lâché, que j'ai fait autant de raffut… J'essayais de lutter contre la solitude.", Line_Normal);
 	ClearMessage();
 
 //圭一rvS06/01/330100437.「…なぁ、魅音」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/330100437", 256, TRUE);
 	OutputLine(NULL, "「…なぁ、魅音」",
-			NULL, "\"Hey, Mion.\"", GetGlobalFlag(GLinemodeSp));
+			NULL, "— Eh, Mion.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //魅音rvS06/03/330300213.「ん、なに圭ちゃん？」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/330300213", 256, TRUE);
 	OutputLine(NULL, "「ん、なに圭ちゃん？」",
-			NULL, "\"Mm? What's up, Kei-chan?\"", GetGlobalFlag(GLinemodeSp));
+			NULL, "— Hum ? Un problème, p'tit gars ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //r魅音は額に汗を浮かべながら、闊達な笑顔で俺に向き直る。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "魅音は額に汗を浮かべながら、闊達な笑顔で俺に向き直る。",
-			NULL, "With faint drops of sweat coating her forehead, Mion turned to face me with a broad smile.", GetGlobalFlag(GLinemodeSp));
+			NULL, "Avec de légères gouttes de sueur recouvrant son front, Mion se tourna vers moi en affichant un large sourire.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //r…この魅音の明るさは、きっとここに連れ出した俺に応えようという優しさの表れなんだろう。だとしたら俺も、それに応えてやりたかった。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…この魅音の明るさは、きっとここに連れ出した俺に応えようという優しさの表れなんだろう。だとしたら俺も、それに応えてやりたかった。",
-			NULL, "...Mion's cheerfulness was most likely just her being considerate towards me for having brought her here. If that was so, then I needed to do the same for her.", GetGlobalFlag(GLinemodeSp));
+			NULL, "La bonne humeur de Mion était probablement due à sa considération pour moi, en guise de remerciement pour l'avoir emmenée ici. Si c'était bien le cas, je me devais de lui rendre la pareille.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //圭一rvS06/01/330100438.「お前、全部初めてって言ってたけど、それホントかぁ？kvS06/01/330100439.　初プレイで２台もハイスコアに名前入れるなんて、とんでもない実力だぜ！」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/330100438", 256, TRUE);
 	OutputLine(NULL, "「お前、全部初めてって言ってたけど、それホントかぁ？",
-			NULL, "\"You told me it was your first time seeing those, but were you serious?", Line_WaitForInput);
+			NULL, "— Tu m'as dit que c'était la première fois que tu voyais ces jeux, mais c'est bien vrai ça ?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/330100439", 256, TRUE);
 	OutputLine(NULL, "　初プレイで２台もハイスコアに名前入れるなんて、とんでもない実力だぜ！」",
-			NULL, " You got two highscores on your first time playing, you're unbelievable!\"", Line_Normal);
+			NULL, " T'as fait deux records sur tes premières parties, t'es pas croyable !", Line_Normal);
 	ClearMessage();
 
 //魅音rvS06/03/330300214.「ちっちっち～！　４台の間違いだよ、圭ちゃん！kvS06/03/330300215.　こういうのはセンスと勘、そして動体視力がものを言うのさ！kvS06/03/330300216.　普段の鍛錬を怠らなかった成果だよ！」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/330300214", 256, TRUE);
 	OutputLine(NULL, "「ちっちっち～！　４台の間違いだよ、圭ちゃん！",
-			NULL, "\"Tsk tsk tsk. That was actually four, Kei-chan!", Line_WaitForInput);
+			NULL, "— Tsk tsk tsk. C'était plutôt quatre records, Kei !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/330300215", 256, TRUE);
 	OutputLine(NULL, "　こういうのはセンスと勘、そして動体視力がものを言うのさ！",
-			NULL, " These games are all about sense, intuition and having great eyesight!", Line_WaitForInput);
+			NULL, " Ces jeux sont tous centrés sur les réflexes, l'intuition et la vision!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/330300216", 256, TRUE);
 	OutputLine(NULL, "　普段の鍛錬を怠らなかった成果だよ！」",
-			NULL, " It's all thanks to never neglecting my everyday discipline!", GetGlobalFlag(GLinemodeSp));
+			NULL, " C'est ma récompense pour ne jamais négliger mon entrainement quotidien !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //魅音rvS06/03/330300217.「むしろ圭ちゃんは、アドバンテージをひっくり返されたことを恥と思うべきだね！」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/330300217", 256, TRUE);
 	OutputLine(NULL, "「むしろ圭ちゃんは、アドバンテージをひっくり返されたことを恥と思うべきだね！」",
-			NULL, "More importantly, Kei-chan, shouldn't you be feeling ashamed of having your advantage used against you?\"", GetGlobalFlag(GLinemodeSp));
+			NULL, "Mais plus important encore, p'tit gars, tu n'as pas honte d'avoir vu ton atout se retourner contre toi ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //圭一rvS06/01/330100440.「おいおい、ちょっと待てよ！kvS06/01/330100441.　エアホッケーの時とか『あ、あれ何？』なんて後ろを指差して、顔向けた瞬間打ち込んできたのは反則だろぉ？kvS06/01/330100442.　まったく、容赦のないやつだぜ！」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/330100440", 256, TRUE);
 	OutputLine(NULL, "「おいおい、ちょっと待てよ！",
-			NULL, "\"Hey, woah, hold it right there!", Line_WaitForInput);
+			NULL, "— Hé, oh ! Tout doux tu veux ?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/330100441", 256, TRUE);
 	OutputLine(NULL, "　エアホッケーの時とか『あ、あれ何？』なんて後ろを指差して、顔向けた瞬間打ち込んできたのは反則だろぉ？",
-			NULL, " Remember how you distracted me by randomly pointing somewhere during airhockey and saying, 'Look, what's that?'. That's against the rules!", Line_WaitForInput);
+			NULL, " Rappelle-toi comment tu m'as distrait en désignant une direction au hasard pendant le hockey aérien en disant: “Regarde, qu'est-ce que c'est que ça ?”. C'est contre les règles !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/330100442", 256, TRUE);
 	OutputLine(NULL, "　まったく、容赦のないやつだぜ！」",
-			NULL, " You're goddamn brutal!\"", GetGlobalFlag(GLinemodeSp));
+			NULL, " Tu es impitoyable ma parole !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //魅音rvS06/03/330300218.「あっはっはっはっ！kvS06/03/330300219.　勝てば官軍、負ければ賊軍だよ～？」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/330300218", 256, TRUE);
 	OutputLine(NULL, "「あっはっはっはっ！",
-			NULL, "\"Ah ha ha ha!", Line_WaitForInput);
+			NULL, "— Ah ha ha ha !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/330300219", 256, TRUE);
 	OutputLine(NULL, "　勝てば官軍、負ければ賊軍だよ～？」",
-			NULL, " Winner takes all, losers gotta fall, right~?\"", Line_Normal);
+			NULL, " Les gagnants écrivent toujours l'histoire, pas vrai ~?", Line_Normal);
 	ClearMessage();
 
 //r…とりあえず、今は背伸びした元気でもいい。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…とりあえず、今は背伸びした元気でもいい。",
-			NULL, "...For the time being, it's alright if her well-being is a front.", GetGlobalFlag(GLinemodeSp));
+			NULL, "Pour le moment, c'est suffisant que sa bonne humeur ne soit qu'une façade.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //rいつかこれが本当になって、元の明るさを取り戻してくれたら、それで…。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "いつかこれが本当になって、元の明るさを取り戻してくれたら、それで…。",
-			NULL, "All I hope for is that someday, this becomes real and she recovers her old cheerful self...", GetGlobalFlag(GLinemodeSp));
+			NULL, "Tout ce que j’espère, c’est qu’un jour, cela devienne réalité et qu'elle retrouve sa joie de vivre.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //圭一rvS06/01/330100443.「いやいや、それにしてもゲーセンも雰囲気が変わったよなぁ。kvS06/01/330100444.少し前なら煙草臭くて暗いイメージだったけど、家族連れで遊びに来る人も結構いたから、ちょっと驚いたぜ」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/330100443", 256, TRUE);
 	OutputLine(NULL, "「いやいや、それにしてもゲーセンも雰囲気が変わったよなぁ。",
-			NULL, "\"Speaking of which, the game arcade's changed quite a bit, huh.", Line_WaitForInput);
+			NULL, "— En parlant de ça, la salle de jeux a pas mal changé, hein.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/330100444", 256, TRUE);
 	OutputLine(NULL, "少し前なら煙草臭くて暗いイメージだったけど、家族連れで遊びに来る人も結構いたから、ちょっと驚いたぜ」",
-			NULL, " A little while ago, I would've expected a dim place stinking of cigarettes, but I'm surprised I got to see so many people there with their families.\"", GetGlobalFlag(GLinemodeSp));
+			NULL, " Il y a quelques temps, je me serais attendu à un endroit sombre puant la cigarette, mais là je suis surpris d'avoir vu autant de familles.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //魅音rvS06/03/330300220.「そうだね。kvS06/03/330300221.やっぱたまには、こういうのも楽しいよね！kvS06/03/330300222.　…あ、今何時ぐらい？」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/330300220", 256, TRUE);
 	OutputLine(NULL, "「そうだね。",
-			NULL, "\"You're right.", Line_WaitForInput);
+			NULL, "— C'est clair.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/330300221", 256, TRUE);
 	OutputLine(NULL, "やっぱたまには、こういうのも楽しいよね！",
-			NULL, " I guess hanging out like this once is a while is pretty fun too!", Line_WaitForInput);
+			NULL, " J'imagine que ce genre de sortie, un coup de temps en temps, ce n'est pas mal non plus !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/330300222", 256, TRUE);
 	OutputLine(NULL, "　…あ、今何時ぐらい？」",
-			NULL, " ...Oh yeah, what time is it now?\"", Line_Normal);
+			NULL, " … Ah, au fait, il est quelle heure ?", Line_Normal);
 	ClearMessage();
 
 //圭一rvS06/01/330100445.「えっと…５時くらい、かな」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/330100445", 256, TRUE);
 	OutputLine(NULL, "「えっと…５時くらい、かな」",
-			NULL, "\"Ummm... it's around 5PM now, I guess?\"", GetGlobalFlag(GLinemodeSp));
+			NULL, "— Hum… Il doit être autour de 17h, j'imagine ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //魅音rvS06/03/330300223.「あー、じゃあ夕食まであと少しだね。kvS06/03/330300224.どこかで食べて帰る？」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/330300223", 256, TRUE);
 	OutputLine(NULL, "「あー、じゃあ夕食まであと少しだね。",
-			NULL, "\"Oh—! Then it's not long before we have dinner, right?", Line_WaitForInput);
+			NULL, "— Oh ! Il reste donc peu de temps avant qu'on aille manger, non ?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/330300224", 256, TRUE);
 	OutputLine(NULL, "どこかで食べて帰る？」",
-			NULL, " Where do you want to go before we leave?\"", GetGlobalFlag(GLinemodeSp));
+			NULL, " On fait quoi avant de rentrer ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //圭一rvS06/01/330100446.「そうだな。kvS06/01/330100447.ファーストフードでハンバーガーなんてどうだ？」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/330100446", 256, TRUE);
 	OutputLine(NULL, "「そうだな。",
-			NULL, "\"Hmmm.", Line_WaitForInput);
+			NULL, "— Hum…", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/330100447", 256, TRUE);
 	OutputLine(NULL, "ファーストフードでハンバーガーなんてどうだ？」",
-			NULL, " How about fast food, like hamburgers or something?\"", GetGlobalFlag(GLinemodeSp));
+			NULL, " Pourquoi pas des hamburgers ou quelque chose du genre ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //魅音rvS06/03/330300225.「おぉ、いいねぇ？kvS06/03/330300226.　…あ、その前にちょっと失礼」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/330300225", 256, TRUE);
 	OutputLine(NULL, "「おぉ、いいねぇ？",
-			NULL, "\"Oh, sounds nice.", Line_WaitForInput);
+			NULL, "— Oh, bonne idée.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/330300226", 256, TRUE);
 	OutputLine(NULL, "　…あ、その前にちょっと失礼」",
-			NULL, " ...Ah, before we go, just excuse me for bit.\"", Line_Normal);
+			NULL, " … Ah, avant qu'on y aille... si tu veux bien m'excuser 2 minutes.", Line_Normal);
 	ClearMessage();
 
 //r魅音はそう言って、ベンチを立ち上がる。一瞬、怪訝に思った俺だったがその意図を察して、
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "魅音はそう言って、ベンチを立ち上がる。一瞬、怪訝に思った俺だったがその意図を察して、",
-			NULL, "Mion said that and stood up from the bench. I found it odd for a minute, but then I understood her intention and...", GetGlobalFlag(GLinemodeSp));
+			NULL, "Joignant le geste à la parole, Mion se leva. Sur le coup j'ai trouvé ça bizarre, puis j'ai percuté…", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //圭一rvS06/01/330100448.「…店にもトイレはあるぞー？kvS06/01/330100449.　――ぶほっ？！」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/330100448", 256, TRUE);
 	OutputLine(NULL, "「…店にもトイレはあるぞー？",
-			NULL, "\"They'll have toilets at the restaurants too, you know...?", Line_WaitForInput);
+			NULL, "— Y'aura des toilettes dans le restau', tu sais ?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/330100449", 256, TRUE);
 	OutputLine(NULL, "　——ぶほっ？！」",
-			NULL, " ...ughmpf?!\"", GetGlobalFlag(GLinemodeSp));
+			NULL, " … ughmpf ?!", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //r…返答代わりに、空き缶を投げつけられる。そして、アッカンベーをして駆け去っていく魅音の背中を見送ってからベンチにどっかと座りなおし、俺は空を見上げた。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…返答代わりに、空き缶を投げつけられる。そして、アッカンベーをして駆け去っていく魅音の背中を見送ってからベンチにどっかと座りなおし、俺は空を見上げた。",
-			NULL, "Instead of a reply, I had empty cans thrown at me. Mion stuck her tongue out at me and left in a hurry... and after I watched her retreating figure, I plopped back down on the bench and looked up at the sky.", Line_Normal);
+			NULL, "Mion me lança une canette au visage en guise de réponse, puis elle me tira la langue avant de disparaitre en toute hâte. Après l'avoir perdue de vue, je me calais bien confortablement sur le banc, à contempler le ciel…", Line_Normal);
 	ClearMessage();
 
 //圭一rvS06/01/330100450.「…ふぅ」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/330100450", 256, TRUE);
 	OutputLine(NULL, "「…ふぅ」",
-			NULL, "\"*sigh*\"", GetGlobalFlag(GLinemodeSp));
+			NULL, "— *soupire*", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //r気持ちいいほどに澄み渡った、真っ青な空。夏の太陽が燦々と光を降り注いで、すべてが輝いているようにも見える。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "気持ちいいほどに澄み渡った、真っ青な空。夏の太陽が燦々と光を降り注いで、すべてが輝いているようにも見える。",
-			NULL, "The sky was pure blue and crystal clear, and it felt amazing. Everything seemed to be glowing, bathed in the brilliant summer sun.", GetGlobalFlag(GLinemodeSp));
+			NULL, "Le ciel était totalement bleu, c'était vraiment plaisant. Le paysage baignait entièrement dans la douce lumière du soleil estival.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //rやっぱり、…来てよかったな。魅音もなんだかんだで、元気を取り戻してくれたみたいだし。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "やっぱり、…来てよかったな。魅音もなんだかんだで、元気を取り戻してくれたみたいだし。",
-			NULL, "It was a good thing we came here. Mion also seemed to show signs of recovery.", GetGlobalFlag(GLinemodeSp));
+			NULL, "C'était une bonne chose que nous fûmes venus ici. Mion semblait également plus en forme.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //圭一rvS06/01/330100451.「…そうだな。kvS06/01/330100452.なんなら今度は、いっそ東京にでも誘ってみるか」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/330100451", 256, TRUE);
 	OutputLine(NULL, "「…そうだな。",
-			NULL, "\"...Oh yeah.", Line_WaitForInput);
+			NULL, "— Oh, c'est vrai.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/330100452", 256, TRUE);
 	OutputLine(NULL, "なんなら今度は、いっそ東京にでも誘ってみるか」",
-			NULL, " Then I might as well try asking her if she wants to come see me at Tokyo next time.\"", Line_Normal);
+			NULL, " Je pourrais lui demander si elle veut venir me voir à Tôkyô la prochaine fois.", Line_Normal);
 	ClearMessage();
 
 //r引っ越した先の自宅に泊めれば安上がりだけど、…しばらくは親も気にするだろう。元通りになるためにはまだ、時間が必要だ。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "引っ越した先の自宅に泊めれば安上がりだけど、…しばらくは親も気にするだろう。元通りになるためにはまだ、時間が必要だ。",
-			NULL, "It would be cheaper if she stayed at our new place there, but I feel like our parents may be concerned for a while. We still needed some more time to go back to how it was.", GetGlobalFlag(GLinemodeSp));
+			NULL, "Ce serait moins cher si elle restait dormir chez nous, mais je sens que nos parents ne seront pas tranquilles. Il nous fallait encore du temps…", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //圭一rvS06/01/330100453.「…あ、そうなると泊まる場所も探しておかないとな。kvS06/01/330100454.あとは――」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/330100453", 256, TRUE);
 	OutputLine(NULL, "「…あ、そうなると泊まる場所も探しておかないとな。",
-			NULL, "\"Ah, then I'll have to look for a place she can stay at.", Line_WaitForInput);
+			NULL, "— Bon pas le choix alors, je vais devoir chercher un endroit où elle peut rester.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/330100454", 256, TRUE);
 	OutputLine(NULL, "あとは——」",
-			NULL, " After that...\"", Line_Normal);
+			NULL, " Et ensuite…", Line_Normal);
 	ClearMessage();
 
 //r――――こんにちは。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "————こんにちは。",
-			NULL, "......Why hello there.", GetGlobalFlag(GLinemodeSp));
+			NULL, "… Oh, bonjour.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //圭一rvS06/01/330100455.「え？kvS06/01/330100456.　ああ、こんにち、……は…、――」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/330100455", 256, TRUE);
 	OutputLine(NULL, "「え？",
-			NULL, "\"Eh?", Line_WaitForInput);
+			NULL, "— Hein ?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/330100456", 256, TRUE);
 	OutputLine(NULL, "　ああ、こんにち、……は…、——」",
-			NULL, " Oh, hello... Wha....., ...\"", Line_Normal);
+			NULL, " Ah, bonjour… Qu'est-ce q-...", Line_Normal);
 	ClearMessage();
 
 	FadeOutBGM(2, 1000, FALSE);
@@ -1252,7 +1252,7 @@ void main()
 //r…………。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…………。",
-			NULL, ".........", Line_Normal);
+			NULL, "…", Line_Normal);
 	ClearMessage();
 
 	DrawScene("scene/206b", 1000 );
@@ -1261,54 +1261,54 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/330300227", 256, TRUE);
 	OutputLine(NULL, "「やー、ごめんごめん圭ちゃん。",
-			NULL, "\"Hey... I'm so sorry, Kei-chan.", Line_WaitForInput);
+			NULL, "— Eh... Je suis vraiment désolée, p'tit gars.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/330300228", 256, TRUE);
 	OutputLine(NULL, "トイレ人いっぱいでさ～！",
-			NULL, " The line for the toilet was really long~!", Line_WaitForInput);
+			NULL, " Il y avait une queue monstre là-bas~ !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/330300229", 256, TRUE);
 	OutputLine(NULL, "　あ、結構待たせちゃったみたいだから、飲み物買ってきた。",
-			NULL, " Look, I bought some drinks because I made you wait so long.", Line_WaitForInput);
+			NULL, " Mais bon, regarde je suis quelqu'un d'attentionné, j'ai pris de quoi boire histoire de me faire pardonner.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/330300230", 256, TRUE);
 	OutputLine(NULL, "どっちがいい？」",
-			NULL, " Which one would you like?\"", GetGlobalFlag(GLinemodeSp));
+			NULL, " Tu préfères laquelle ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //r…………。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…………。",
-			NULL, ".........", Line_Normal);
+			NULL, "…", Line_Normal);
 	ClearMessage();
 
 //魅音rvS06/03/330300231.「…あれ、圭ちゃん寝ちゃったの？kvS06/03/330300232.　もう、しょうがないなぁ。kvS06/03/330300233.女の子とのデート中に居眠りなんて、エチケット違反だよ～？」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/330300231", 256, TRUE);
 	OutputLine(NULL, "「…あれ、圭ちゃん寝ちゃったの？",
-			NULL, "\"...My my, Kei-chan, don't tell me you fell asleep?", Line_WaitForInput);
+			NULL, "— … Eh bien, qu'avons-nous là, ne me dis pas que tu t'es endormi ?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/330300232", 256, TRUE);
 	OutputLine(NULL, "　もう、しょうがないなぁ。",
-			NULL, " Wow, this is pathetic.", Line_WaitForInput);
+			NULL, " Wow, c'est carrément pathétique.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/330300233", 256, TRUE);
 	OutputLine(NULL, "女の子とのデート中に居眠りなんて、エチケット違反だよ～？」",
-			NULL, " It's not very gentlemanly to doze off on a date with a girl, you know~.\"", GetGlobalFlag(GLinemodeSp));
+			NULL, " Ce n'est pas très gentleman de s'assoupir en plein rendez-vous avec une fille, tu sais~ ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //r…………。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…………。",
-			NULL, ".........", Line_Normal);
+			NULL, "…", Line_Normal);
 	ClearMessage();
 
 //魅音rvS06/03/330300234.「圭ちゃん？kvS06/03/330300235.　…もう、いつまで寝てるんだよ。kvS06/03/330300236.ほら、起きて」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/330300234", 256, TRUE);
 	OutputLine(NULL, "「圭ちゃん？",
-			NULL, "\"Kei-chan?", Line_WaitForInput);
+			NULL, "— Kei ?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/330300235", 256, TRUE);
 	OutputLine(NULL, "　…もう、いつまで寝てるんだよ。",
-			NULL, " ...Seriously, how long are you going to be out?", Line_WaitForInput);
+			NULL, " … Bon en vrai, tu vas roupiller encore longtemps ?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/330300236", 256, TRUE);
 	OutputLine(NULL, "ほら、起きて」",
-			NULL, " Come on, wake up!\"", Line_Normal);
+			NULL, " Hop hop hop, on se réveille !", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -1320,10 +1320,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/330300237", 256, TRUE);
 	OutputLine(NULL, "「…圭ちゃん？",
-			NULL, "\"...Kei-chan?", Line_WaitForInput);
+			NULL, "— … Kei ?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/330300238", 256, TRUE);
 	OutputLine(NULL, "　え、…あ…ッ？！」",
-			NULL, " Eh... Ah-?!\"", GetGlobalFlag(GLinemodeSp));
+			NULL, " Eh… Ah- ?!", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //r…………。
@@ -1338,7 +1338,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/330300239_b", 256, TRUE);
 	OutputLine(NULL, "「い、…いやあぁぁぁあぁぁ——ッッ！！」",
-			NULL, "\"N-Nooooooooooooo!!\"", Line_Normal);
+			NULL, "— N-Nooooooooooooooonnnnnn !!!", Line_Normal);
 	ClearMessage();
 
 	SetValidityOfInput( FALSE );

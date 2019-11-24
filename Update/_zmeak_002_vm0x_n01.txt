@@ -1,4 +1,4 @@
-void main()
+﻿void main()
 {
 }
 
@@ -7,21 +7,21 @@ void dialog000()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300002", 256, TRUE);
 	OutputLine(NULL, "「そ、",
-		   NULL, "\"Th-", Line_Continue);
+		   NULL, "— Non...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "………その声は！！",
-		   NULL, "That voice!!", Line_WaitForInput);
+		   NULL, "Cette voix, c'est...", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300003", 256, TRUE);
 	OutputLine(NULL, "　でもそんなはずは…！",
-		   NULL, " But that can't be true...!", Line_WaitForInput);
+		   NULL, " Mais c'est impossible !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300004", 256, TRUE);
 	OutputLine(NULL, "　詩音の寮は私用電話禁止だったはず…！！",
-		   NULL, " Shion's dorm doesn't allow private calls...!", Line_WaitForInput);
+		   NULL, " Shion a été enfermée à Sainte Lucia !!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300005", 256, TRUE);
 	OutputLine(NULL, "　そんなはずはない……！」",
-		   NULL, " You can't be her...!\"", Line_Normal);
+		   NULL, " Comment pourrait-elle...", Line_Normal);
 	ClearMessage();
 }
 
@@ -30,16 +30,16 @@ void dialog001()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600198_1", 256, TRUE);
 	OutputLine(NULL, "「叔父さん、私を見てまだ小さい子供って言うのなら、",
-		   NULL, "\"Hey, if you think I still look like a small child,", Line_Continue);
+		   NULL, "— Tonton, tu vois les deux masses molles, là ? Et les courbes, là ? Si tu oses affirmer que je suis une petite fille avec ça,", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 3000 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "眼科行くか、",
-		   NULL, " you should see an eye doctor.", Line_Continue);
+		   NULL, " t'es soit super bigleux,", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "回し蹴り食らうかのどちらかを選んでもらうことになるんですけど。」",
-		   NULL, " Either that, or accept a roundhouse kick from me.\"", Line_Normal);
+		   NULL, " soit t'es un pédophile, mais les gens vont jaser sur ton dos, alors choisis bien.", Line_Normal);
 	ClearMessage();
 }
