@@ -207,7 +207,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300470", 256, TRUE);
 	OutputLine(NULL, "「お姉ぇお姉えええぇえ！！」",
-		   NULL, " — Grande sœur !", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— Grande sœur !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
@@ -1073,12 +1073,12 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　沙都子はちゃんと私が面倒を見て、待っててあげるから。",
-		   NULL, "Je t'attendrai, toute ma vie si nécessaire. »", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Je t'attendrai, toute ma vie si nécessaire.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　沙都子と二人でね、大人しく悟史くんが帰って来るのを、待っている。",
-		   NULL, "« Je m'occuperai d'elle et nous t'attendrons toutes les deux. »", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Je m'occuperai d'elle et nous t'attendrons toutes les deux. »", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
