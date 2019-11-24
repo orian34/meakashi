@@ -46,7 +46,7 @@
 		   NULL, " Je vais vous en piquer quelques-unes, les enfants !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300474", 256, TRUE);
 	OutputLine(NULL, "ほら梨花ちゃん、机、机。」",
-		   NULL, " Allez, Rika, bouge un peu, ton pupitre, là !", Line_Normal);
+		   NULL, " Allez, Rika, bouge un peu ton pupitre, là !", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
