@@ -201,7 +201,7 @@
 		   NULL, " Rends-moi Mion !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100400", 256, TRUE);
 	OutputLine(NULL, "　俺の最高の友人だった…魅音を返せぇえぇえええッ！！！」",
-		   NULL, " Rends-moi ma meilleure amie !  Rends-moi Mion !!!", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Rends-moi ma meilleure amie ! Rends-moi Mion !!!", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -508,7 +508,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　時間が私を癒し、………悟史くんの思い出を、やわらかく包んで、胸の内にそっと、しまってくれたんだ。",
-		   NULL, "Et après, le Temps avait guérit ma blessure, et les souvenirs de Satoshi avaient été recouverts, puis cachés bien au fond de mon âme, pour ne plus y toucher.", Line_Normal);
+		   NULL, "Et après, le Temps avait guéri ma blessure, et les souvenirs de Satoshi avaient été recouverts, puis cachés bien au fond de mon âme, pour ne plus y toucher.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
@@ -1753,7 +1753,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150602696", 256, TRUE);
 	OutputLine(NULL, "「…う、……嘘だ！！",
-		   NULL, "— Non_! Tu mens !", Line_WaitForInput);
+		   NULL, "— Non ! Tu mens !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150602697", 256, TRUE);
 	OutputLine(NULL, "　あの事件が、園崎家が関わってないってわけ？！",
 		   NULL, " Tu oses prétendre que les Sonozaki n'ont rien à voir là-dedans ?", Line_WaitForInput);
@@ -1765,10 +1765,10 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300450", 256, TRUE);
 	OutputLine(NULL, "「………私は、…婆っちゃがね、嘘を言うとは思わないの…。",
-		   NULL, "— ... Tu sais, je ne pense pas que Mémé m'aurait menti.", Line_WaitForInput);
+		   NULL, "— ... Tu sais, je ne pense pas que Mémé m'aurait mentie.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300451", 256, TRUE);
 	OutputLine(NULL, "……特に悟史くんの失踪については、本当に知らないって言ったの。",
-		   NULL, " Je l'ai cuisiné sur Satoshi, tu sais, mais elle a toujours nié.", Line_WaitForInput);
+		   NULL, " Je l'ai cuisinée sur Satoshi, tu sais, mais elle a toujours nié.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300452", 256, TRUE);
 	OutputLine(NULL, "だって、悟史くんとお姉の交際、……婆っちゃは許したんだよ？",
 		   NULL, " Elle avait accepté ta relation avec lui, tu sais ? ", GetGlobalFlag(GLinemodeSp));
