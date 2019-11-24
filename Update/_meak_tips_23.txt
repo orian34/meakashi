@@ -123,7 +123,7 @@
 		   NULL, "— Je vois...", Line_Continue);
 	Wait( 2000 );
 	OutputLine(NULL, "その騒ぎのせいで勘当されたわけ？」",
-		   NULL, " Et c'est à cause de ça que tu a été déshéritée ?", Line_Normal);
+		   NULL, " Et c'est à cause de ça que tu as été déshéritée ?", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6bd09f>茜</color>", NULL, "<color=#6bd09f>Akane</color>", NULL, Line_ContinueAfterTyping); }
