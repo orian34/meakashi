@@ -1138,7 +1138,7 @@
 		   NULL, "Il sait que dans ma situation, je n'ai pas trop le choix, et il sait comment m'aider au mieux.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>ウェイトレス</color>", NULL, "<color=#f5e6d3>Waitress</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>ウェイトレス</color>", NULL, "<color=#f5e6d3>Serveuse</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s06/00/waita15001", 256, TRUE);
 	OutputLine(NULL, "「店長〜、シフト表もってきましたぁ。",
 		   NULL, "— Patron, voici le tableau des heures de service,", Line_WaitForInput);
