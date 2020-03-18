@@ -576,7 +576,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/330300196", 256, TRUE);
 	OutputLine(NULL, "「やり直せるなんて、都合のいいことは考えてないけど…もう、疲れちゃった。",
-			NULL, "Ce n'est pas quelque chose de bien commode comme "recommencer à zéro"... Je suis juste épuisée.", Line_WaitForInput);
+			NULL, "Ce n'est pas quelque chose de bien commode comme \"recommencer à zéro\"... Je suis juste épuisée.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/330300197", 256, TRUE);
 	OutputLine(NULL, "全部、…投げ出したいよ。あはは…」",
 			NULL, " J'ai juste envie de tout envoyer chier. Ahaha…", GetGlobalFlag(GLinemodeSp));

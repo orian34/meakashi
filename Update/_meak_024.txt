@@ -2548,7 +2548,7 @@
 	char Item[2];
 
 	if (GetGlobalFlag(GLanguage) == 1) {
-		Item[0] = "À ce moment-là, je pris conscience du regard que Keiichi me lançait";
+		Item[0] = "Je pris conscience du regard que Keiichi me lançait";
 		Item[1] = "Puis, je me suis retournée pour faire face à Keiichi";
 	} else {
 		Item[0] = "その時、私は圭一の視線に気がついた";
