@@ -16,7 +16,8 @@
 	ClearMessage();
 	PlaySE( 0, "s_page", 56, 64 );
 	DrawSceneWithMask("black", "maskright", 7, 0, 300 );
-	ModDrawCharacter(1, 9, "sprite/normal/ta1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	ModSetLayerFilter(1, 256, "none");
+	ModDrawCharacter(1, 9, "sprite/ta1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawSceneWithMask("background/tosyo2", "maskright", 7, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -71,9 +72,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　彼女の独自の説によるならば、雛見沢村には信仰を中心とした一派があり、",
-		   NULL, "En gros, la malédiction serait en fait une série de meurtres perpétrés par des fanatiques religieux.", Line_WaitForInput);
+		   NULL, "En gros, la malédiction serait en fait une série de meurtres perpétrés par des fanatiques religieux.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "それを中心に御三家が組み上げられているという。",
-		   NULL, " D'après sa théorie, il y aurait un groupuscule de fanatiques à Hinamizawa, tous rassemblés par leur foi, et organisés selon l'architecture des trois clans fondateurs du village.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "D'après sa théorie, il y aurait un groupuscule de fanatiques à Hinamizawa, tous rassemblés par leur foi, et organisés selon l'architecture des trois clans fondateurs du village.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -90,7 +92,7 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だけど、悟史くんの失踪した理由に局所的にスポットを当てると、何の説明にもならない。",
 		   NULL, "Mais si l'on se prête au jeu et que l'on cherche la réponse à certaines questions restées en suspens, comme par exemple la raison de la disparition de Satoshi, on n'obtient aucune lumière et on se rend compte donc qu'elle ne tient pas vraiment debout.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

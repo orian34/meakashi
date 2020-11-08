@@ -46,22 +46,25 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300061", 256, TRUE);
 	OutputLine(NULL, "「警察も検死したみたいだけど、その後に、特に騒がなかったってことは、死因に不審な点はなかったってことじゃないの？",
-		   NULL, "— Ben, la Police a fait une autopsie, mais ils ont jamais poursuivi l'enquête, donc je dirais que les résultats étaient plus ou moins dans la norme.", Line_WaitForInput);
+		   NULL, "— Ben, la Police a fait une autopsie, mais ils ont jamais poursuivi l'enquête, donc je dirais que les résultats étaient plus ou moins dans la norme.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300062", 256, TRUE);
 	OutputLine(NULL, "　……まぁでも、詩音の言う通り、人の死が三年も続いて綿流しの日に重なると、やっぱり普通じゃないって思うね。」",
-		   NULL, " Mais je suis assez d'accord pour dire que trois ans de suite, ça commence à faire beaucoup de hasards et de coïncidences...", Line_Normal);
+		   NULL, "Mais je suis assez d'accord pour dire que trois ans de suite, ça commence à faire beaucoup de hasards et de coïncidences...", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600209", 256, TRUE);
 	OutputLine(NULL, "「それに、さっきお姉も言った通り、オヤシロさまに祟られそうな人ばかり怪死する。",
-		   NULL, "— Et puis, tu l'as dit tout à l'heure, les victimes sont toutes des personnes contre qui la déesse Yashiro pourrait avoir une dent.", Line_WaitForInput);
+		   NULL, "— Et puis, tu l'as dit tout à l'heure, les victimes sont toutes des personnes contre qui la déesse Yashiro pourrait avoir une dent.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600210", 256, TRUE);
 	OutputLine(NULL, "これは絶対に何かあります。",
-		   NULL, " Moi, je suis sûre que ça cache quelque chose.", Line_WaitForInput);
+		   NULL, "Moi, je suis sûre que ça cache quelque chose.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600211", 256, TRUE);
 	OutputLine(NULL, "祟りでも陰謀でも、とにかく絶対裏に何か因果関係がある。」",
-		   NULL, " Appelle-ça une malédiction ou un complot si tu veux, mais toutes ces morts sont en rapport les unes aux autres.", Line_Normal);
+		   NULL, "Appelle-ça une malédiction ou un complot si tu veux, mais toutes ces morts sont en rapport les unes aux autres.", Line_Normal);
 	ClearMessage();
 
 	DrawSceneWithMask("background/tosyo1", "maskright", 1, 0, 300 );
@@ -149,9 +152,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ダム計画の凍結が発表され、勝利に沸き返る雛見沢で迎えた綿流しの祭の日に、",
-		   NULL, "Le gel des travaux fut annoncé, et le soir où le village s'apprêtait à célébrer cela comme il se devait, il y eut cet accident, cette chute qui entraîna la mort de deux traîtres du village,", Line_WaitForInput);
+		   NULL, "Le gel des travaux fut annoncé, et le soir où le village s'apprêtait à célébrer cela comme il se devait, il y eut cet accident, cette chute qui entraîna la mort de deux traîtres du village,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "今度は村の裏切り者であるダム推進派の北条夫妻が転落事故。",
-		   NULL, " un ancien acquis au projet du barrage, M. Hôjô, et sa femme.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "un ancien acquis au projet du barrage, M. Hôjô, et sa femme.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -230,7 +234,8 @@
 		   NULL, " sa mort acheva de convaincre les derniers non-croyants.", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(2, 3, "sprite/normal/me2_def_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModSetLayerFilter(2, 256, "none");
+	ModDrawCharacter(2, 3, "sprite/me2_def_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene("background/tosyo2", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
@@ -274,7 +279,7 @@
 		   NULL, "En même temps, il était gendre d'adoption dans le clan des Furude -- il n'avait pas vraiment son mot à dire, donc forcément...", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　夏祭の会場でもあり、村の集会場所として開放もされている神社の管理人としては、そういう性格の神主さんは、適材適所であったかもしれない。",
 		   NULL, "Il avait servi de concierge du sanctuaire shintoïste pendant de nombreuses années, et tant que celui-ci n'avait servi que de local de rencontres pour le troisième âge, ou comme lieu des rares cérémonies religieuses, il avait été parfait.", Line_Normal);
 	ClearMessage();
@@ -307,7 +312,6 @@
 	OutputLine(NULL, "　オヤシロさま信仰は根源を紐解けば、",
 		   NULL, "Le culte de la déesse Yashiro prenait son origine dans une philosophie bien peu reluisante : ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
 	OutputLine(NULL, "自分たちは仙人の一族で麓の下民どもとは違う、汚らわしい下民どもは村に近付くな…という、排他的な選民思想に行き着く。",
 		   NULL, "il partait du postulat que nous, les sages qui vivions sur la montagne, valions bien mieux que les sous-merdes qui vivaient au pied de la montagne, en conséquence de quoi la déesse leur interdisait de nous approcher.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -359,9 +363,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…こうやって表現すると、何だかすごく嫌ぁな、まるで日本の戦時中の暗黒時代を彷彿させるが、",
-		   NULL, "... Ça donne pas une image très glorieuse, je sais ; on se croirait replongé dans les heures sombres de l'impérialisme japonais.", Line_WaitForInput);
+		   NULL, "... Ça donne pas une image très glorieuse, je sais ; on se croirait replongé dans les heures sombres de l'impérialisme japonais.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "前にも述べた通り、子どもたちにとってはあれは戦争というよりは戦争ごっこで、村全体が一丸となるお祭のようなものだったのだ。",
-		   NULL, " Mais je vous assure que les jeunes voyaient cela comme un jeu et que les adultes s'organisaient comme pour la fête du village, dans une ambiance bonne enfant.", Line_Normal);
+		   NULL, "Mais je vous assure que les jeunes voyaient cela comme un jeu et que les adultes s'organisaient comme pour la fête du village, dans une ambiance bonne enfant.", Line_Normal);
 	ClearMessage();
 	DrawScene("background/ho1", 400 );
 
@@ -422,9 +427,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　神主は、反ダムに異論は唱えなかったものの、",
-		   NULL, "Le prêtre ne s'élevait pas contre les voix radicales qui prônaient le refus du barrage,", Line_WaitForInput);
+		   NULL, "Le prêtre ne s'élevait pas contre les voix radicales qui prônaient le refus du barrage,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "北条夫妻の「立ち退きに応じて国から賠償金をもらい、生活を再建する」という主張にも、異論を唱えなかったのである。",
-		   NULL, " mais il ne semblait pas non plus gêné par l'attitude des Hôjô, qui avaient accepté l'argent de l'État pour pouvoir refaire leur vie ailleurs.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "mais il ne semblait pas non plus gêné par l'attitude des Hôjô, qui avaient accepté l'argent de l'État pour pouvoir refaire leur vie ailleurs.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -438,9 +444,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　鬼ヶ淵死守同盟の屋台骨であり、雛見沢村の大黒柱である御三家で足並みが揃わないことは好ましくない、",
-		   NULL, "Il était resté à l'abri des critiques car il était le chef de l'un des clans les plus influents.", Line_WaitForInput);
+		   NULL, "Il était resté à l'abri des critiques car il était le chef de l'un des clans les plus influents.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "御三家間でトラブルを起こしたくないということから、神主への糾弾は一切行なわれなかった。",
-		   NULL, " Il était l'un des piliers du village et de l'association, aussi les gens ne voulaient pas se fâcher contre lui et montrer une désunion dans la communauté.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Il était l'un des piliers du village et de l'association, aussi les gens ne voulaient pas se fâcher contre lui et montrer une désunion dans la communauté.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -451,7 +458,7 @@
 		   NULL, " et qu'il finirait puni par la colère divine...", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(2, 3, "sprite/normal/me2_def_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModDrawCharacter(2, 3, "sprite/me2_def_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene("background/tosyo2", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
@@ -485,18 +492,20 @@
 
 	DisableWindow();
 	PlayBGM( 0, "msys07", 56, 0 );
-	ModDrawCharacter(2, 3, "sprite/normal/me2_sinmyou_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 3, "sprite/me2_sinmyou_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300067", 256, TRUE);
 	OutputLine(NULL, "「…うーん…。",
-		   NULL, "— Aha, ahem, hmmm, je sais pas trop.", Line_WaitForInput);
+		   NULL, "— Aha, ahem, hmmm, je sais pas trop.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300068", 256, TRUE);
 	OutputLine(NULL, "本当に大人だったら、あそこは周りに合わせて協調すべきところだったと思うね。",
-		   NULL, " Si vraiment il avait eu de la sagesse en lui, il aurait essayé de rallier Hôjô à la cause du village.", Line_WaitForInput);
+		   NULL, "Si vraiment il avait eu de la sagesse en lui, il aurait essayé de rallier Hôjô à la cause du village.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300069", 256, TRUE);
 	OutputLine(NULL, "古手のおじさんは単に神社の神主だっただけじゃなく、仮にも御三家のひとつ、古手家の長だったんだからさ…。",
-		   NULL, " Le vieux Furude n'était pas que le prêtre, il était aussi le chef du clan fondateur, c'est un poste qui a une portée et et un poids politique considérables.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Le vieux Furude n'était pas que le prêtre, il était aussi le chef du clan fondateur, c'est un poste qui a une portée et et un poids politique considérables.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -573,15 +582,16 @@
 		   NULL, "Qu'il faut se comporter comme un mouton et suivre la masse ?", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(2, 3, "sprite/normal/me2_tohoho_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 3, "sprite/me2_tohoho_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300072", 256, TRUE);
 	OutputLine(NULL, "「…べ、別にそこまでは言わないけど…。",
-		   NULL, "— Non, c'est pas aussi violent que ça, c'est...", Line_WaitForInput);
+		   NULL, "— Non, c'est pas aussi violent que ça, c'est...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300073", 256, TRUE);
 	OutputLine(NULL, "ただその、…やっぱり御三家の長のひとりなんだから、もう少し言動は慎重にしてもよかったんじゃないかって、…そういうことだよ。」",
-		   NULL, " Ben... J'veux dire, il était chef de clan, c'était l'un des hommes les plus importants du village, il aurait dû être plus prudent dans sa manière d'agir et dans ce qu'il disait...", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Ben... J'veux dire, il était chef de clan, c'était l'un des hommes les plus importants du village, il aurait dû être plus prudent dans sa manière d'agir et dans ce qu'il disait...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -671,7 +681,7 @@
 		   NULL, "... Pendant cette année d'absence, Mion était devenue bien plus proche et bien plus en phase de son rôle d'héritière du clan.", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(2, 3, "sprite/normal/me2_def_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModDrawCharacter(2, 3, "sprite/me2_def_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene("background/tosyo2", 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
@@ -688,7 +698,7 @@
 		   NULL, "Mion semblait avoir compris ce que je ressentais et ce que je voulais dire.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(2, 3, "sprite/normal/me2_sinmyou_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 3, "sprite/me2_sinmyou_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300074", 256, TRUE);
@@ -711,7 +721,7 @@
 		   NULL, " Il te faut penser comme un monarque si tu veux gouverner.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(2, 3, "sprite/normal/me2_odoroki_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 3, "sprite/me2_odoroki_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300075", 256, TRUE);
@@ -721,7 +731,7 @@
 	OutputLine(NULL, "どうやれば婆っちゃのふりができるかって、それだけだよ…。",
 		   NULL, " J'essaie juste de faire comme Mémé, c'est tout.", GetGlobalFlag(GLinemodeSp));
 	DisableWindow();
-	ModDrawCharacter(2, 3, "sprite/normal/me2_akuwarai_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 3, "sprite/me2_akuwarai_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300077", 256, TRUE);
@@ -788,19 +798,23 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600233_1", 256, TRUE);
 	OutputLine(NULL, "「…あんたは私が、その辺りで逆恨みしてるんじゃないかって思ってるかもしれない。",
-		   NULL, "— Tu penses peut-être que je t'en veux pour tout ça,", Line_WaitForInput);
+		   NULL, "— Tu penses peut-être que je t'en veux pour tout ça,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600233_2", 256, TRUE);
 	OutputLine(NULL, "でもそれは、誤解。",
-		   NULL, " mais je t'assure, Mion, tu te trompes.", Line_WaitForInput);
+		   NULL, "mais je t'assure, Mion, tu te trompes.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600233_3", 256, TRUE);
 	OutputLine(NULL, "そりゃ確かに確執はあったよ？",
-		   NULL, " Oh, oui, j'ai été jalouse, c'est clair.", Line_WaitForInput);
+		   NULL, "Oh, oui, j'ai été jalouse, c'est clair.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600233_4", 256, TRUE);
 	OutputLine(NULL, "　でもそんなのは時間で流れる程度のもの。",
-		   NULL, " Mais après tout, c'est pas si grave. L'eau a coulé sous les ponts, tu sais.", Line_WaitForInput);
+		   NULL, "Mais après tout, c'est pas si grave. L'eau a coulé sous les ponts, tu sais.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600233_5", 256, TRUE);
 	OutputLine(NULL, "あんたが引け目を感じるようなことは、何もない。」",
-		   NULL, " Je ne te reproche rien, Mion. Rien du tout.", Line_Normal);
+		   NULL, "Je ne te reproche rien, Mion. Rien du tout.", Line_Normal);
 	ClearMessage();
 
 	DrawScene("background/sora", 400 );
@@ -904,7 +918,8 @@
 		   NULL, "Elle a probablement vécu tout le temps avec cet énorme bonbon devant les yeux, ce titre d'héritière du clan, et depuis toujours, elle me regarde et attend que je lui donne la permission de le manger.", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(2, 3, "portrait/normal/me2_hau_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModSetLayerFilter(2, 256, "none");
+	ModDrawCharacter(2, 3, "portrait/me2_hau_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene("background/tosyo2", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
@@ -963,7 +978,7 @@
 	ClearMessage();
 
 	DisableWindow();
-	ModDrawCharacter(2, 3, "portrait/normal/me2_sinmyou_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 3, "portrait/me2_sinmyou_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300084", 256, TRUE);
@@ -1182,7 +1197,7 @@
 	SetValidityOfInput( FALSE );
 	Wait( 3000 );
 	SetValidityOfInput( TRUE );
-	ModDrawCharacter(2, 15, "sprite/normal/kasa_1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModDrawCharacter(2, 15, "sprite/kasa_1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene("background/si_g1", 400 );
 	PlayBGM( 1, "z2_hig2", 56, 0 );
 
@@ -1308,13 +1323,15 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 15, "ps3/s06/15/151500099", 256, TRUE);
 	OutputLine(NULL, "「悪かったと思ってます。",
-		   NULL, "— Allons, Mademoiselle, je suis vraiment navré de tout cela.", Line_WaitForInput);
+		   NULL, "— Allons, Mademoiselle, je suis vraiment navré de tout cela.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 15, "ps3/s06/15/151500100", 256, TRUE);
 	OutputLine(NULL, "少しふざけすぎたと思ってますよ。",
-		   NULL, " Je reconnais que j'ai poussé le bouchon un peu trop loin et que ce n'était pas très drôle ni très malin,", Line_WaitForInput);
+		   NULL, "Je reconnais que j'ai poussé le bouchon un peu trop loin et que ce n'était pas très drôle ni très malin,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 15, "ps3/s06/15/151500101", 256, TRUE);
 	OutputLine(NULL, "だからそろそろ、あんな下らない話、忘れて下さってもいいのに。」",
-		   NULL, " mais par pitié, oubliez ces histoires, elles sont pourtant stupides et ridicules !", GetGlobalFlag(GLinemodeSp));
+		   NULL, "mais par pitié, oubliez ces histoires, elles sont pourtant stupides et ridicules !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
@@ -1436,7 +1453,7 @@
 		   NULL, "— Kasai, vire le journal de la table, s'te plaît.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
-	ModDrawCharacter(2, 15, "sprite/normal/kasa_2_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModDrawCharacter(2, 15, "sprite/kasa_2_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 15, "ps3/s06/15/151500102", 256, TRUE);

@@ -9,7 +9,8 @@ void dialog000()
 		   NULL, "J'avais peut-être bu trop d'alcool trop vite, car j'étais affalée sur les tatamis, incapable de bouger.", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(1, 15, "sprite/normal/kasa_2_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	ModSetLayerFilter(1, 256, "none");
+	ModDrawCharacter(1, 15, "sprite/kasa_2_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene("background/ima1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -42,13 +43,15 @@ void dialog003()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601468", 256, TRUE);
 	OutputLine(NULL, "「富竹さんの、自分で自分の喉を引き裂いたってのは何？",
-		   NULL, "— Et c'est quoi, le secret pour que Tomitake se tranche la gorge tout seul ?", Line_WaitForInput);
+		   NULL, "— Et c'est quoi, le secret pour que Tomitake se tranche la gorge tout seul ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601469", 256, TRUE);
 	OutputLine(NULL, "　狂気に駆り立てるような怪しいお薬でも注射したの？",
-		   NULL, " Un nouveau sirop pour la toux ? Une piqûre bizarre qui l'a rendu fou dans sa tête ?", Line_WaitForInput);
+		   NULL, "Un nouveau sirop pour la toux ? Une piqûre bizarre qui l'a rendu fou dans sa tête ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601470", 256, TRUE);
 	OutputLine(NULL, "　それとも、そういう死に方に見せるような拷問道具でもあるわけ？」",
-		   NULL, " Ou bien alors vous avez un meuble de torture pour simuler ce genre de suicide ?", Line_Normal);
+		   NULL, "Ou bien alors vous avez un meuble de torture pour simuler ce genre de suicide ?", Line_Normal);
 	ClearMessage();
 }
 

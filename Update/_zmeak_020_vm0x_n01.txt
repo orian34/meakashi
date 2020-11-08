@@ -7,13 +7,15 @@ void dialog000()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps2/06/150601924", 540, TRUE);
 	OutputLine(NULL, "「あれ、どう思います？",
-		   NULL, "— Ben, vous en pensez quoi, vous, de cette histoire, tiens ?", Line_WaitForInput);
+		   NULL, "— Ben, vous en pensez quoi, vous, de cette histoire, tiens ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601925", 256, TRUE);
 	OutputLine(NULL, "　……私は、…あはは、私がこういうのも変だけど、悟史くんが叔母殺しの犯人だって信じてるですよ。",
-		   NULL, " Personnellement... Vous allez rire, mais je suis sûre que c'est Satoshi qui a tué sa tante.", Line_WaitForInput);
+		   NULL, "Personnellement... Vous allez rire, mais je suis sûre que c'est Satoshi qui a tué sa tante.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601926", 256, TRUE);
 	OutputLine(NULL, "あいつは、例えばバァさん辺りに買収されて仕立て上げられた身代わりじゃないかと思うんですけど。」",
-		   NULL, " L'autre déséquilibré, à mon avis, c'est quelqu'un qui a été payé pour endosser la responsabilité du meurtre.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "L'autre déséquilibré, à mon avis, c'est quelqu'un qui a été payé pour endosser la responsabilité du meurtre.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 

@@ -31,13 +31,15 @@ void dialog002()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 15, "ps3/s06/15/151500043", 256, TRUE);
 	OutputLine(NULL, "「詩音さんを聖ルチーア学園に入学させる決定は、園崎本家頭首が下したものです。",
-		   NULL, "— La décision de vous envoyer au pensionnat de jeunes filles de Sainte Lucia a été prise par la chef de clan, Oryô Sonozaki, elle-même.", Line_WaitForInput);
+		   NULL, "— La décision de vous envoyer au pensionnat de jeunes filles de Sainte Lucia a été prise par la chef de clan, Oryô Sonozaki, elle-même.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 15, "ps3/s06/15/151500044", 256, TRUE);
 	OutputLine(NULL, "…詩音さんはその学園を抜け出した。",
-		   NULL, " Et vous vous êtes enfuie.", Line_WaitForInput);
+		   NULL, "Et vous vous êtes enfuie.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 15, "ps3/s06/15/151500045", 256, TRUE);
 	OutputLine(NULL, "…どういうことか、お分かりですね。」",
-		   NULL, " Vous comprenez, je l'espère, l'étendue et la gravité de votre geste ?", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Vous comprenez, je l'espère, l'étendue et la gravité de votre geste ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
@@ -76,9 +78,10 @@ void dialog005()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600068", 256, TRUE);
 	OutputLine(NULL, "「鬼婆はとっくに更年期障害で、正常な思考なんか出来なくなってんの！",
-		   NULL, "— La vieille folle est complètement sénile, depuis un moment d'ailleurs. Elle ne pense plus droit.", Line_WaitForInput);
+		   NULL, "— La vieille folle est complètement sénile, depuis un moment d'ailleurs. Elle ne pense plus droit.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600069", 256, TRUE);
 	OutputLine(NULL, "　あのダム戦争の興奮で、頭がイカれちゃって、まだその時の興奮が抜け切ってないんじゃないかな。ったく！」",
-		   NULL, " Depuis les affrontements avec le barrage, elle se sent plus pisser, elle a pas encore compris que c'était fini depuis belle lurette. Elle débloque complètement !", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Depuis les affrontements avec le barrage, elle se sent plus pisser, elle a pas encore compris que c'était fini depuis belle lurette. Elle débloque complètement !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }

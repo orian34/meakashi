@@ -10,8 +10,7 @@
 	DrawScene("background/nort", 1000 );
 	PlayBGM( 0, "03_cele", 56, 0 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　昭和５７年のオヤシロさまの祟りの渦中にある時は、私は新しい情報に一喜一憂し、その度に自分の頭の中の仮説をひっくり返した。",
 		   NULL, "Lorsque je me trouvais au beau milieu des événements de la malédiction de 1982 -- l'an 57 de l'ère Shôwa, donc -- chaque nouvelle information était pour moi une bombe en puissance, et je remettais en cause mes théories à chaque fois.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }

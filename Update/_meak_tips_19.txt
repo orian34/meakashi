@@ -27,7 +27,7 @@
 	ClearMessage();
 	PlaySE( 0, "s_page", 56, 64 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　古手家には、八代続けて第一子が女児ならば、その子はオヤシロさまの生まれ変わりであるとする言い伝えがあるらしく、",
 		   NULL, "Il y avait apparemment une légende qui se transmettait chez les Furude et qui disait que si le premier né issu du mariage du chef du clan était une fille pendant huit générations, alors cette enfant serait la réincarnation de la déesse Yashiro. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -117,9 +117,10 @@
 	OutputLine(NULL, "　あの奇怪な注射器も含めて、謎だらけの存在。",
 		   NULL, "Cela pouvait bien sûr être un sosie, mais cela paraît tout aussi incroyable.", Line_WaitForInput);
 	OutputLine(NULL, "正体不明。",
-		   NULL, " Et puis, il y avait cette seringue.", Line_WaitForInput);
+		   NULL, " Et puis, il y avait cette seringue.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "理解不能。",
-		   NULL, " Cette gamine était décidément un mystère à elle seule. Je ne sais pas qui elle était en réalité, et je n'arrive pas à la comprendre.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Cette gamine était décidément un mystère à elle seule. Je ne sais pas qui elle était en réalité, et je n'arrive pas à la comprendre.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }

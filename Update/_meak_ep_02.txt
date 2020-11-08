@@ -59,9 +59,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　詩音だけを殺しておいて、私がのうのうと生き延びてしまうのが許せなくて、",
-		   NULL, "Elle ne pouvait pas supporter l'idée de me voir essayer de survivre par tous les moyens possibles et imaginables, alors qu'elle était déjà morte depuis un moment.", Line_WaitForInput);
+		   NULL, "Elle ne pouvait pas supporter l'idée de me voir essayer de survivre par tous les moyens possibles et imaginables, alors qu'elle était déjà morte depuis un moment.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "私がちゃんと死んでみせるまで、そこにずっと取り憑いているつもりなのだ。",
-		   NULL, " Elle avait l'intention de rester avec moi, jusqu'à ma mort.", Line_Normal);
+		   NULL, "Elle avait l'intention de rester avec moi, jusqu'à ma mort.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -336,9 +337,10 @@
 	OutputLine(NULL, "はぁはあ！！",
 		   NULL, " Hahahaha !", Line_WaitForInput);
 	OutputLine(NULL, "　ただじゃ消えない、あんただけ恋した人が生き残ってるなんてフェアじゃない！！",
-		   NULL, " Je ne serai pas la seule à mourir, il reste encore quelqu'un de vivant, quelqu'un que tu as aimé ! C'est pas juste, ça, c'est pas juste !", Line_WaitForInput);
+		   NULL, " Je ne serai pas la seule à mourir, il reste encore quelqu'un de vivant, quelqu'un que tu as aimé ! C'est pas juste, ça, c'est pas juste !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　あはははっはははあっひゃへへひゃきゃ！！！",
-		   NULL, " Ahahahahahahahahaha !", Line_Normal);
+		   NULL, "Ahahahahahahahahaha !", Line_Normal);
 	ClearMessage();
 	DrawSceneWithMask("black", "maskleft", 1, 0, 300 );
 	FadeFilm( 200, TRUE );
@@ -437,7 +439,8 @@
 		   NULL, "Même d'ici, je savais qu'il devait descendre les escaliers quatre à quatre.", Line_Normal);
 	ClearMessage();
 	PlayBGM( 1, "kaze", 56, 0 );
-	ModDrawCharacter(2, 1, "sprite/night/kei2_majime_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModSetLayerFilter(2, 256, "night");
+	ModDrawCharacter(2, 1, "sprite/kei2_majime_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene("background/ma2", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -522,7 +525,7 @@
 		   NULL, " éhhéhhéhhé, HAHAHAHAHA !", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(2, 1, "sprite/night/kei2_komaru_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 1, "sprite/kei2_komaru_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100442", 256, TRUE);
@@ -544,7 +547,7 @@
 		   NULL, " Éhéhéhéhé !", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(2, 1, "sprite/night/kei2_def2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 1, "sprite/kei2_def2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100443", 256, TRUE);
@@ -599,7 +602,7 @@
 		   NULL, " Je ne peux plus rester ici.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
-	ModDrawCharacter(2, 1, "sprite/night/kei2_komaru_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 1, "sprite/kei2_komaru_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100445", 256, TRUE);
@@ -708,7 +711,7 @@
 		   NULL, " aha...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
-	ModDrawCharacter(2, 1, "sprite/night/kei2_majime_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 1, "sprite/kei2_majime_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100447", 256, TRUE);
@@ -718,7 +721,7 @@
 	OutputLine(NULL, "　もう無理するな…。",
 		   NULL, " Ne te force pas, voyons !", GetGlobalFlag(GLinemodeSp));
 	DisableWindow();
-	ModDrawCharacter(2, 1, "sprite/night/kei2_def1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 1, "sprite/kei2_def1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100449", 256, TRUE);
@@ -737,12 +740,13 @@
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "悟史くんの仇悟史くんの仇、",
-		   NULL, " Je prendrai ma revanche, Satoshi ne sera pas mort en vain !", Line_ContinueAfterTyping);
+		   NULL, " Je prendrai ma revanche, Satoshi ne sera pas mort en vain !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	SetValidityOfInput( FALSE );
 	Wait( 1100 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…こいつは詩音の好きな人、詩音なんか大嫌い、こいつを殺して詩音に思い知らせてやるんだ、",
-		   NULL, " Shion l'aime, lui et pas un autre, mais moi je déteste Shion, alors je vais le crever, et on verra la tête qu'elle va tirer !", Line_ContinueAfterTyping);
+		   NULL, "Shion l'aime, lui et pas un autre, mais moi je déteste Shion, alors je vais le crever, et on verra la tête qu'elle va tirer !", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 600 );
 	SetValidityOfInput( TRUE );
@@ -863,9 +867,10 @@
 	OutputLine(NULL, "　やった、やったよふげげぎゃぎゃ、私は成し遂げた！！！",
 		   NULL, "J'ai réussi, j'ai tout réussi !", Line_WaitForInput);
 	OutputLine(NULL, "　ぎゃぎ悟史くんの仇を全て討ったよぉおおぎょごごがぎゃ！！！",
-		   NULL, " Je me suis vengée de tout le monde, Satoshi est vengé maintenant, ahHAHAHAHahahaha !", Line_WaitForInput);
+		   NULL, " Je me suis vengée de tout le monde, Satoshi est vengé maintenant, ahHAHAHAHahahaha !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　褒めてよ悟史くん、私を撫でて？！",
-		   NULL, " Allez, Satoshi, félicite-moi, dis-moi que j'ai bien agi, récompense-moi ! Caresse-moi la tête !", Line_WaitForInput);
+		   NULL, "Allez, Satoshi, félicite-moi, dis-moi que j'ai bien agi, récompense-moi ! Caresse-moi la tête !", Line_WaitForInput);
 	OutputLine(NULL, "　げぎゃぎゃぎゃ、ぎげぇえぇ！！！",
 		   NULL, " AhHAHAHAHahahaha !", Line_Normal);
 	ClearMessage();

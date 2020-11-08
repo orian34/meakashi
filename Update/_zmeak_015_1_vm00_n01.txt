@@ -53,10 +53,11 @@ void dialog002()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>不良</color>", NULL, "<color=#f5e6d3>Délinquant</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s06/00/huryoc15009", 256, TRUE);
 	OutputLine(NULL, "「上から下までぜ〜〜んぶ脱がっしゃあよぉおおー！",
-		   NULL, "— On commence par le haut, et on termine en bas, sans rien oublier entre-temps !", Line_WaitForInput);
+		   NULL, "— On commence par le haut, et on termine en bas, sans rien oublier entre-temps !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>不良</color>", NULL, "<color=#f5e6d3>Délinquant</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s06/00/huryoc15010", 256, TRUE);
 	OutputLine(NULL, "　靴下までぜえんぶひん剥いてぇえ、生まれたまんまあの姿にしちゃあるんけん〜〜〜！！！！！」",
-		   NULL, " Faut qu' tu sois comme quand t'es née, pour qu'on puisse bien voir comme t'as grandi, alors oublie pas d'enlever le string ni les chaussettes !", Line_Normal);
+		   NULL, "Faut qu' tu sois comme quand t'es née, pour qu'on puisse bien voir comme t'as grandi, alors oublie pas d'enlever le string ni les chaussettes !", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
@@ -74,20 +75,23 @@ void dialog003()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100016", 256, TRUE);
 	OutputLine(NULL, "「全裸には萌えがない！！！",
-		   NULL, "— Vous voulez juste la voir à poil, c'est nul ! Ça ne respire pas la PASSION !", Line_WaitForInput);
+		   NULL, "— Vous voulez juste la voir à poil, c'est nul ! Ça ne respire pas la PASSION !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100017", 256, TRUE);
 	OutputLine(NULL, "　服は脱がしても靴下は脱がすな！！",
-		   NULL, " Vous ne savez même pas la règle de base, on n'enlève jamais les chaussettes !", Line_WaitForInput);
+		   NULL, "Vous ne savez même pas la règle de base, on n'enlève jamais les chaussettes !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100018", 256, TRUE);
 	OutputLine(NULL, "　たとえお天道様が西から昇ることがあろうとも！！",
-		   NULL, " Même si d'aventure le soleil devait se lever du mauvais côté de l'horizon,", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Même si d'aventure le soleil devait se lever du mauvais côté de l'horizon,", GetGlobalFlag(GLinemodeSp));
 
 	DisableWindow();
 	PlaySE( 0, "s_daidageki", 56, 64 );
 	DrawScene("background/furiker_b", 100 );
 	StartShakingOfWindow( 248, 40, 0, 0, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 0, 4*2, TRUE );
-	ModDrawCharacter(2, 1, "sprite/normal/kei2_ikari2_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModSetLayerFilter(2, 256, "none");
+	ModDrawCharacter(2, 1, "sprite/kei2_ikari2_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene("background/mati4", 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
@@ -150,11 +154,12 @@ void dialog004()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100031", 256, TRUE);
 	OutputLine(NULL, "それについて貴様らに講義することは、Ｂ−２９から落下傘で降りてきたヤンキーどもに大和魂を一から説明するより困難この上極まりない！！",
-		   NULL, "Ça servirait à rien de vous l'expliquer en long, en large et en travers, autant apprendre l'art du thé à un bataillon de yankees sortis en parachutes de leur B29 !", Line_WaitForInput);
+		   NULL, "Ça servirait à rien de vous l'expliquer en long, en large et en travers, autant apprendre l'art du thé à un bataillon de yankees sortis en parachutes de leur B29 !", GetGlobalFlag(GLinemodeSp));
 
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100032", 256, TRUE);
 	OutputLine(NULL, "　だからここでは最も普及していると思われる制服系で説明することとする！！",
-		   NULL, " Je vais vous expliquer avec un truc plus connu, les uniformes !", Line_Normal);
+		   NULL, "Je vais vous expliquer avec un truc plus connu, les uniformes !", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
@@ -211,7 +216,7 @@ void dialog006()
 	DrawScene("background/furiker_a", 100 );
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
-	ModDrawCharacter(2, 1, "sprite/normal/kei2_ikari2_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModDrawCharacter(2, 1, "sprite/kei2_ikari2_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene("background/mati4", 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
@@ -283,7 +288,7 @@ void dialog007()
 	OutputLine(NULL, "そんなことも知らんのか愚か者！！",
 		   NULL, "Me dites pas que vous le saviez, c'est pas vrai !", GetGlobalFlag(GLinemodeSp));
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps2/01/150100058", 540, TRUE);
 	OutputLine(NULL, "制服系とロシア系を組み合わせたロシア美少女女子高生などという、ゲッター２が抜けて三神合体できないような水と油な組み合わせが出ているようだが、本官は断じて認めたりはしないぞッ！！！",
 		   NULL, "Ils essaient de nous pondre des lycéennes ultimes, le genre à réussir l'assemblage des trois robots divins même sans Getter 2, ou bien à marier l'eau et l'huile, mais sachez que je suis votre instructeur et que je ne tolèrerai pas ce genre d'ineptie !", GetGlobalFlag(GLinemodeSp));

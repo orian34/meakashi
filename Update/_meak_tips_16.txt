@@ -70,11 +70,13 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　陽のピラミッド、",
-		   NULL, "Il y avait celle des ordres officiels,", Line_WaitForInput);
+		   NULL, "Il y avait celle des ordres officiels,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "陰のピラミッド。",
-		   NULL, " Mion étant la représentante officielle de celle-ci en cas de maladie, elle était au courant de l'existence d'un bon nombre de ses pyramides, mais même elle ne les connaissait pas forcément toutes.", Line_WaitForInput);
+		   NULL, "Mion étant la représentante officielle de celle-ci en cas de maladie, elle était au courant de l'existence d'un bon nombre de ses pyramides, mais même elle ne les connaissait pas forcément toutes.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "その他にお魎直轄の秘密の小ピラミッドがいくつか。",
-		   NULL, " Il y avait aussi plusieurs petites pyramides gérées par Oryô Sonozaki elle-même.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Il y avait aussi plusieurs petites pyramides gérées par Oryô Sonozaki elle-même.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 

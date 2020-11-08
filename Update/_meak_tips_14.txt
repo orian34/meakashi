@@ -70,7 +70,7 @@
 		   NULL, "On dit souvent que lorsque le petit peuple vous touche, vous êtes souillé.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それは衆人環視に晒されたら威厳がなくなるので、もったいぶって隠した方が、箔がつく…という意味でしかないのだ。",
 		   NULL, "Cela veut simplement dire qu'une chose offerte à tous les regards perd de son charme et finit par ne plus impressionner les gens. Il vaut donc mieux la cacher aux regards et ne la montrer que dans de rares occasions, pour obtenir un effet plus important.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }

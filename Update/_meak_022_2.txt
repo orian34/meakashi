@@ -8,7 +8,8 @@
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
 	PlayBGM( 0, "yoru", 56, 0 );
-	ModDrawCharacter(1, 1, "sprite/night/kei2_komaru_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	ModSetLayerFilter(1, 256, "night");
+	ModDrawCharacter(1, 1, "sprite/kei2_komaru_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene("background/y_ie1", 2000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
@@ -25,7 +26,8 @@
 		   NULL, "Lorsque Keiichi m'annonça que Rika avait peut-être été enlevée, je feignis de m'énerver -- il ne devait pas parler de malheur !", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(3, 2, "sprite/night/re2b_def_b1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	ModSetLayerFilter(3, 256, "night");
+	ModDrawCharacter(3, 2, "sprite/re2b_def_b1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s06/02/150200195", 256, TRUE);
@@ -38,7 +40,7 @@
 	OutputLine(NULL, "だって冗談なんだから。",
 		   NULL, " Ca ne sera qu'une blague après tout.", GetGlobalFlag(GLinemodeSp));
 	DisableWindow();
-	ModDrawCharacter(3, 2, "sprite/night/re2a_komaru_a2_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 2, "sprite/re2a_komaru_a2_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s06/02/150200198", 256, TRUE);
@@ -188,7 +190,8 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ModDrawCharacter(2, 2, "sprite/normal/re2a_def_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 800, TRUE );
+	ModSetLayerFilter(2, 256, "none");
+	ModDrawCharacter(2, 2, "sprite/re2a_def_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 800, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　なのに、…この竜宮レナという娘と目が合うと、",
@@ -237,7 +240,8 @@
 		   NULL, " Est-ce que ce serait ça ?", Line_Normal);
 	ClearMessage();
 	FadeOutBGM( 0, 300, FALSE );
-	ModDrawCharacter(2, 2, "sprite/night/re2a_nande_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModSetLayerFilter(2, 256, "night");
+	ModDrawCharacter(2, 2, "sprite/re2a_nande_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask("background/yhu2", "maskdown", 1, 0, 300 );
 	PlayBGM( 0, "yoru", 56, 0 );
 
@@ -272,7 +276,7 @@
 		   NULL, " J'étais en train de zoner lorsque Rena m'adressa la parole.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(2, 2, "sprite/night/re2b_nande_b1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 2, "sprite/re2b_nande_b1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s06/02/150200201", 256, TRUE);
@@ -647,16 +651,18 @@
 	OutputLine(NULL, "悟史くんが消えてしまったんだ…！！",
 		   NULL, " qu'il a fini par disparaître !", Line_WaitForInput);
 	OutputLine(NULL, "　あいつが発端、",
-		   NULL, " C'est elle la raison,", Line_WaitForInput);
+		   NULL, " C'est elle la raison,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "あいつが元凶！！",
-		   NULL, " elle qui est la source de tous ses malheurs !", Line_WaitForInput);
+		   NULL, "elle qui est la source de tous ses malheurs !", Line_WaitForInput);
 	OutputLine(NULL, "　あいつさえいなかったなら！！",
 		   NULL, " Si seulement elle n'avait pas été là !! ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　古手梨花と沙都子が二人で仲良く住んでいたように、……あり得なかった私の幸福な未来があったかもしれない。",
-		   NULL, "J'aurais peut-être pu vivre heureuse avec lui, tout comme Satoko et Rika avaient vécu ensemble !", Line_WaitForInput);
+		   NULL, "J'aurais peut-être pu vivre heureuse avec lui, tout comme Satoko et Rika avaient vécu ensemble !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "私と悟史くんが、興宮でつつましやかに生活を再スタートさせる未来があったかもしれない！！",
-		   NULL, " J'aurais pu vivre avec lui à Okinomiya, pas dans le luxe et l'opulence, mais j'aurais pu vivre d'amour et d'eau fraîche, on aurait pu repartir à zéro ! ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "J'aurais pu vivre avec lui à Okinomiya, pas dans le luxe et l'opulence, mais j'aurais pu vivre d'amour et d'eau fraîche, on aurait pu repartir à zéro ! ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そうさ、始まりと終わりを結びつければ火を見るより明らか！",
 		   NULL, "Il suffisait de regarder le départ et l'arrivée", Line_WaitForInput);
@@ -729,16 +735,18 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そうさ、あいつこそが運命の元凶。",
-		   NULL, "Elle ne connaîtra jamais le repos. Oh non, elle ne connaîtra jamais le repos...", Line_WaitForInput);
+		   NULL, "Elle ne connaîtra jamais le repos. Oh non, elle ne connaîtra jamais le repos...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-5>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "あいつが古手梨花に取り入ったから、悟史くんに祟りが及んだんだ。",
-		   NULL, " C'est sûrement de sa faute si Rika a disparu ! Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain.", Line_WaitForInput);
+		   NULL, "C'est sûrement de sa faute si Rika a disparu ! Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain.", Line_WaitForInput);
 	OutputLine(NULL, "あいつが先に祟りで死ねばよかったんだ。",
 		   NULL, " Oui, c'est elle qui est responsable de son sort. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "そうすれば悟史くんはまだ生きてた。",
-		   NULL, "C'est parce qu'elle était la protégée de Rika Furude que Satoshi a dû y passer. Elle n'aurait eu qu'à crever, et il était sauf. Il serait encore en vie aujourd'hui.", Line_WaitForInput);
+		   NULL, "C'est parce qu'elle était la protégée de Rika Furude que Satoshi a dû y passer. Elle n'aurait eu qu'à crever, et il était sauf. Il serait encore en vie aujourd'hui.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "生きててさえくれれば、私はどんな助けでもできたのに！！",
-		   NULL, " Tant qu'il aurait eu la vie sauve, j'aurais pu m'occuper de tous ses autres problèmes !", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Tant qu'il aurait eu la vie sauve, j'aurais pu m'occuper de tous ses autres problèmes !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -951,12 +959,13 @@
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "残るはどこそこだ、",
-		   NULL, " indiquant les endroits dans lesquels les recherches avaient déjà été effectuées,", Line_ContinueAfterTyping);
+		   NULL, " indiquant les endroits dans lesquels les recherches avaient déjà été effectuées,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	SetValidityOfInput( FALSE );
 	Wait( 700 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "あそこは捜してないか、",
-		   NULL, " cherchant les endroits encore à vérifier,", Line_ContinueAfterTyping);
+		   NULL, "cherchant les endroits encore à vérifier,", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
@@ -1141,8 +1150,8 @@
 		   NULL, " Quelqu'un va le chercher ?", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(1, 2, "sprite/night/re2a_komaru_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 300, FALSE );
-	ModDrawCharacter(3, 1, "sprite/night/kei2_komaru_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	ModDrawCharacter(1, 2, "sprite/re2a_komaru_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 300, FALSE );
+	ModDrawCharacter(3, 1, "sprite/kei2_komaru_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そんなやり取りをしていると、松林の方から圭一とレナが戻ってくるのが見えた。",
@@ -1159,7 +1168,7 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
 	FadeAllBustshots( 200, TRUE );
-	ModDrawCharacter(2, 1, "sprite/night/kei2_komaru_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 1, "sprite/kei2_komaru_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100255", 256, TRUE);
@@ -1184,7 +1193,7 @@
 	ClearMessage();
 	DisableWindow();
 	FadeAllBustshots( 400, TRUE );
-	ModDrawCharacter(3, 11, "sprite/night/oisi1_2_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	ModDrawCharacter(3, 11, "sprite/oisi1_2_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700358", 256, TRUE);
@@ -1208,7 +1217,7 @@
 		   NULL, "Tiens donc, Ôishi ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
-	ModDrawCharacter(3, 11, "sprite/night/oisi1_4_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 11, "sprite/oisi1_4_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…大石め、さすがに今年の事件は困惑しているに違いない。",
@@ -1272,7 +1281,7 @@
 	OutputLine(NULL, "　大石には、その最期を看取る大任を与えることになるだろう…。",
 		   NULL, "Et ce sera Ôishi qui aura l'honneur de faire tomber toute l'organisation...", Line_Normal);
 	ClearMessage();
-	ModDrawCharacter(2, 11, "sprite/night/oisi1_2_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModDrawCharacter(2, 11, "sprite/oisi1_2_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene("background/jy1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }

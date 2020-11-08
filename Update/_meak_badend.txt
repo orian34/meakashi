@@ -175,7 +175,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
 	OutputLine(NULL, "事件の動機には今もなお不明な点が多く、また、園崎家、雛見沢村住民の極度の非協力もあり、その解明には膨大な時間を要することが予想される。",
-			NULL, "Il existe encore de nombreuses zones d'ombres quant au motif de l’incident et, en raison du manque total de coopération de la famille Sonozaki et des habitants d'Hinamizawa, il faudra beaucoup de temps pour les mettre en lumière.", Line_ContinueAfterTyping);
+			NULL, "Il existe encore de nombreuses zones d'ombres quant au motif de l'incident et, en raison du manque total de coopération de la famille Sonozaki et des habitants d'Hinamizawa, il faudra beaucoup de temps pour les mettre en lumière.", Line_ContinueAfterTyping);
 	FadeOutBGM( 1, 0, FALSE );
 	OutputLineAll(NULL, "", Line_Normal);
 	ClearMessage();
@@ -369,7 +369,7 @@
 //rそして両親がいくら断っても、毎日慰謝料と称して百万円単位の札束をいくつも積んでいく。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "そして両親がいくら断っても、毎日慰謝料と称して百万円単位の札束をいくつも積んでいく。",
-			NULL, "Et peu importe à quel point mes parents refusaient, ils ont continué à accumuler des billets de banque d’une valeur de plusieurs millions de yens, à titre de compensation.", GetGlobalFlag(GLinemodeSp));
+			NULL, "Et peu importe à quel point mes parents refusaient, ils ont continué à accumuler des billets de banque d'une valeur de plusieurs millions de yens, à titre de compensation.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //rその額が日々積み重なり、ある程度の額が貯まったある日、…今度はそこに、手紙の入った封筒も添えられていた。
@@ -596,7 +596,7 @@
 //rそして不本意な重責に戸惑いと疲れを感じつつ、…それでも懸命に、その役目を果たそうと頑張ってきたのだろう。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "そして不本意な重責に戸惑いと疲れを感じつつ、…それでも懸命に、その役目を果たそうと頑張ってきたのだろう。",
-			NULL, "Bien qu'accablée par le doute et la fatigue de cette responsabilité imprévue, elle s’était néanmoins montrée sérieuse et avait tout donné pour s’acquitter de sa tâche.", GetGlobalFlag(GLinemodeSp));
+			NULL, "Bien qu'accablée par le doute et la fatigue de cette responsabilité imprévue, elle s'était néanmoins montrée sérieuse et avait tout donné pour s'acquitter de sa tâche.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //rしかし、その結末が、こんな形になって…。
@@ -679,7 +679,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/330100426", 256, TRUE);
 	OutputLine(NULL, "「東京…は、ちょっと遠いけど、大きな街とかに足を伸ばして、うまい飯とか買い物とかさ。",
-			NULL, "Tokyô… ce n’est pas la porte à côté. Mais pourquoi pas une autre grande ville, avec de la bonne bouffe et des magasins ?", Line_WaitForInput);
+			NULL, "Tokyô… ce n'est pas la porte à côté. Mais pourquoi pas une autre grande ville, avec de la bonne bouffe et des magasins ?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/330100427", 256, TRUE);
 	OutputLine(NULL, "…どうだ？」",
 			NULL, " … T'en dis quoi ?", GetGlobalFlag(GLinemodeSp));
@@ -740,7 +740,7 @@
 			NULL, "— Ahahaha !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s06/02/330200387", 256, TRUE);
 	OutputLine(NULL, "　だって、レナは馬になんて蹴られたくないもん。",
-			NULL, " À vrai dire, je n’ai pas vraiment envie de tenir la chandelle.", Line_WaitForInput);
+			NULL, " À vrai dire, je n'ai pas vraiment envie de tenir la chandelle.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s06/02/330200388", 256, TRUE);
 	OutputLine(NULL, "だから、二人きりでどうぞっ♪",
 			NULL, " Donc, vous devriez y aller tous les deux ♪", Line_WaitForInput);
@@ -849,7 +849,7 @@
 //rその後俺たちは、いつものように当たり障りのない、学校や近所での出来事で夕方まで話しこんだ。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "その後俺たちは、いつものように当たり障りのない、学校や近所での出来事で夕方まで話しこんだ。",
-			NULL, "Après cela, nous avons passé la journée à parler de choses sans importance qui se passaient à l’école ou dans le quartier.", GetGlobalFlag(GLinemodeSp));
+			NULL, "Après cela, nous avons passé la journée à parler de choses sans importance qui se passaient à l'école ou dans le quartier.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //rただ、…魅音の調子が少しだけ昔に戻ったように思えて、それが俺には嬉しかった。
@@ -1003,7 +1003,7 @@
 //rおそらく魅音も、そう感じていたに違いない。だからこそ、大袈裟に騒いだりふざけたりして、…寂しさを紛らわそうとしているんだと、途中から俺は気付いていた。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "おそらく魅音も、そう感じていたに違いない。だからこそ、大袈裟に騒いだりふざけたりして、…寂しさを紛らわそうとしているんだと、途中から俺は気付いていた。",
-			NULL, "Je suis certain que Mion a dû penser à la même chose. C’est aussi la raison pour laquelle je me suis autant lâché, que j'ai fait autant de raffut… J'essayais de lutter contre la solitude.", Line_Normal);
+			NULL, "Je suis certain que Mion a dû penser à la même chose. C'est aussi la raison pour laquelle je me suis autant lâché, que j'ai fait autant de raffut… J'essayais de lutter contre la solitude.", Line_Normal);
 	ClearMessage();
 
 //圭一rvS06/01/330100437.「…なぁ、魅音」
@@ -1094,7 +1094,7 @@
 //rいつかこれが本当になって、元の明るさを取り戻してくれたら、それで…。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "いつかこれが本当になって、元の明るさを取り戻してくれたら、それで…。",
-			NULL, "Tout ce que j’espère, c’est qu’un jour, cela devienne réalité et qu'elle retrouve sa joie de vivre.", GetGlobalFlag(GLinemodeSp));
+			NULL, "Tout ce que j'espère, c'est qu'un jour, cela devienne réalité et qu'elle retrouve sa joie de vivre.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //圭一rvS06/01/330100443.「いやいや、それにしてもゲーセンも雰囲気が変わったよなぁ。kvS06/01/330100444.少し前なら煙草臭くて暗いイメージだったけど、家族連れで遊びに来る人も結構いたから、ちょっと驚いたぜ」

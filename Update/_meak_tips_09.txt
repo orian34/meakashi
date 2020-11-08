@@ -47,9 +47,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　さすがに北条家と対立してきた園崎家は表に出ることはできなかったんだろうが、",
-		   NULL, "Étant donné le lourd passif entre les Hôjô et les Sonozaki, il était évident que le troisième clan ne pouvait pas officiellement venir en aide à Satoko,", Line_WaitForInput);
+		   NULL, "Étant donné le lourd passif entre les Hôjô et les Sonozaki, il était évident que le troisième clan ne pouvait pas officiellement venir en aide à Satoko,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "事実上、北条沙都子は御三家の保護下に入っていた。",
-		   NULL, " mais dans les faits, elle se retrouvait sous la protection des trois clans fondateurs.", Line_Normal);
+		   NULL, "mais dans les faits, elle se retrouvait sous la protection des trois clans fondateurs.", Line_Normal);
 	ClearMessage();
 	DrawScene("background/nort", 400 );
 

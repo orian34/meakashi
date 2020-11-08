@@ -12,7 +12,7 @@ void dialog000()
 	Wait( 1000 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "………その声は！！",
-		   NULL, "Cette voix, c'est...", Line_WaitForInput);
+		   NULL, " Cette voix, c'est...", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300003", 256, TRUE);
 	OutputLine(NULL, "　でもそんなはずは…！",
 		   NULL, " Mais c'est impossible !", Line_WaitForInput);
@@ -27,7 +27,7 @@ void dialog000()
 
 void dialog001()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600198_1", 256, TRUE);
 	OutputLine(NULL, "「叔父さん、私の体のラインが未だ幼児体型に見えるってんなら、",
 		   NULL, "— Tonton, tu vois les deux masses molles, là ? Et les courbes, là ? Si tu oses affirmer que je suis une petite fille avec ça,", Line_Continue);

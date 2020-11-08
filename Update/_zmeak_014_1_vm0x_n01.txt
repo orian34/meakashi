@@ -7,13 +7,15 @@ void dialog000()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700275", 256, TRUE);
 	OutputLine(NULL, "「クスリに手を出したとんでもない野郎でしてね。",
-		   NULL, "— Un accro à l'héroïne, complètement barjo.", Line_WaitForInput);
+		   NULL, "— Un accro à l'héroïne, complètement barjo.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700276", 256, TRUE);
 	OutputLine(NULL, "出所しては捕まるの繰り返しだそうです。",
-		   NULL, " Il a passé sa vie entre les ruelles, à voler les gens et s'envoyer des doses, et la prison.", Line_WaitForInput);
+		   NULL, "Il a passé sa vie entre les ruelles, à voler les gens et s'envoyer des doses, et la prison.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700277", 256, TRUE);
 	OutputLine(NULL, "雛見沢村連続怪事件が面白そうだったんで、４年目の祟りは自分が下してみたくなった…とか何とか。」",
-		   NULL, " Il trouvait cette histoire de meurtres en série à Hinamizawa très amusante, alors il a voulu contribuer aussi, pour marquer le coup de la quatrième année.", Line_Normal);
+		   NULL, "Il trouvait cette histoire de meurtres en série à Hinamizawa très amusante, alors il a voulu contribuer aussi, pour marquer le coup de la quatrième année.", Line_Normal);
 	ClearMessage();
 }
 
@@ -37,13 +39,15 @@ void dialog002()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700294", 256, TRUE);
 	OutputLine(NULL, "「だから充分に納得するまで調べられたわけじゃありません。",
-		   NULL, "— En fait, je n'ai pas pu mener ma propre enquête dessus, et ça me chiffone.", Line_WaitForInput);
+		   NULL, "— En fait, je n'ai pas pu mener ma propre enquête dessus, et ça me chiffone.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700295", 256, TRUE);
 	OutputLine(NULL, "……私は納得できないんですがね、…上の方は充分に納得しちゃったようでした。",
-		   NULL, " ... Enfin, moi, ça me chiffonne, mais mes chefs en sont très satisfaits.", Line_WaitForInput);
+		   NULL, "... Enfin, moi, ça me chiffonne, mais mes chefs en sont très satisfaits.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700296", 256, TRUE);
 	OutputLine(NULL, "どうもその愉快犯が主婦殺しの犯人ってことで決着しそうな流れです。」",
-		   NULL, " Je pense qu'ils vont déclarer qu'il était effectivement le meurtrier et que l'affaire va être classée.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Je pense qu'ils vont déclarer qu'il était effectivement le meurtrier et que l'affaire va être classée.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
@@ -77,13 +81,15 @@ void dialog005()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700323", 256, TRUE);
 	OutputLine(NULL, "「……詩音さん。",
-		   NULL, "— ... Mademoiselle…", Line_WaitForInput);
+		   NULL, "— ... Mademoiselle…", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700324", 256, TRUE);
 	OutputLine(NULL, "………このまま行くと、主婦殺しの犯人はすでに死んでるその大バカタレってことで確定すると思います。",
-		   NULL, " Vu comme c'est parti, mes supérieurs vont dire que c'est ce toxico qui a tué cette pauvre femme.", Line_WaitForInput);
+		   NULL, "Vu comme c'est parti, mes supérieurs vont dire que c'est ce toxico qui a tué cette pauvre femme.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700325", 256, TRUE);
 	OutputLine(NULL, "そうなると、悟史くんの扱いは単なる家出人になります。",
-		   NULL, " Si cela devait se produire, Satoshi passerait du statut de criminel en fuite à celui de petit garçon qui a fait une fugue. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Si cela devait se produire, Satoshi passerait du statut de criminel en fuite à celui de petit garçon qui a fait une fugue. ", GetGlobalFlag(GLinemodeSp));
 }
 
 void dialog006()
