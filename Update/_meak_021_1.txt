@@ -439,9 +439,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そんな奴らは死んで当り前だと憤る老人たちに対し、",
-		   NULL, "Tous les autres membres étaient d'accord pour considérer la mort comme un châtiment tout à fait normal.", Line_WaitForInput);
+		   NULL, "Tous les autres membres étaient d'accord pour considérer la mort comme un châtiment tout à fait normal.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "その神聖な祭具殿を預かる古手家の頭首が、反省すればそれでいい、ととてつもなく寛大なことを言っているのだ。",
-		   NULL, " Mais elle, qui pourtant était la première intéressée, voulait simplement des excuses et du repentir ? C'était trop magnanime pour être honnête.", Line_Normal);
+		   NULL, "Mais elle, qui pourtant était la première intéressée, voulait simplement des excuses et du repentir ? C'était trop magnanime pour être honnête.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -626,16 +627,19 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150602007", 256, TRUE);
 	OutputLine(NULL, "「あぁいい質問だね、じゃあお勉強しよう。",
-		   NULL, "— Oh, mais c'est une excellente question, alors laisse-moi te donner une petite leçon de choses.", Line_WaitForInput);
+		   NULL, "— Oh, mais c'est une excellente question, alors laisse-moi te donner une petite leçon de choses.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150602008", 256, TRUE);
 	OutputLine(NULL, "けじめってのはね、罪を贖うってことなの。",
-		   NULL, " Quand on a commis un crime, il faut payer sa dette.", Line_WaitForInput);
+		   NULL, "Quand on a commis un crime, il faut payer sa dette.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150602009", 256, TRUE);
 	OutputLine(NULL, "罪は残せない。",
-		   NULL, " On ne peut pas laisser un crime impuni.", Line_WaitForInput);
+		   NULL, "On ne peut pas laisser un crime impuni.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150602010", 256, TRUE);
 	OutputLine(NULL, "オヤシロさまのお怒りを放置することになるんだからね。",
-		   NULL, " Si l'on fait ça, la déesse Yashiro sera encore plus en colère. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Si l'on fait ça, la déesse Yashiro sera encore plus en colère. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150602011", 256, TRUE);
 	OutputLine(NULL, "だから罪の大きさに比例したけじめで、罪を清めなければならないの。",
@@ -1779,7 +1783,7 @@
 
 	PlaySE( 0, "s_interphone", 56, 64 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……コンセントとかが抜けてるのかと思い、裏の配線を見ようとするが、ぐちゃぐちゃの束になって冷蔵庫の裏に続いており、さっぱり分からなかった。",
 		   NULL, "... Je devinai que cela devait être le câble qui était décroché, aussi me penchai-je derrière le moniteur pour le retrouver, mais il se perdait dans les câbles électriques des autres appareils. Je n'avais pas la moindre idée de quel câble cela pouvait être.", Line_Normal);
 	ClearMessage();

@@ -270,9 +270,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　でも神さま…。",
-		   NULL, "Sauf que le dieu ou la déesse qui a provoqué cet accident a intérêt à avoir un truc en stock pour moi, là.", Line_WaitForInput);
+		   NULL, "Sauf que le dieu ou la déesse qui a provoqué cet accident a intérêt à avoir un truc en stock pour moi, là.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "私を使って天罰をするのは勝手だけど、その後こうして路地裏みたいなところに引きずり込まれて、不良三人組に、よってたかって罵倒されることに対するフォローはどうなってるわけ…？",
-		   NULL, " Je lui rappelle que je suis seule contre trois gusses bien baraqués et que nous sommes dans une ruelle sombre et peu fréquentée...", Line_Normal);
+		   NULL, "Je lui rappelle que je suis seule contre trois gusses bien baraqués et que nous sommes dans une ruelle sombre et peu fréquentée...", Line_Normal);
 	ClearMessage();
 	DrawSceneWithMask("background/sora", "maskup", 1, 0, 300 );
 
@@ -420,7 +421,7 @@
 	OutputLine(NULL, "　あとはのらりくらりと時間を稼ぐだけで、ここにはたくさんの人通りができるようになる。",
 		   NULL, "Je n'ai qu'à gagner un peu de temps et attendre que les gens s'attroupent.", Line_WaitForInput);
 	OutputLine(NULL, "こいつらは退散せざるを得なくなるのだ。",
-		   NULL, " Ils n’auront plus le choix, ils devront se faire la malle.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Ils n'auront plus le choix, ils devront se faire la malle.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -1083,10 +1084,11 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 7, "ps3/s06/07/151200018", 256, TRUE);
 	OutputLine(NULL, "「魅音のことだから、何だか珍妙な拳法でも使って、瞬く間に撃退してしまうんじゃないかって期待してたね。",
-		   NULL, "— À vrai dire, quand j'ai vu qu'ils t'avaient encerclée, je me suis arrêté pour observer, j'étais persuadé que tu allais leur mettre une râclée avec je ne sais quel art martial.", Line_WaitForInput);
+		   NULL, "— À vrai dire, quand j'ai vu qu'ils t'avaient encerclée, je me suis arrêté pour observer, j'étais persuadé que tu allais leur mettre une râclée avec je ne sais quel art martial.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 7, "ps3/s06/07/151200019", 256, TRUE);
 	OutputLine(NULL, "…だから、泣き出したときは、正直、驚いた。」",
-		   NULL, " ... Alors quand je t'ai vue te mettre à pleurer, ç'a été une sacrée surprise.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "... Alors quand je t'ai vue te mettre à pleurer, ç'a été une sacrée surprise.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
@@ -1115,9 +1117,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　………私だって、幼少の頃にはこんな風に頭を撫でられることもあったが、",
-		   NULL, "... Je veux dire, je suis sûre qu'autrefois, mes parents ou autres devaient m'avoir caressé la tête de cette manière, mais... ça commençait à remonter très loin en arrière, mine de rien.", Line_WaitForInput);
+		   NULL, "... Je veux dire, je suis sûre qu'autrefois, mes parents ou autres devaient m'avoir caressé la tête de cette manière, mais... ça commençait à remonter très loin en arrière, mine de rien.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…もうずいぶんとこんなことをされた覚えはない。",
-		   NULL, " Il m'a tellement prise par surprise avec ça que...", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Il m'a tellement prise par surprise avec ça que...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -1234,9 +1237,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　名前すら知らない「魅音の友人」は、本当に本当に、…さっき見て晴れ晴れしい気持ちになったあの高い空のように、清々しい顔でもう一度笑ってくれた。",
-		   NULL, "Le bel inco-- euh, “l'ami de Mion” me fit encore une fois un sourire timide, qui me donna envie de plonger dans des cieux immenses et vides et de m'y abandonner.", Line_WaitForInput);
+		   NULL, "Le bel inco-- euh, “l'ami de Mion” me fit encore une fois un sourire timide, qui me donna envie de plonger dans des cieux immenses et vides et de m'y abandonner.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…ほんのちょっぴりだけ悪戯っぽく。",
-		   NULL, " Puis son sourire se transforma, et il eut un regard plus espiègle.", Line_Normal);
+		   NULL, "Puis son sourire se transforma, et il eut un regard plus espiègle.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	ModDrawCharacter(2, 7, "sprite/sato1_def2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
@@ -1398,28 +1402,35 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300104", 256, TRUE);
 	OutputLine(NULL, "「うん。",
-		   NULL, "— Oui.", Line_WaitForInput);
+		   NULL, "— Oui.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300105", 256, TRUE);
 	OutputLine(NULL, "妹は沙都子って言ってね。",
-		   NULL, " Elle s'appelle Satoko.", Line_WaitForInput);
+		   NULL, "Elle s'appelle Satoko.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300106", 256, TRUE);
 	OutputLine(NULL, "なかなか面白いヤツだよ。",
-		   NULL, " Assez marrante, comme gamine, en fait.", Line_WaitForInput);
+		   NULL, "Assez marrante, comme gamine, en fait.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300107", 256, TRUE);
 	OutputLine(NULL, "なかなか悪知恵が働くしね。",
-		   NULL, " Elle est pleine de ressources quand il s'agit de faire des bêtises.", Line_WaitForInput);
+		   NULL, "Elle est pleine de ressources quand il s'agit de faire des bêtises.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300108", 256, TRUE);
 	OutputLine(NULL, "その癖、追い詰められると泣くし。",
-		   NULL, " Et pourtant, quand tu la pousses un peu, elle se met tout de suite à pleurer.", Line_WaitForInput);
+		   NULL, "Et pourtant, quand tu la pousses un peu, elle se met tout de suite à pleurer.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300109", 256, TRUE);
 	OutputLine(NULL, "見てて退屈しない子だね。",
-		   NULL, " Enfin bon, on ne s'ennuie jamais à la regarder, elle est assez active.", Line_WaitForInput);
+		   NULL, "Enfin bon, on ne s'ennuie jamais à la regarder, elle est assez active.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300110", 256, TRUE);
 	OutputLine(NULL, "……まぁ、最近は色々とあってね。",
-		   NULL, " Sauf peut-être ces derniers temps, d'ailleurs. C'est pas facile pour eux en ce moment,", Line_WaitForInput);
+		   NULL, "Sauf peut-être ces derniers temps, d'ailleurs. C'est pas facile pour eux en ce moment,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300111", 256, TRUE);
 	OutputLine(NULL, "…ちょっと調子を落としてるけど。」",
-		   NULL, " ils ont plein de trucs sur le dos.", Line_Normal);
+		   NULL, "ils ont plein de trucs sur le dos.", Line_Normal);
 	ClearMessage();
 	DrawScene("black", 400 );
 
@@ -1531,7 +1542,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　しかも、……なんと悟史くんたちの両親は、あのダム推進派の筆頭の北条夫妻だと言うからさらに驚かされる。",
-		   NULL, "Et en plus -- et là, c'est le pompon, les enfants -- les défunts parents de Satoshi et de sa sœur, c’étaient, je vous le donne en mille : les fameux Hôjô qui s’étaient fait tuer dans la malédiction de la deuxième année !", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Et en plus -- et là, c'est le pompon, les enfants -- les défunts parents de Satoshi et de sa sœur, c'étaient, je vous le donne en mille : les fameux Hôjô qui s'étaient fait tuer dans la malédiction de la deuxième année !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -1545,7 +1556,7 @@
 		   NULL, "Pendant la guerre du barrage, à cause de leurs liens de famille avec les “traîtres” du village, ils avaient dû en prendre plein la figure, je pense.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　散々、自分たちに迷惑をかけた挙句、勝手に事故死して、その子どもを二人も押し付けてきた…とあっては、憎さこそあれ、可愛さなど一欠けらも感じまい。",
 		   NULL, "Et en plus, après leur avoir créé des ennuis, ils ont l'impudence de mourir dans un accident et de leur refourguer leurs mioches ? Non mais dans ces conditions, il est prévisible à des kilomètres que les enfants ne se feront jamais accepter, quoi.", Line_Normal);
 	ClearMessage();

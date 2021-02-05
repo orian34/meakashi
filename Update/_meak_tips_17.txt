@@ -22,13 +22,13 @@
 	ClearMessage();
 	PlaySE( 0, "s_page", 56, 64 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　うちの両親の序列は高いには高いが、うちの母親の昔の勘当騒ぎが尾を引いていて、表舞台にそうそう顔を出せない、やや日陰者っぽい扱いなのだと言う。",
 		   NULL, "Mes parents étaient placés plutôt haut dans la hiérarchie du clan, mais ma mère avait été déshéritée par le passé et n'avait pas toujours droit de séance aux réunions, ce qui rendait la position de mon père un peu moins influente -- il était un peu en retrait.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-4>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その父親からの電話が多いのは、対外的には距離を置いていても、実際には重用していた鬼婆の陽と陰の二面性の証拠でもある。",
 		   NULL, "Ses très nombreux appels téléphoniques prouvaient que même si, selon les apparences, il gardait une certaine distance avec la vieille folle, il était en réalité beaucoup plus proche d'elle et qu'il lui était très important -- cela tendait à prouver l'existence d'un réseau d'ordres officiels et d'un autre plus officieux.", Line_Normal);
 	ClearMessage();
@@ -70,7 +70,7 @@
 		   NULL, " En tout cas, je n'ai aucun élément qui tendrait à le prouver.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-5>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　父親は、今回の事件に対する、警察の捜査状況やその他の情報を貪欲に集め報告するばかりで、",
 		   NULL, "Mon père rapportait presque fiévreusement toutes les infos relatives à l'action de la Police dans cette affaire, les décisions, les demandes de mandats de perquisition, et cætera, ainsi que d'ailleurs tout ce qu'il se racontait en ville à propos des événements.", Line_WaitForInput);
 	OutputLine(NULL, "少なくとも今年の祟りについては、自身が関与したわけではなさそうだった。",

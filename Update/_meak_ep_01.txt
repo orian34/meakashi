@@ -91,8 +91,7 @@
 	DrawScene("black", 1000 );
 	PlayBGM( 1, "type", 56, 0 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-5>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　失踪者たちを殺害したと思われる園崎邸内の離れ地下奥、拷問室からは、失踪者４人（園崎お魎・公由喜一郎・古手梨花・北条沙都子）の毛髪、皮膚片、血液などを発見。",
 		   NULL, "La police est entrée dans une salle construite à l'écart de la propriété principale. C'est dans cet endroit que les victimes auraient été mises à mort. Dans une salle spécialement aménagée pour la torture, la Police a pu retrouver des échantillons de tissus, de sang et de poils appartenant à quatre des personnes disparues -- Oryô Sonozaki, Kiichirô Kimiyoshi, Rika Furude et Satoko Hôjô.", Line_ContinueAfterTyping);
 	FadeOutBGM( 1, 0, FALSE );
@@ -119,8 +118,7 @@
 
 	PlayBGM( 1, "type", 56, 0 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　監禁されていたクラスメートの証言から、監禁現場となった、園崎邸内の離れ地下にあるものと見て捜索を続けているが、容疑者の逃亡ルート共々、発見には未だ至っていない。",
 		   NULL, "D'après les témoignages des camarades de classe du suspect, la Police a conclu qu'ils devaient se trouver dans cet endroit spécialement aménagé et a poursuivi les recherches, mais n'a trouvé ni les corps, ni par où le suspect s'est enfui.", Line_ContinueAfterTyping);
 	FadeOutBGM( 1, 0, FALSE );
@@ -148,7 +146,6 @@
 	PlayBGM( 1, "type", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
 	OutputLine(NULL, "　事件の動機には今もなお不明な点が多く、また、園崎家、雛見沢村住民の極度の非協力もあり、その解明には膨大な時間を要することが予想される。",
 		   NULL, "Le mobile du suspect est encore très incertain, et le manque de coopération de la part des villageois préfigure de nombreuses difficultés pour le découvrir.", Line_ContinueAfterTyping);
 	FadeOutBGM( 1, 0, FALSE );

@@ -221,7 +221,7 @@
 //rおかしさがこみ上げて、脇骨のあたりに震えが走る。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "おかしさがこみ上げて、脇骨のあたりに震えが走る。",
-			NULL, "Une drôle de sensation se fît sentir jusqu’à dans ma poitrine. J'en frissonnais.", GetGlobalFlag(GLinemodeSp));
+			NULL, "Une drôle de sensation se fît sentir jusqu'à dans ma poitrine. J'en frissonnais.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //r一応もしかしたら、…なんて、心積もりはしていた。
@@ -571,7 +571,7 @@
 //rだからもしも、言い当てることができたら、…命だけは、助けてやってもいい。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "だからもしも、言い当てることができたら、…命だけは、助けてやってもいい。",
-			NULL, "J'étais vraiment prête à lui laisser la vie sauve s’il trouvait la bonne réponse.", GetGlobalFlag(GLinemodeSp));
+			NULL, "J'étais vraiment prête à lui laisser la vie sauve s'il trouvait la bonne réponse.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //rそれが、さっき決めたルールだ。
@@ -621,7 +621,7 @@
 //r現実に正解を口にした圭一を目の当たりにした私の心は、冴え渡るように鋭く、深く、そして重い、…どす黒い闇で満ちている。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "現実に正解を口にした圭一を目の当たりにした私の心は、冴え渡るように鋭く、深く、そして重い、…どす黒い闇で満ちている。",
-			NULL, "Après avoir vu Keiichi deviner la bonne réponse devant mes yeux, mon cœur était plongé dans une obscurité cinglante, béante et accablante, comme s’il gelait.", GetGlobalFlag(GLinemodeSp));
+			NULL, "Après avoir vu Keiichi deviner la bonne réponse devant mes yeux, mon cœur était plongé dans une obscurité cinglante, béante et accablante, comme s'il gelait.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //rなんでだ。
@@ -682,7 +682,7 @@
 			NULL, " Ne le tue pas !!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300435", 256, TRUE);
 	OutputLine(NULL, "　圭ちゃん、逃げてええぇぇえぇええええッ！！！」",
-			NULL, " Kei, va-t’en !", GetGlobalFlag(GLinemodeSp));
+			NULL, " Kei, va-t'en !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //rぼりぼりッ、がりがりッ、ぼりぼりッ、がりがりッ、ぼりぼりッ、がりがりッ……！！
@@ -706,7 +706,7 @@
 //rいっそのこと、…先に詩音から、始末してやろうか？
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "いっそのこと、…先に詩音から、始末してやろうか？",
-			NULL, "Pourquoi je ne m’occuperai pas d'elle en premier ?", GetGlobalFlag(GLinemodeSp));
+			NULL, "Pourquoi je ne m'occuperai pas d'elle en premier ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //rむごたらしく惨めに、この世で味わう最高の絶望と恐怖を与えてから殺してやろうと思っていたけど、今は無性にこみ上げる、無差別な殺意を抑えるだけでも一苦労だった。

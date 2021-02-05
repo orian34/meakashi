@@ -59,9 +59,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　詩音だけを殺しておいて、私がのうのうと生き延びてしまうのが許せなくて、",
-		   NULL, "Elle ne pouvait pas supporter l'idée de me voir essayer de survivre par tous les moyens possibles et imaginables, alors qu'elle était déjà morte depuis un moment.", Line_WaitForInput);
+		   NULL, "Elle ne pouvait pas supporter l'idée de me voir essayer de survivre par tous les moyens possibles et imaginables, alors qu'elle était déjà morte depuis un moment.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "私がちゃんと死んでみせるまで、そこにずっと取り憑いているつもりなのだ。",
-		   NULL, " Elle avait l'intention de rester avec moi, jusqu'à ma mort.", Line_Normal);
+		   NULL, "Elle avait l'intention de rester avec moi, jusqu'à ma mort.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -336,9 +337,10 @@
 	OutputLine(NULL, "はぁはあ！！",
 		   NULL, " Hahahaha !", Line_WaitForInput);
 	OutputLine(NULL, "　ただじゃ消えない、あんただけ恋した人が生き残ってるなんてフェアじゃない！！",
-		   NULL, " Je ne serai pas la seule à mourir, il reste encore quelqu'un de vivant, quelqu'un que tu as aimé ! C'est pas juste, ça, c'est pas juste !", Line_WaitForInput);
+		   NULL, " Je ne serai pas la seule à mourir, il reste encore quelqu'un de vivant, quelqu'un que tu as aimé ! C'est pas juste, ça, c'est pas juste !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　あはははっはははあっひゃへへひゃきゃ！！！",
-		   NULL, " Ahahahahahahahahaha !", Line_Normal);
+		   NULL, "Ahahahahahahahahaha !", Line_Normal);
 	ClearMessage();
 	DrawSceneWithMask("black", "maskleft", 1, 0, 300 );
 	FadeFilm( 200, TRUE );
@@ -738,12 +740,13 @@
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "悟史くんの仇悟史くんの仇、",
-		   NULL, " Je prendrai ma revanche, Satoshi ne sera pas mort en vain !", Line_ContinueAfterTyping);
+		   NULL, " Je prendrai ma revanche, Satoshi ne sera pas mort en vain !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	SetValidityOfInput( FALSE );
 	Wait( 1100 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…こいつは詩音の好きな人、詩音なんか大嫌い、こいつを殺して詩音に思い知らせてやるんだ、",
-		   NULL, " Shion l'aime, lui et pas un autre, mais moi je déteste Shion, alors je vais le crever, et on verra la tête qu'elle va tirer !", Line_ContinueAfterTyping);
+		   NULL, "Shion l'aime, lui et pas un autre, mais moi je déteste Shion, alors je vais le crever, et on verra la tête qu'elle va tirer !", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 600 );
 	SetValidityOfInput( TRUE );
@@ -864,9 +867,10 @@
 	OutputLine(NULL, "　やった、やったよふげげぎゃぎゃ、私は成し遂げた！！！",
 		   NULL, "J'ai réussi, j'ai tout réussi !", Line_WaitForInput);
 	OutputLine(NULL, "　ぎゃぎ悟史くんの仇を全て討ったよぉおおぎょごごがぎゃ！！！",
-		   NULL, " Je me suis vengée de tout le monde, Satoshi est vengé maintenant, ahHAHAHAHahahaha !", Line_WaitForInput);
+		   NULL, " Je me suis vengée de tout le monde, Satoshi est vengé maintenant, ahHAHAHAHahahaha !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　褒めてよ悟史くん、私を撫でて？！",
-		   NULL, " Allez, Satoshi, félicite-moi, dis-moi que j'ai bien agi, récompense-moi ! Caresse-moi la tête !", Line_WaitForInput);
+		   NULL, "Allez, Satoshi, félicite-moi, dis-moi que j'ai bien agi, récompense-moi ! Caresse-moi la tête !", Line_WaitForInput);
 	OutputLine(NULL, "　げぎゃぎゃぎゃ、ぎげぇえぇ！！！",
 		   NULL, " AhHAHAHAHahahaha !", Line_Normal);
 	ClearMessage();

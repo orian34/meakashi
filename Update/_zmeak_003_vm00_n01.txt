@@ -22,19 +22,23 @@ void dialog001()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600277", 256, TRUE);
 	OutputLine(NULL, "「……親父は鬼婆寄りだからなぁ。",
-		   NULL, "— Faut dire que Papa obéit tout le temps à la vieille folle,", Line_WaitForInput);
+		   NULL, "— Faut dire que Papa obéit tout le temps à la vieille folle,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600278", 256, TRUE);
 	OutputLine(NULL, "耳に入れば自動的に鬼婆にも伝えるだろうな。",
-		   NULL, " il lui dira directement dès qu'il le saura.", Line_WaitForInput);
+		   NULL, "il lui dira directement dès qu'il le saura.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600279", 256, TRUE);
 	OutputLine(NULL, "で、鬼婆の耳に入れば、見つけ次第、即刻ここへ連れて来い。",
-		   NULL, " Et si la vieille folle l'apprend, elle donnera l'ordre de m'amener jusqu'à elle.", Line_WaitForInput);
+		   NULL, "Et si la vieille folle l'apprend, elle donnera l'ordre de m'amener jusqu'à elle.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600280", 256, TRUE);
 	OutputLine(NULL, "申し開きの如何によっては、指の一本や二本…ってことになるだろうねぇ。",
-		   NULL, " Et ensuite, ça va dépendre de mon attitude, je suppose. Je vais y laisser des doigts, c'est clair...", Line_WaitForInput);
+		   NULL, "Et ensuite, ça va dépendre de mon attitude, je suppose. Je vais y laisser des doigts, c'est clair...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600281", 256, TRUE);
 	OutputLine(NULL, "…おっかないこって。",
-		   NULL, " Putain, c'est super flippant, en fait ! ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Putain, c'est super flippant, en fait ! ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600282", 256, TRUE);
 	OutputLine(NULL, "あははは！」",

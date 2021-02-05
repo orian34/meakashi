@@ -12,9 +12,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　悟史くんがよほど狡猾だったか、幸運に恵まれたか、",
-		   NULL, "Je ne sais pas si Satoshi avait été vraiment malin, s'il avait eu une moule extraordinaire,", Line_WaitForInput);
+		   NULL, "Je ne sais pas si Satoshi avait été vraiment malin, s'il avait eu une moule extraordinaire,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…それとも本当に悟史くんではないのか、犯行現場には悟史くんが犯人であることを示す痕跡は残されていなかった。",
-		   NULL, " ou si peut-être ce n'était vraiment pas lui qui avait fait le coup, mais en tout cas, il n'y avait aucun élément sur les lieux du crime pour le relier au meurtre.", Line_Normal);
+		   NULL, "ou si peut-être ce n'était vraiment pas lui qui avait fait le coup, mais en tout cas, il n'y avait aucun élément sur les lieux du crime pour le relier au meurtre.", Line_Normal);
 	ClearMessage();
 	PlaySE( 0, "s_page", 56, 64 );
 

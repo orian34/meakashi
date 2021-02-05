@@ -144,7 +144,7 @@
 	ClearMessage();
 	PlaySE( 0, "s_page", 56, 64 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……オヤシロさまの祟りを妄信してしまった悟史くんたちには、それがオヤシロさまの気配に感じられるに違いない。",
 		   NULL, "... Je suppose que si Satoshi et cette autre fille croyaient en cette histoire de malédiction, ils ont pu s'imaginer que la présence qu'ils ressentaient était en fait celle de la déesse, en chair et en os, si je puis dire.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

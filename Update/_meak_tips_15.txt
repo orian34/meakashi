@@ -42,9 +42,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　なぜなら、もっとも遠い地で遺体が見つかることになる鷹野さんの殺された時間などを考えると、",
-		   NULL, "En effet, si l'on réfléchit au temps nécessaire pour capturer, torturer, mettre à mort et se débarrasser de madame Takano -- qui sera découverte très loin du village, dans une autre préfecture --", Line_WaitForInput);
+		   NULL, "En effet, si l'on réfléchit au temps nécessaire pour capturer, torturer, mettre à mort et se débarrasser de madame Takano -- qui sera découverte très loin du village, dans une autre préfecture --", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "祭具殿を出て私たちが分かれてすぐくらいに殺されてなければならないからだ。",
-		   NULL, " alors il apparaît évident que les responsables lui sont tombés dessus juste à la sortie du temple, après notre séparation.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "alors il apparaît évident que les responsables lui sont tombés dessus juste à la sortie du temple, après notre séparation.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -53,7 +54,7 @@
 		   NULL, "Cette rapidité d'exécution est particulièrement impressionnante et mérite que l'on s'y attarde.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　相当高度な暗殺部隊が組織されているのか、さもなければ「５年目の祟りの準備」がすでにされていたからなのか。",
 		   NULL, "Soit les trois clans fondateurs disposent d'une équipe d'assassins extrêmement efficaces et très entraînés, soit “les préparatifs de la malédiction de la cinquième année” étaient déjà terminés depuis longtemps et n'attendaient plus que leur victime.", Line_Normal);
 	ClearMessage();

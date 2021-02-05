@@ -18,7 +18,7 @@
 	OutputLine(NULL, "その時が飛び降り時刻です。",
 		   NULL, " C'est sûrement l'heure où elle a sauté.", GetGlobalFlag(GLinemodeSp));
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>刑事</color>", NULL, "<color=#f5e6d3>Détective</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>刑事</color>", NULL, "<color=#f5e6d3>Détective</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/tp1_keijia_10002", 256, TRUE);
 	OutputLine(NULL, "それでその真下の５階エレベーターフロアの屋根に一度落ちて脳震盪。",
 		   NULL, " Elle est tombée sur la cage d'ascenseur du 5ème étage, où elle est restée sur place à cause du choc cérébral. ", Line_Continue);
@@ -47,13 +47,15 @@
 		   NULL, "— ... Non, ça ne colle pas.", Line_Continue);
 	Wait( 3000 );
 	OutputLine(NULL, "ベランダから抜け出して圭一を刺して。",
-		   NULL, " Je pense qu'elle est passée par la véranda pour partir d'ici sans être vue, aller chez les Maebara, tuer leur fils ", Line_WaitForInput);
+		   NULL, " Je pense qu'elle est passée par la véranda pour partir d'ici sans être vue, aller chez les Maebara, tuer leur fils ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700239", 256, TRUE);
 	OutputLine(NULL, "ベランダへまた戻る時に誤って落下…、じゃないかなぁ？",
-		   NULL, "et qu'elle a glissé en voulant revenir à l'intérieur en passant par la véranda.", Line_WaitForInput);
+		   NULL, "et qu'elle a glissé en voulant revenir à l'intérieur en passant par la véranda.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700240", 256, TRUE);
 	OutputLine(NULL, "　悪いけど、周辺の部屋のベランダとかも調べ直してください。」",
-		   NULL, " Je suis désolé de vous donner encore du boulot à faire, mais faites-moi des relevés d'empreintes de toutes les vérandas de cette façade.", Line_Normal);
+		   NULL, "Je suis désolé de vous donner encore du boulot à faire, mais faites-moi des relevés d'empreintes de toutes les vérandas de cette façade.", Line_Normal);
 	ClearMessage();
 	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 19, "sprite/kuma_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
@@ -129,13 +131,15 @@
 		   NULL, "— Bingo, Nounours.", Line_Continue);
 	Wait( 1800 );
 	OutputLine(NULL, "園崎姉妹は逆なんです。",
-		   NULL, " Les jumelles Sonozaki sont inversées.", Line_WaitForInput);
+		   NULL, " Les jumelles Sonozaki sont inversées.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700247", 256, TRUE);
 	OutputLine(NULL, "魅音が詩音で、詩音が魅音。",
-		   NULL, " Mion, c'est Shion en fait, et donc Shion était la vraie Mion.", Line_WaitForInput);
+		   NULL, "Mion, c'est Shion en fait, et donc Shion était la vraie Mion.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700248", 256, TRUE);
 	OutputLine(NULL, "刺青入れる時に間違って逆にやっちゃって、取り返しがつかなくなったらしい。",
-		   NULL, " Apparemment, ils se sont plantés de gamine quand ils lui ont fait le tatouage dans le dos, alors forcément, ils ne pouvaient pas revenir en arrière.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Apparemment, ils se sont plantés de gamine quand ils lui ont fait le tatouage dans le dos, alors forcément, ils ne pouvaient pas revenir en arrière.", GetGlobalFlag(GLinemodeSp));
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700249", 256, TRUE);
@@ -143,13 +147,15 @@
 		   NULL, " Donc dans ce cahier, il faut remplacer tous les Shion en Mion et tous les Mion en Shion. ", Line_Continue);
 	Wait( 3000 );
 	OutputLine(NULL, "それでなら、悟史くんと詩音さん、…いや魅音さん？",
-		   NULL, "Et là seulement, ça explique la relation entre Satoshi et Shion-- euh non, Mion, du coup.", Line_WaitForInput);
+		   NULL, "Et là seulement, ça explique la relation entre Satoshi et Shion-- euh non, Mion, du coup.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700250", 256, TRUE);
 	OutputLine(NULL, "　ややこしいなぁ！",
-		   NULL, " Rah, c'est compliqué leur truc, aussi !", Line_WaitForInput);
+		   NULL, "Rah, c'est compliqué leur truc, aussi !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700251", 256, TRUE);
 	OutputLine(NULL, "　…の関係が理解できる。」",
-		   NULL, " Enfin bref, c'est déjà plus clair.", Line_Normal);
+		   NULL, "Enfin bref, c'est déjà plus clair.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	ModDrawCharacter(3, 19, "sprite/kuma_def_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
@@ -169,10 +175,11 @@
 		   NULL, "— Bah, disons que le détail des noms ne pardonne pas tout, il reste pas mal de trucs complètement surréalistes, mais bon.", Line_Continue);
 	Wait( 6000 );
 	OutputLine(NULL, "……このノート、どこまで信じていいのやら。",
-		   NULL, " ... Je me demande jusqu'où croire ce qu'il y a de marqué là-dedans.", Line_WaitForInput);
+		   NULL, " ... Je me demande jusqu'où croire ce qu'il y a de marqué là-dedans.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700253", 256, TRUE);
 	OutputLine(NULL, "…もし本当なら、古手梨花の死の辺りが怪し過ぎるからなぁ…。」",
-		   NULL, " La description de la mort de Rika Furude me paraît un peu grosse à avaler...", GetGlobalFlag(GLinemodeSp));
+		   NULL, "La description de la mort de Rika Furude me paraît un peu grosse à avaler...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumadani</color>", NULL, Line_ContinueAfterTyping); }
@@ -181,10 +188,11 @@
 		   NULL, "— Bah, c'est le journal intime d'une personne complètement folle.", Line_Continue);
 	Wait( 1800 );
 	OutputLine(NULL, "読んでるとこっちまで狂いそうになります。",
-		   NULL, " Il y a de quoi devenir dingue, rien qu'à le lire.", Line_WaitForInput);
+		   NULL, " Il y a de quoi devenir dingue, rien qu'à le lire.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumadani</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 19, "ps3/s20/19/443100058", 256, TRUE);
 	OutputLine(NULL, "最後のページの、生まれてきてごめんなさいなんて、…読んでるとこっちまで飛び降りたくなりますよ…。」",
-		   NULL, " Vous avez lu les dernières pages ? “Je vous demande pardon pour être venue au monde” ? Non mais sérieux, j'avais presque envie de sauter aussi...", Line_Normal);
+		   NULL, "Vous avez lu les dernières pages ? “Je vous demande pardon pour être venue au monde” ? Non mais sérieux, j'avais presque envie de sauter aussi...", Line_Normal);
 	ClearMessage();
 	DrawScene("background/sora", 1000 );
 

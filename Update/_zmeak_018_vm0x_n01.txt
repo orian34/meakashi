@@ -6,9 +6,10 @@ void dialog000()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…私は気持ちよく眠りこけてしまって、……ここに泊まってしまったが、",
-		   NULL, "Si je suis restée dormir ici ce soir, c'est parce que j'étais bourrée, mais ça ne m'arrive jamais, d'habitude.", Line_WaitForInput);
+		   NULL, "Si je suis restée dormir ici ce soir, c'est parce que j'étais bourrée, mais ça ne m'arrive jamais, d'habitude.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "それが本当に疲れだけによるものなのか、",
-		   NULL, " Est-ce que par hasard, ce ne serait pas l'alcool qui serait responsable de mon état lamentable en soirée ?", Line_WaitForInput);
+		   NULL, "Est-ce que par hasard, ce ne serait pas l'alcool qui serait responsable de mon état lamentable en soirée ?", Line_WaitForInput);
 	OutputLine(NULL, "……何か料理に睡眠薬が混入されていたのか分からない。",
 		   NULL, " C'est pas impossible.", Line_Normal);
 	ClearMessage();
@@ -80,16 +81,19 @@ void dialog003()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps2/06/150601552", 540, TRUE);
 	OutputLine(NULL, "「大丈夫。",
-		   NULL, "— Ne t'inquiète pas,", Line_WaitForInput);
+		   NULL, "— Ne t'inquiète pas,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps2/06/150601553", 540, TRUE);
 	OutputLine(NULL, "あんたは叩かない。",
-		   NULL, " tu n'auras pas de coups de fouets.", Line_WaitForInput);
+		   NULL, "tu n'auras pas de coups de fouets.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps2/06/150601554", 540, TRUE);
 	OutputLine(NULL, "でもね、あんたが不愉快だと、バァさんをもっと叩くかもしれない。",
-		   NULL, " Mais si tu m'énerves, je referai quelques séries sur la vioque, pour me passer les nerfs, tu comprends ?", Line_WaitForInput);
+		   NULL, "Mais si tu m'énerves, je referai quelques séries sur la vioque, pour me passer les nerfs, tu comprends ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps2/06/150601555", 540, TRUE);
 	OutputLine(NULL, "今度は鞭なんかじゃなくて、」",
-		   NULL, " Je prendrai d'ailleurs peut-être autre chose pour lui taper dessus.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Je prendrai d'ailleurs peut-être autre chose pour lui taper dessus.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
@@ -146,15 +150,18 @@ void dialog007()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601591", 256, TRUE);
 	OutputLine(NULL, "「……あんたが何も知らないのは本当だと思う。",
-		   NULL, "— ... Tu sais, je crois que tu dis la vérité et qu'effectivement, on ne te dit rien de ce qu'il se passe dans le Clan.", Line_WaitForInput);
+		   NULL, "— ... Tu sais, je crois que tu dis la vérité et qu'effectivement, on ne te dit rien de ce qu'il se passe dans le Clan.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601592", 256, TRUE);
 	OutputLine(NULL, "あんた自身、バァさんに真の意味で信頼を得ていたかは怪しいからね。",
-		   NULL, " Je parie même que la vieille folle n'a jamais eu confiance en toi.", Line_WaitForInput);
+		   NULL, "Je parie même que la vieille folle n'a jamais eu confiance en toi.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601593", 256, TRUE);
 	OutputLine(NULL, "………でも、バァさんが本当に私のけじめで悟史くんを許したかは分からないよ。",
-		   NULL, " Je ne sais pas si mes ongles ont suffit à payer pour ma relation avec Satoshi.", Line_WaitForInput);
+		   NULL, "Je ne sais pas si mes ongles ont suffit à payer pour ma relation avec Satoshi.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601594", 256, TRUE);
 	OutputLine(NULL, "甘ちゃんなあんたに、本当のところを打ち明けるわけもない。」",
-		   NULL, " Le plus probable, c'est qu'elle n'ait jamais voulu te dire la vérité en face, parce tu es trop naïve et sensible.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Le plus probable, c'est qu'elle n'ait jamais voulu te dire la vérité en face, parce tu es trop naïve et sensible.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 }

@@ -40,10 +40,11 @@ void dialog001()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 15, "ps3/s06/15/151500133", 256, TRUE);
 	OutputLine(NULL, "「家には叔母の北条玉枝と北条悟史、沙都子の３人となりました。",
-		   NULL, "— Il n'y a plus que trois personnes qui vivent chez les Hôjô : Satoshi Hôjô, Satoko Hôjô et Tamae Hôjô.", Line_WaitForInput);
+		   NULL, "— Il n'y a plus que trois personnes qui vivent chez les Hôjô : Satoshi Hôjô, Satoko Hôjô et Tamae Hôjô.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 15, "ps3/s06/15/151500134", 256, TRUE);
 	OutputLine(NULL, "玉枝は鉄平が別の女性のところへ逃げたのだと気付き、大層機嫌を悪くしたらしいですね。」",
-		   NULL, " Cette dernière a compris que son mari voyait une ou plusieurs maîtresses, et elle n'est pas très heureuse de cette situation.", Line_Normal);
+		   NULL, "Cette dernière a compris que son mari voyait une ou plusieurs maîtresses, et elle n'est pas très heureuse de cette situation.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }

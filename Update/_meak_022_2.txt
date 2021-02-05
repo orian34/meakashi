@@ -651,16 +651,18 @@
 	OutputLine(NULL, "悟史くんが消えてしまったんだ…！！",
 		   NULL, " qu'il a fini par disparaître !", Line_WaitForInput);
 	OutputLine(NULL, "　あいつが発端、",
-		   NULL, " C'est elle la raison,", Line_WaitForInput);
+		   NULL, " C'est elle la raison,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "あいつが元凶！！",
-		   NULL, " elle qui est la source de tous ses malheurs !", Line_WaitForInput);
+		   NULL, "elle qui est la source de tous ses malheurs !", Line_WaitForInput);
 	OutputLine(NULL, "　あいつさえいなかったなら！！",
 		   NULL, " Si seulement elle n'avait pas été là !! ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　古手梨花と沙都子が二人で仲良く住んでいたように、……あり得なかった私の幸福な未来があったかもしれない。",
-		   NULL, "J'aurais peut-être pu vivre heureuse avec lui, tout comme Satoko et Rika avaient vécu ensemble !", Line_WaitForInput);
+		   NULL, "J'aurais peut-être pu vivre heureuse avec lui, tout comme Satoko et Rika avaient vécu ensemble !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "私と悟史くんが、興宮でつつましやかに生活を再スタートさせる未来があったかもしれない！！",
-		   NULL, " J'aurais pu vivre avec lui à Okinomiya, pas dans le luxe et l'opulence, mais j'aurais pu vivre d'amour et d'eau fraîche, on aurait pu repartir à zéro ! ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "J'aurais pu vivre avec lui à Okinomiya, pas dans le luxe et l'opulence, mais j'aurais pu vivre d'amour et d'eau fraîche, on aurait pu repartir à zéro ! ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そうさ、始まりと終わりを結びつければ火を見るより明らか！",
 		   NULL, "Il suffisait de regarder le départ et l'arrivée", Line_WaitForInput);
@@ -733,16 +735,18 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そうさ、あいつこそが運命の元凶。",
-		   NULL, "Elle ne connaîtra jamais le repos. Oh non, elle ne connaîtra jamais le repos...", Line_WaitForInput);
+		   NULL, "Elle ne connaîtra jamais le repos. Oh non, elle ne connaîtra jamais le repos...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-5>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "あいつが古手梨花に取り入ったから、悟史くんに祟りが及んだんだ。",
-		   NULL, " C'est sûrement de sa faute si Rika a disparu ! Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain.", Line_WaitForInput);
+		   NULL, "C'est sûrement de sa faute si Rika a disparu ! Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain. Sûr et certain.", Line_WaitForInput);
 	OutputLine(NULL, "あいつが先に祟りで死ねばよかったんだ。",
 		   NULL, " Oui, c'est elle qui est responsable de son sort. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "そうすれば悟史くんはまだ生きてた。",
-		   NULL, "C'est parce qu'elle était la protégée de Rika Furude que Satoshi a dû y passer. Elle n'aurait eu qu'à crever, et il était sauf. Il serait encore en vie aujourd'hui.", Line_WaitForInput);
+		   NULL, "C'est parce qu'elle était la protégée de Rika Furude que Satoshi a dû y passer. Elle n'aurait eu qu'à crever, et il était sauf. Il serait encore en vie aujourd'hui.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "生きててさえくれれば、私はどんな助けでもできたのに！！",
-		   NULL, " Tant qu'il aurait eu la vie sauve, j'aurais pu m'occuper de tous ses autres problèmes !", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Tant qu'il aurait eu la vie sauve, j'aurais pu m'occuper de tous ses autres problèmes !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -955,12 +959,13 @@
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "残るはどこそこだ、",
-		   NULL, " indiquant les endroits dans lesquels les recherches avaient déjà été effectuées,", Line_ContinueAfterTyping);
+		   NULL, " indiquant les endroits dans lesquels les recherches avaient déjà été effectuées,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	SetValidityOfInput( FALSE );
 	Wait( 700 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "あそこは捜してないか、",
-		   NULL, " cherchant les endroits encore à vérifier,", Line_ContinueAfterTyping);
+		   NULL, "cherchant les endroits encore à vérifier,", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );

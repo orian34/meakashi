@@ -234,9 +234,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…私は真相を解き明かしこのメモが不要となったので廃棄したか、",
-		   NULL, "La première est que j'ai fait la lumière sur cette affaire et que j'ai jeté ce cahier, n'en ayant plus besoin.", Line_WaitForInput);
+		   NULL, "La première est que j'ai fait la lumière sur cette affaire et que j'ai jeté ce cahier, n'en ayant plus besoin.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "私が志半ばで「オヤシロさまの祟り」に遭い失踪してこのメモだけが残ったかのどちらかだ。",
-		   NULL, " La deuxième est que je suis devenue moi aussi l'une des victimes de “la malédiction de la déesse Yashiro” et que j'ai disparu à mon tour, laissant ce cahier orphelin.", Line_Normal);
+		   NULL, "La deuxième est que je suis devenue moi aussi l'une des victimes de “la malédiction de la déesse Yashiro” et que j'ai disparu à mon tour, laissant ce cahier orphelin.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }

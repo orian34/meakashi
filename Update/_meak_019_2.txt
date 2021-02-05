@@ -250,9 +250,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　一年前、私が鷹野さんに雛見沢の歴史の真実を教えられたのとまったく同じ場所で、今度は私が同じようなことを圭一に話そうとしている。",
-		   NULL, "C'était marrant, quand même : j'allais lui faire un topo horrible sur l'histoire du village exactement là où madame Takano m'a raconté la même chose, l'année dernière.", Line_WaitForInput);
+		   NULL, "C'était marrant, quand même : j'allais lui faire un topo horrible sur l'histoire du village exactement là où madame Takano m'a raconté la même chose, l'année dernière.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "……神さまの皮肉のつもりだろうか。",
-		   NULL, " Je suis sûre que là où ils sont, les dieux doivent nous regarder et se fendre la poire.", Line_Normal);
+		   NULL, "Je suis sûre que là où ils sont, les dieux doivent nous regarder et se fendre la poire.", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();

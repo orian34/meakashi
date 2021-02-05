@@ -72,13 +72,15 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 4, "ps3/s06/04/150400098", 256, TRUE);
 	OutputLine(NULL, "「ほっほっほ！",
-		   NULL, "— Ooohhohhohhohho !", Line_WaitForInput);
+		   NULL, "— Ooohhohhohhohho !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 4, "ps3/s06/04/150400099", 256, TRUE);
 	OutputLine(NULL, "　残念なことにミートボールは私も大好物でございましてよ！",
-		   NULL, " Ceci est fort dommage pour vous, mes chers amis, mais les boulettes de viande de notre chère Rena font partie de mes mets préférés !", Line_WaitForInput);
+		   NULL, "Ceci est fort dommage pour vous, mes chers amis, mais les boulettes de viande de notre chère Rena font partie de mes mets préférés !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 4, "ps3/s06/04/150400100", 256, TRUE);
 	OutputLine(NULL, "　皆さんに一口でも口に入ると思わないことでしてよー！！」",
-		   NULL, " J'ai bien peur de n'avoir aucune envie de les partager avec vous !", GetGlobalFlag(GLinemodeSp));
+		   NULL, "J'ai bien peur de n'avoir aucune envie de les partager avec vous !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
