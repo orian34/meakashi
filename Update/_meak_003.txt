@@ -8,7 +8,7 @@
 	ClearMessage();
 
 	DrawScene("black", 400 );
-	PlayBGM( 1, "msys06", 56, 0 );
+	PlayBGM( 1, "mati", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300056", 256, TRUE);
@@ -491,7 +491,7 @@
 	ClearMessage();
 
 	DisableWindow();
-	PlayBGM( 0, "msys07", 56, 0 );
+	PlayBGM( 0, "higurashi", 56, 0 );
 	ModDrawCharacter(2, 3, "sprite/me2_sinmyou_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -1028,8 +1028,7 @@
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
-	PlayBGM( 0, "semi", 56, 0 );
-	PlayBGM( 1, "suzume", 56, 0 );
+	PlayBGM( 1, "z2_hig2", 56, 0 );
 	DrawScene("white", 1000 );
 	DrawScene("background/mati3", 1000 );
 
@@ -1168,8 +1167,6 @@
 	ClearMessage();
 
 	DrawScene("black", 1000 );
-	FadeOutBGM( 0, 1000, FALSE );
-	FadeOutBGM( 1, 1000, FALSE );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
@@ -1199,7 +1196,6 @@
 	SetValidityOfInput( TRUE );
 	ModDrawCharacter(2, 15, "sprite/kasa_1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene("background/si_g1", 400 );
-	PlayBGM( 1, "z2_hig2", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 15, "ps3/s06/15/151500090", 256, TRUE);
