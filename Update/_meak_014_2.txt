@@ -719,7 +719,7 @@
 	OutputLine(NULL, "　私と同じように、左手の小指から中指の三本の爪が、私と同じように歪な形をしていた。",
 		   NULL, "Ils étaient comme les miens. Son majeur, annulaire et auriculaire de la main gauche portaient des ongles difformes, franchement pas très jolis à regarder.", Line_Normal);
 	ClearMessage();
-	PlayBGM( 0, "msys17", 56, 0 );
+	PlayBGM( 0, "hgrs01", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601288", 256, TRUE);

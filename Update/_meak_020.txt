@@ -997,7 +997,7 @@
 	OutputLine(NULL, "……乾ききった空気に耐えかねて、私の背中の皮がバリバリとひび割れを起こしていくのを感じた。",
 		   NULL, "Je sentis mon dos se déchirer, incapable de soutenir l'atmosphère qui règnait ici.", Line_Normal);
 	ClearMessage();
-	PlayBGM( 1, "msys08", 56, 0 );
+	PlayBGM( 1, "getting_mad", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　………………………………その表情はあまりに無機質。",
@@ -1386,7 +1386,7 @@
 	OutputLine(NULL, "「ずっと泣いていますよ。」",
 		   NULL, "— Elle n'a fait que pleurer depuis.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-	PlayBGM( 1, "msys27", 56, 0 );
+	PlayBGM( 1, "hgrs01", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f3ceb3>喜一郎</color>", NULL, "<color=#f3ceb3>Kiichirô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 18, "ps3/s06/18/153300058", 256, TRUE);
@@ -3033,7 +3033,7 @@
 
 
 	}
-	
+
 
 	SetSpeedOfMessage( TRUE, 128 );
 	OutputLine(NULL, "一体悟史くんに何の罪があったというのかッ！！！」",
@@ -5087,7 +5087,7 @@
 	OutputLine(NULL, "「嘘だあああぁああぁああッ！！！」",
 		   NULL, "— MENTEUSE !", Line_Normal);
 	ClearMessage();
-	PlayBGM( 0, "msys30", 56, 0 );
+	PlayBGM( 0, "hgrs01", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　一年前のあの日。　……私に対して、爪を剥がすけじめを強要した時の、あの冷酷な次期頭首としての魅音がありありと蘇る。",

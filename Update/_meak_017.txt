@@ -322,7 +322,7 @@
 		   NULL, "Heureusement qu'au milieu de la nuit, tout était calme -- je pus tout distinguer clairement, même en restant assez éloignée.", Line_Normal);
 	ClearMessage();
 	DrawSceneWithMask("background/jsa7", "maskleft", 1, 0, 300 );
-	PlayBGM( 0, "msys07", 56, 0 );
+	PlayBGM( 0, "getting_mad", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 17, "ps3/s06/17/152300019", 256, TRUE);
@@ -376,7 +376,7 @@
 	OutputLine(NULL, "　心臓が止まりそうになる。",
 		   NULL, "Mon cœur s'étrangla dans ma poitrine.", Line_Normal);
 
-	PlayBGM( 0, "msys08", 56, 0 );
+	PlayBGM( 0, "hig_sample_kyouki", 56, 0 );
 
 	OutputLine(NULL, "　オヤシロさまの祟りに触れた。",
 		   NULL, "“Ils ont attiré les foudres de la déesse.”", GetGlobalFlag(GLinemodeSp));
@@ -778,7 +778,7 @@
 	OutputLine(NULL, "　出したかったけど、喉の奥が詰まったようになって、口をぱくぱくさせるのがやっと……。",
 		   NULL, "J'aurais préféré crier très fort, mais la pression était si forte sur mon cou que rien ne sortit. J'avais déjà du mal à ouvrir à la bouche...", Line_Normal);
 	ClearMessage();
-	PlayBGM( 0, "yoru", 56, 0 );
+	PlayBGM( 0, "iwakannnohatuga", 56, 0 );
 
 	DisableWindow();
 	ModSetLayerFilter(1, 256, "night");
@@ -918,6 +918,9 @@
 	OutputLine(NULL, "　今の電話の相手は……誰？！…………………ッ！！！",
 		   NULL, "Mais c'était QUI, là, au téléphone ?", Line_Normal);
 	ClearMessage();
+
+	FadeOutBGM( 0, 300, FALSE );
+	PlayBGM( 2, "hig_sample_kyouki", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　魅音は襟首を掴んだまま、私に額を寄せて……言った。",
@@ -1130,7 +1133,7 @@
 		   NULL, "— Tu n'arrives vraiment pas à faire un rapprochement aussi simple que ça ?", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 2, 1000, FALSE );
 	FadeOutBGM( 1, 1000, FALSE );
 	DrawScene("black", 1000 );
 	PlayBGM( 1, "suzu", 56, 0 );
@@ -1198,7 +1201,7 @@
 	OutputLine(NULL, "　でも、それでも、自分はダム戦争の戦犯じゃないから、犠牲者になるなんてことは絶対にないと思ってた。",
 		   NULL, "Et pourtant, j'imaginais qu'il ne m'arriverait rien, car je n'avais rien à me reprocher pour ma conduite lors de la guerre du barrage.", Line_Normal);
 	ClearMessage();
-	PlayBGM( 0, "kaze", 56, 0 );
+	PlayBGM( 0, "hig_sample_kyouki", 56, 0 );
 	FadeOutBGM( 1, 300, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1275,7 +1278,7 @@
 	SetValidityOfInput( FALSE );
 	Wait( 3000 );
 	SetValidityOfInput( TRUE );
-	PlayBGM( 0, "msys30", 56, 0 );
+	PlayBGM( 0, "higurashi_soundscape", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　魅音は私にしな垂れかかって、",
@@ -1771,7 +1774,7 @@
 		   NULL, "Je tournai donc les talons et allai voir ma sœur jumelle.", Line_Normal);
 	ClearMessage();
 	DrawSceneWithMask("black", "maskleft", 1, 0, 300 );
-	PlayBGM( 0, "hig_sample_kyouki", 56, 0 );
+	PlayBGM( 0, "depressive paranoia", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300353", 256, TRUE);

@@ -457,7 +457,7 @@
 	FadeOutBGM( 0, 300, FALSE );
 	FadeOutBGM( 2, 300, FALSE );
 	DrawSceneWithMask("background/ke5", "maskdown", 1, 0, 300 );
-	PlayBGM( 1, "z2_hig1", 56, 0 );
+	PlayBGM( 1, "getting_mad", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700273", 256, TRUE);

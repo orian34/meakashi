@@ -284,7 +284,7 @@
 	DrawSceneWithMask("black", "maskleft", 1, 0, 300 );
 	FadeOutBGM( 0, 300, FALSE );
 	DrawSceneWithMask("background/kuruma4", "maskleft", 1, 0, 300 );
-	PlayBGM( 1, "Mati", 56, 0 );
+	PlayBGM( 1, "Mati", 24, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　園崎本家には、ろくな時に招かれた記憶がない。",
@@ -856,7 +856,7 @@
 	FadeOutBGM( 1, 300, FALSE );
 	ModDrawCharacter(2, 17, "portrait/oryou_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 80, FALSE );
 	DrawBustshot(6, "background/js7", 0, -70, -400, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 300, TRUE );
-	PlayBGM( 0, "msys23", 56, 0 );
+	PlayBGM( 0, "hgrs01", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600919", 256, TRUE);
@@ -2081,7 +2081,7 @@
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	FadeOutBGM( 0, 300, FALSE );
-	PlayBGM( 1, "msys30", 56, 0 );
+	PlayBGM( 1, "higurashi_soundscape", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　最後の息を止める。",

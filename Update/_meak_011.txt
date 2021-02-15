@@ -370,7 +370,7 @@
 	FadeOutBGM( 0, 400, FALSE );
 	FadeOutBGM( 2, 400, FALSE );
 	DrawScene("white", 400 );
-	PlayBGM( 1, "Mati", 56, 0 );
+	PlayBGM( 1, "Mati", 24, 0 );
 	DrawScene("background/kuruma5_01", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1863,7 +1863,7 @@
 	Wait( 10000 );
 	FadeOutBGM( 1, 1000, FALSE );
 	DrawScene("scene/009a", 1000 );
-	PlayBGM( 0, "msys30", 56, 0 );
+	PlayBGM( 0, "hgrs01", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600881", 256, TRUE);

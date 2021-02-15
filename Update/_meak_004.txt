@@ -76,6 +76,7 @@
 
 	FadeOutBGM( 0, 300, FALSE );
 	PlayBGM( 1, "semi", 56, 0 );
+	PlayBGM( 2, "suzume", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600309", 256, TRUE);
@@ -130,6 +131,8 @@
 		   NULL, "Je n'ai pas calé que les propriétaires des motos étaient juste à côté, et qu'en plus, c'étaient manifestement des gens très mal famés.", Line_Normal);
 	ClearMessage();
 
+	FadeOutBGM( 1, 300, FALSE );
+	FadeOutBGM( 2, 300, FALSE );
 	DrawSceneWithMask("black", "maskright", 1, 0, 300 );
 	PlayBGM( 0, "deadend", 56, 0 );
 
@@ -630,7 +633,6 @@
 		   NULL, "... Une voix retentit -- celle d'un jeune garçon qui devait avoir à peu près mon âge.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 1, 300, FALSE );
 	PlayBGM( 0, "T1", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -820,6 +822,7 @@
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
 	PlayBGM( 1, "semi", 56, 0 );
+	PlayBGM( 2, "suzume", 56, 0 );
 	DrawScene("background/mati4", 3000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }

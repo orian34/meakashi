@@ -1073,7 +1073,7 @@
 
 	FadeOutBGM( 0, 300, FALSE );
 	FadeOutBGM( 2, 300, FALSE );
-	PlayBGM( 1, "msys17", 56, 0 );
+	PlayBGM( 1, "hgrs01", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……公由のおじいちゃん、",

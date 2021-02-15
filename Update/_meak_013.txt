@@ -1458,7 +1458,7 @@
 	FadeOutBGM( 0, 300, FALSE );
 	FadeOutBGM( 2, 300, FALSE );
 	DrawSceneWithMask("background/kuruma6", "maskleft", 1, 0, 300 );
-	PlayBGM( 1, "Mati", 56, 0 );
+	PlayBGM( 1, "Mati", 24, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601064", 256, TRUE);
@@ -1794,7 +1794,7 @@
 	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacter(1, 11, "sprite/oisi1_4_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene("background/ke_s2", 400 );
-	PlayBGM( 1, "msys07", 56, 0 );
+	PlayBGM( 1, "getting_mad", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700187", 256, TRUE);

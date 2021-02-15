@@ -322,7 +322,7 @@
 	DrawScene("white", 100 );
 	DrawScene("black", 50 );
 	Wait( 100 );
-	PlayBGM( 0, "msys23", 56, 0 );
+	PlayBGM( 0, "hig_sample_kyouki", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150602059", 256, TRUE);
@@ -2084,7 +2084,7 @@
 	ClearMessage();
 	FadeOutBGM( 1, 400, FALSE );
 	DrawScene("background/jsa7", 400 );
-	PlayBGM( 0, "semi_r", 56, 0 );
+	PlayBGM( 0, "jikuu_a", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150602124", 256, TRUE);
