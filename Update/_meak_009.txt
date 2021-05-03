@@ -8,7 +8,7 @@
 
 	DrawScene("black", 100 );
 	PlayBGM( 0, "semi", 56, 0 );
-	PlayBGM( 2, "suzume", 56, 0 );
+	ModPlayBGM( 2, "suzume", 56, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　大の字になって、私は天井を見上げているだけだ。",
@@ -131,7 +131,8 @@
 	FadeOutBGM( 0, 300, FALSE );
 	FadeOutBGM( 2, 300, FALSE );
 	ModDrawCharacter(2, 15, "sprite/kasa_1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
-	PlayBGM( 1, "03_cele", 56, 0 );
+	ModPlayBGM( 1, "msys06", 56, 0, 0 );
+	ModPlayBGM( 0, "03_cele", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 15, "ps3/s06/15/151500120", 256, TRUE);
@@ -594,8 +595,9 @@
 		   NULL, "Mais désormais, il y en avait de moins en moins, des ennemis du village. À première vue, je ne voyais plus que l'oncle et la tante de Satoshi.", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 0, "semi", 56, 0 );
-	PlayBGM( 2, "suzume", 56, 0 );
+	ModPlayBGM( 0, "semi", 56, 0, 0 );
+	ModPlayBGM( 2, "suzume", 56, 0, 0 );
+	ModPlayBGM( 1, "semi", 56, 0, 1 );
 	DrawScene("white", 400 );
 	DrawScene("background/sora", 400 );
 
@@ -883,9 +885,9 @@
 		   NULL, " Puis, inspirant profondément, je composai à toute vitesse le numéro qu'elle m'avait donné.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 1, 300, FALSE );
+	ModFadeOutBGM( 1, 300, FALSE, 0 );
 	DrawScene("black", 400 );
-	PlayBGM( 0, "higurashi", 56, 0 );
+	ModPlayBGM( 0, "higurashi", 56, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　やがて、呼び出し音が、",
@@ -956,8 +958,8 @@
 		   NULL, " Sinon, ça va maintenant ? Tu as le temps ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	FadeOutBGM( 0, 300, FALSE );
-	PlayBGM( 1, "t1", 56, 0 );
+	ModFadeOutBGM( 0, 300, FALSE, 0 );
+	ModPlayBGM( 1, "t1", 56, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　悟史くんは、…悟史くんでいてくれた。",
@@ -1155,7 +1157,7 @@
 		   NULL, " J'espère qu'elle va bien...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	FadeOutBGM( 1, 300, FALSE );
+	ModFadeOutBGM( 1, 300, FALSE, 0 );
 	PlaySE( 4, "wa_025", 56, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
@@ -1164,7 +1166,7 @@
 		   NULL, "— ... Évidemment que non, elle ne va pas bien. Tu as bien vu ce qu'il s'est passé en cours ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 1, "msys17", 56, 0 );
+	ModPlayBGM( 1, "msys17", 56, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　悟史くんの声色が急にどす黒くなる。",

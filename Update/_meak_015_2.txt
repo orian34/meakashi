@@ -15,7 +15,7 @@
 	SetValidityOfInput( TRUE );
 	DrawScene("background/sora", 3000 );
 	PlayBGM( 0, "semi", 56, 0 );
-	PlayBGM( 2, "suzume", 56, 0 );
+	ModPlayBGM( 2, "suzume", 56, 0, 0 );
 	SetValidityOfInput( FALSE );
 	Wait( 4000 );
 	SetValidityOfInput( TRUE );

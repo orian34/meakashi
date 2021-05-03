@@ -240,9 +240,10 @@
 	OutputLine(NULL, "　…………その後、勘定を済ませ、私は葛西の車で自分の部屋に送り届けられたのだった……。",
 		   NULL, "... Après encore quelques longs moments d'attente, on m'appela à la caisse pour régler les frais de consultation et les soins, puis Kasai me ramena en voiture jusqu'à mon appartement...", Line_Normal);
 	ClearMessage();
+	ModPlayBGM( 1, "semi", 56, 0, 1 );
 
 	DrawScene("maskc", 1200 );
-	FadeOutBGM( 0, 300, FALSE );
+	ModFadeOutBGM( 0, 300, FALSE, 0 );
 	PlaySE( 4, "s_knock", 56, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -251,8 +252,8 @@
 	ClearMessage();
 
 	DrawScene("black", 1200 );
-	PlayBGM( 0, "semi", 56, 0 );
-	PlayBGM( 2, "suzume", 56, 0 );
+	ModPlayBGM( 0, "semi", 56, 0, 0 );
+	ModPlayBGM( 2, "suzume", 56, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 15, "ps3/s06/15/151500157", 256, TRUE);
@@ -275,9 +276,10 @@
 	ClearMessage();
 
 	DisableWindow();
-	FadeOutBGM( 0, 300, FALSE );
-	FadeOutBGM( 2, 300, FALSE );
-	PlayBGM( 1, "t2", 56, 0 );
+	ModFadeOutBGM( 0, 300, FALSE, 0 );
+	ModFadeOutBGM( 2, 300, FALSE, 0 );
+	ModPlayBGM( 1, "t2", 56, 0, 0 );
+	ModFadeOutBGM( 1, 300, FALSE, 1 );
 	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 15, "sprite/kasa_2_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
@@ -713,10 +715,12 @@
 	ClearMessage();
 
 	DisableWindow();
-	FadeOutBGM( 1, 1000, FALSE );
+	ModFadeOutBGM( 1, 1000, FALSE, 0 );
+	ModFadeOutBGM( 0, 1000, FALSE, 1 );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
-	PlayBGM( 1, "demo_48khz", 56, 0 );
+	ModPlayBGM( 1, "demo_48khz", 56, 0, 0 );
+	ModPlayBGM( 0, "demo_48khz", 56, 0, 1 );
 	DrawSceneWithMask("background/mati3", "maskright", 1, 0, 300 );
 	Wait( 1000 );
 	DrawSceneWithMask("background/mati_o1", "maskright", 1, 0, 300 );
@@ -1051,7 +1055,8 @@
 	ClearMessage();
 
 	DisableWindow();
-	FadeOutBGM( 1, 300, FALSE );
+	ModFadeOutBGM( 1, 300, FALSE, 0 );
+	ModFadeOutBGM( 0, 300, FALSE, 1 );
 	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacter(1, 11, "sprite/oisi1_2_", "1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
@@ -1066,8 +1071,9 @@
 		   NULL, "Soudain, contrastant avec la voix douce du chef, un rire gras, rauque, vicieux, nous interrompit.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 0, "semi", 56, 0 );
-	PlayBGM( 2, "suzume", 56, 0 );
+	ModPlayBGM( 0, "semi", 56, 0, 0 );
+	ModPlayBGM( 2, "suzume", 56, 0, 0 );
+	ModPlayBGM( 1, "semi", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　………あいつだ。",
@@ -1215,8 +1221,8 @@
 		   NULL, " Mademoiselle Sonozaki.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	FadeOutBGM( 0, 300, FALSE );
-	FadeOutBGM( 2, 300, FALSE );
+	ModFadeOutBGM( 0, 300, FALSE, 0 );
+	ModFadeOutBGM( 2, 300, FALSE, 0 );
 	PlaySE( 4, "wa_022", 56, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1243,8 +1249,8 @@
 
 	ModDrawCharacter(1, 11, "sprite/oisi1_4_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene("background/mati_o1", 400 );
-	PlayBGM( 0, "semi", 56, 0 );
-	PlayBGM( 2, "suzume", 56, 0 );
+	ModPlayBGM( 0, "semi", 56, 0, 0 );
+	ModPlayBGM( 2, "suzume", 56, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700150", 256, TRUE);
@@ -1455,8 +1461,9 @@
 		   NULL, "Comme je ne voulais pas être à la place du mort, je préférai monter sur la banquette arrière.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 300, FALSE );
-	FadeOutBGM( 2, 300, FALSE );
+	ModFadeOutBGM( 0, 300, FALSE, 0 );
+	ModFadeOutBGM( 2, 300, FALSE, 0 );
+	ModFadeOutBGM( 1, 300, FALSE, 1 );
 	DrawSceneWithMask("background/kuruma6", "maskleft", 1, 0, 300 );
 	PlayBGM( 1, "Mati", 24, 0 );
 
@@ -1490,7 +1497,7 @@
 	FadeOutBGM( 1, 300, FALSE );
 	DrawSceneWithMask("background/ke1", "maskleft", 1, 0, 300 );
 	PlayBGM( 0, "semi", 56, 0 );
-	PlayBGM( 2, "suzume", 56, 0 );
+	ModPlayBGM( 2, "suzume", 56, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　大石の車は予想を裏切らず、本当に興宮署にやって来た。",
@@ -1794,7 +1801,8 @@
 	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacter(1, 11, "sprite/oisi1_4_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene("background/ke_s2", 400 );
-	PlayBGM( 1, "getting_mad", 56, 0 );
+	ModPlayBGM( 1, "msys07", 56, 0, 0 );
+	ModPlayBGM( 0, "getting_mad", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700187", 256, TRUE);
@@ -1996,10 +2004,11 @@
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	FadeOutBGM( 1, 300, FALSE );
+	ModFadeOutBGM( 1, 300, FALSE, 0 );
 	Negative( 300 , TRUE );
 	PlaySE( 4, "s_glass", 56, 64 );
-	PlayBGM( 0, "kaze", 56, 0 );
+	ModPlayBGM( 0, "kaze", 56, 0, 0 );
+	ModPlayBGM( 1, "kaze", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その時。",
@@ -2060,8 +2069,9 @@
 	ClearMessage();
 
 	DrawScene("background/aka2", 400 );
-	FadeOutBGM( 0, 300, FALSE );
-	PlayBGM( 1, "semi_r", 56, 0 );
+	ModFadeOutBGM( 0, 300, FALSE, 0 );
+	ModPlayBGM( 1, "semi_r", 56, 0, 0 );
+	ModPlayBGM( 2, "semi_r", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　戻らなかった？",
@@ -2313,6 +2323,8 @@
 	DisableWindow();
 	FadeFilm( 300, FALSE );
 	FadeOutBGM( 0, 400, FALSE );
+	ModFadeOutBGM( 1, 400, FALSE, 1 );
+	ModFadeOutBGM( 2, 400, FALSE, 1 );
 	PlaySE( 4, "s_glass", 56, 64 );
 	DrawSceneWithMask("white", "maskc", 0, 0, 400 );
 	ModDrawCharacter(2, 11, "sprite/oisi1_2_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
@@ -2734,7 +2746,7 @@
 	ClearMessage();
 
 	DrawSceneWithMask("black", "maskdown", 1, 0, 1300 );
-	FadeOutBGM( 0, 300, FALSE );
+	ModFadeOutBGM( 0, 300, FALSE, 0 );
 	PlaySE( 4, "wa_003", 56, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2760,7 +2772,7 @@
 
 	ModDrawCharacter(2, 11, "sprite/oisi1_1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask("background/ke_s2", "maskup", 1, 0, 300 );
-	PlayBGM( 1, "msys17", 56, 0 );
+	ModPlayBGM( 1, "msys17", 56, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700227", 256, TRUE);
@@ -2946,7 +2958,8 @@
 		   NULL, " Aussitôt l'argent débité de son compte, il a dû foncer au magasin de jouets.", GetGlobalFlag(GLinemodeSp));
 
 	DisableWindow();
-	FadeOutBGM( 1, 300, FALSE );
+	ModFadeOutBGM( 1, 300, FALSE, 0 );
+	ModFadeOutBGM( 0, 300, FALSE, 1 );
 	PlaySE( 4, "wa_023", 56, 64 );
 	ModDrawCharacter(2, 11, "sprite/oisi1_5_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
@@ -3273,7 +3286,7 @@
 		   NULL, " Il ne répondit rien.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 1000, FALSE );
+	ModFadeOutBGM( 0, 1000, FALSE, 0 );
 	DrawSceneWithMask("black", "maskdown", 1, 0, 1300 );
 	SetStyleOfMessageSwinging( 2 );
 	SetSpeedOfMessage( TRUE, 0 );
@@ -3340,6 +3353,7 @@
 	OutputLine(NULL, "　実際のところ、行方はおろか、生死すらもわかっていない。",
 		   NULL, "À l'heure actuelle, il est impossible de savoir s'il est mort ou vivant.", Line_ContinueAfterTyping);
 	FadeOutBGM( 1, 0, FALSE );
+	ModFadeOutBGM( 0, 300, FALSE, 1 );
 	OutputLineAll(NULL, "", Line_WaitForInput);
 	ClearMessage();
 	SetSpeedOfMessage( FALSE, 0 );

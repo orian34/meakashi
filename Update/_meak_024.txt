@@ -149,7 +149,7 @@
 	ModDrawCharacter(1, 1, "sprite/kei1_komaru_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene("background/heya1", 400 );
 	PlayBGM( 0, "semi", 56, 0 );
-	PlayBGM( 2, "suzume", 56, 0 );
+	ModPlayBGM( 2, "suzume", 56, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100341", 256, TRUE);
@@ -340,9 +340,9 @@
 		   NULL, "Je fis de mon mieux pour trouver une incohérence dans sa théorie, mais elle n'en eut pas l'air le plus impressionnée du monde.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 300, FALSE );
-	FadeOutBGM( 2, 300, FALSE );
-	PlayBGM( 1, "semi_r", 56, 0 );
+	ModFadeOutBGM( 0, 300, FALSE, 0 );
+	ModFadeOutBGM( 2, 300, FALSE, 0 );
+	ModPlayBGM( 1, "semi_r", 56, 0, 0 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私はみるみる追い詰められていく。",
 		   NULL, "Elle ne mit pas longtemps à me mettre au dos du mur.", GetGlobalFlag(GLinemodeSp));
@@ -391,11 +391,13 @@
 	OutputLine(NULL, "　…詩音は鈍感だから、レナのこんな一面は想像も付かないんだろうけど。",
 		   NULL, "Shion est tellement conne, je parie qu'elle n'a jamais pensé que tu pouvais cacher ton jeu.", Line_Normal);
 	ClearMessage();
-	FadeOutBGM( 1, 300, FALSE );
+	ModFadeOutBGM( 1, 300, FALSE, 0 );
+	ModFadeOutBGM( 0, 300, FALSE, 1 );
 	ModDrawCharacter(1, 1, "sprite/kei1_komaru_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	ModDrawCharacter(3, 2, "sprite/re1a_komaru_a2_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawSceneWithMask("background/heya1", "maskup", 1, 0, 300 );
-	PlayBGM( 0, "hgrs01", 56, 0 );
+	ModPlayBGM( 0, "birth_and_death", 56, 0, 0 );
+	ModPlayBGM( 0, "hgrs01", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150602464", 256, TRUE);
@@ -522,7 +524,7 @@
 		   NULL, "Alors arrêtez de poser des questions et de chercher la petite bête, plaquez-moi au sol et livrez-moi à la Police.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	FadeOutBGM( 0, 1000, FALSE );
+	ModFadeOutBGM( 0, 1000, FALSE, 0 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だからほら。",
 		   NULL, "Tsss, trop tard, maintenant.", Line_WaitForInput);
@@ -533,7 +535,7 @@
 	ModDrawCharacter(1, 1, "sprite/kei1_ikari1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	ModDrawCharacter(3, 2, "sprite/re1a_komaru_a2_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawScene("background/heya1", 400 );
-	PlayBGM( 0, "depressive paranoia", 56, 0 );
+	ModPlayBGM( 0, "depressive paranoia", 56, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150602470", 256, TRUE);
@@ -2377,9 +2379,9 @@
 		   NULL, " Vas-t'en, Keiichi !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	FadeOutBGM( 0, 1000, FALSE );
+	ModFadeOutBGM( 0, 1000, FALSE, 0 );
 	DrawScene("background/aka2", 1000 );
-	PlayBGM( 1, "yabaisemi", 56, 0 );
+	ModPlayBGM( 1, "yabaisemi", 56, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　どうぞ、鬼さん。",

@@ -8,7 +8,7 @@
 
 	DrawScene("black", 100 );
 	PlayBGM( 0, "semi", 56, 0 );
-	PlayBGM( 2, "suzume", 56, 0 );
+	ModPlayBGM( 2, "suzume", 56, 0, 0 );
 	DrawScene("text/nort19", 1000 );
 	Wait( 10000 );
 	DrawScene("black", 3000 );
@@ -170,7 +170,7 @@
 	FadeOutBGM( 0, 400, FALSE );
 	FadeOutBGM( 2, 400, FALSE );
 	DrawScene("black", 400 );
-	PlayBGM( 1, "msys27", 56, 0 );
+	ModPlayBGM( 1, "msys27", 56, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　最近は、野球の練習日に合わせて「魅音」の時間をもらえるようになっていたので、お姉と打ち合わせることはほとんどなくなっていた。",
@@ -224,10 +224,10 @@
 		   NULL, " je me suis fait avoir par surprise.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 1, 300, FALSE );
+	ModFadeOutBGM( 1, 300, FALSE, 0 );
 	DrawSceneWithMask("background/oki_g3", "maskleft", 1, 0, 300 );
 	PlayBGM( 0, "semi", 56, 0 );
-	PlayBGM( 2, "suzume", 56, 0 );
+	ModPlayBGM( 2, "suzume", 56, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　自転車を引っ張り出し、グラウンドを後にしようとした時、…突然声をかけられたのだ。",
@@ -410,7 +410,7 @@
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
-	PlayBGM( 0, "Ame", 56, 0 );
+	ModPlayBGM( 0, "Ame", 56, 0, 0 );
 	PlayBGM( 1, "Ame", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -478,7 +478,7 @@
 		   NULL, "Donc forcément, ce n'était pas étonnant si elle était au courant.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 1, 400, FALSE );
+	ModFadeOutBGM( 1, 400, FALSE, 0 );
 	DrawScene("black", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -529,7 +529,7 @@
 	ClearMessage();
 
 	DrawSceneWithMask("background/mob1_01", "maskup", 1, 0, 300 );
-	PlayBGM( 1, "Ame", 56, 0 );
+	ModPlayBGM( 1, "Ame", 56, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s06/02/150200010", 256, TRUE);
@@ -641,7 +641,7 @@
 		   NULL, " Parce qu'un jour, ce sourire ne sera plus un mensonge.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 1, 400, FALSE );
+	ModFadeOutBGM( 1, 400, FALSE, 0 );
 	DrawScene("black", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -677,7 +677,7 @@
 	ClearMessage();
 
 	DrawSceneWithMask("background/mob1_01", "maskup", 1, 0, 300 );
-	PlayBGM( 1, "Ame", 56, 0 );
+	ModPlayBGM( 1, "Ame", 56, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s06/02/150200022", 256, TRUE);
@@ -777,7 +777,7 @@
 		   NULL, " De toute façon, il faudra bien que ce soit avant l'anniversaire de Satoko.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 1, 300, FALSE );
+	ModFadeOutBGM( 1, 300, FALSE, 0 );
 	DrawSceneWithMask("black", "maskdown", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -851,6 +851,7 @@
 	OutputLine(NULL, "………沙都子のことなんか、忘れてしまえば…悟史くんはもっともっと…心に負担をかけずに過せるのに。",
 		   NULL, " Il n'a qu'à l'oublier et la laisser se démerder toute seule, un peu, il irait tellement mieux !", Line_Normal);
 	ClearMessage();
+	ModFadeOutBGM( 1, 400, FALSE, 1 );
 
 	DisableWindow();
 	SetValidityOfInterface(FALSE);
@@ -868,6 +869,7 @@
 	OutputLine(NULL, "「…………………っ。」",
 		   NULL, "— ... ...?!?", Line_Normal);
 	ClearMessage();
+	ModPlayBGM( 1, "Ame", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その時、…私の瞳を覗きこんでいるレナに、…ぎょっとする。",
@@ -876,8 +878,8 @@
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 
 	DrawScene("background/mob1_01", 400 );
-	PlayBGM( 0, "ame", 56, 0 );
-	PlayBGM( 1, "Ame", 56, 0 );
+	ModPlayBGM( 0, "ame", 56, 0, 0 );
+	ModPlayBGM( 1, "Ame", 56, 0, 0 );
 	SetValidityOfInterface(TRUE);
 	SetValidityOfSaving(TRUE);
 
@@ -1225,7 +1227,8 @@
 	ClearMessage();
 
 	FadeOutBGM( 0, 300, FALSE );
-	PlayBGM( 1, "getting_mad", 56, 0 );
+	ModPlayBGM( 1, "msys07", 56, 0, 0 );
+	ModPlayBGM( 0, "getting_mad", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s06/02/150200045", 256, TRUE);
@@ -1258,7 +1261,8 @@
 		   NULL, "Et d'un seul coup, une peur indicible m'envahit.", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 0, "semi_r", 56, 0 );
+	ModPlayBGM( 0, "semi_r", 56, 0, 0 );
+	ModPlayBGM( 1, "semi_r", 56, 0, 1 );
 	DrawScene("scene/204b", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1568,7 +1572,7 @@
 		   NULL, " a envie de s'enfuir très loin d'ici.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 300, FALSE );
+	ModFadeOutBGM( 0, 300, FALSE, 0 );
 	PlayBGM( 2, "kaze", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1953,9 +1957,11 @@
 		   NULL, "Elle attend de voir s'il compte protéger sa sœur ou l'abandonner, et là, elle le jugera.", Line_Normal);
 	ClearMessage();
 
+	ModFadeOutBGM( 1, 300, FALSE, 1 );
 	FadeOutBGM( 2, 300, FALSE );
-	PlayBGM( 0, "ame", 56, 0 );
-	PlayBGM( 2, "ame", 56, 0 );
+	ModPlayBGM( 0, "ame", 56, 0, 0 );
+	ModPlayBGM( 2, "ame", 56, 0, 0 );
+	ModPlayBGM( 0, "ame", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……土砂降りは、少しも弱まる気配はない。",
@@ -2012,8 +2018,8 @@
 	ClearMessage();
 
 	DisableWindow();
-	PlayBGM( 0, "ame", 56, 0 );
-	PlayBGM( 2, "ame", 56, 0 );
+	ModPlayBGM( 0, "ame", 56, 0, 0 );
+	ModPlayBGM( 2, "ame", 56, 0, 0 );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
@@ -2036,10 +2042,10 @@
 		   NULL, " c'est le moment que choisit Satoshi pour ressentir les effets de la malédiction ?", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 400, FALSE );
-	FadeOutBGM( 2, 400, FALSE );
+	ModFadeOutBGM( 0, 400, FALSE, 0 );
+	ModFadeOutBGM( 2, 400, FALSE, 0 );
 	DrawScene("black", 400 );
-	PlayBGM( 0, "suzu", 56, 0 );
+	ModPlayBGM( 0, "suzu", 56, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　悟史くんが家出してしまう？",
@@ -2106,7 +2112,7 @@
 	ClearMessage();
 
 	DisableWindow();
-	PlayBGM( 0, "ame", 56, 0 );
+	ModPlayBGM( 0, "ame", 56, 0, 0 );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
@@ -2120,6 +2126,7 @@
 	OutputLine(NULL, "　……その連絡の無神経ぶりに初め魅音は怒り、…そして私の話を聞いて驚くことになる。",
 		   NULL, "Elle fut d'ailleurs très en colère par mon manque de prudence, mais quand elle entendit ce que j'avais à lui dire, elle fut abasourdie.", Line_Normal);
 	ClearMessage();
+	ModPlayBGM( 1, "yoru", 56, 0, 1 );
 
 	DrawScene("background/si_h2_01", 1000 );
 

@@ -196,7 +196,8 @@
 	FadeOutBGM( 0, 400, FALSE );
 	DrawScene("white", 400 );
 	DrawScene("background/ke1_01", 400 );
-	PlayBGM( 0, "yoru", 56, 0 );
+	ModPlayBGM( 0, "yoru", 56, 0, 0 );
+	ModPlayBGM( 0, "higurashi", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　警察署の玄関前には、真っ黒な車が待ち構えていた。",
@@ -282,7 +283,7 @@
 	ClearMessage();
 
 	DrawSceneWithMask("black", "maskleft", 1, 0, 300 );
-	FadeOutBGM( 0, 300, FALSE );
+	ModFadeOutBGM( 0, 300, FALSE, 0 );
 	DrawSceneWithMask("background/kuruma4", "maskleft", 1, 0, 300 );
 	PlayBGM( 1, "Mati", 24, 0 );
 
@@ -303,7 +304,7 @@
 	ClearMessage();
 	FadeOutBGM( 1, 300, FALSE );
 	DrawSceneWithMask("background/so5", "maskright", 1, 0, 300 );
-	PlayBGM( 0, "yoru", 56, 0 );
+	ModPlayBGM( 0, "yoru", 56, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　車は本家の表門でなく、裏手に停まった。",
@@ -856,7 +857,8 @@
 	FadeOutBGM( 1, 300, FALSE );
 	ModDrawCharacter(2, 17, "portrait/oryou_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 80, FALSE );
 	DrawBustshot(6, "background/js7", 0, -70, -400, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 300, TRUE );
-	PlayBGM( 0, "hgrs01", 56, 0 );
+	ModPlayBGM( 0, "msys23", 56, 0, 0 );
+	ModPlayBGM( 0, "hgrs01", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600919", 256, TRUE);
@@ -1692,9 +1694,9 @@
 		   NULL, " Attends... Je le ferai... Laisse-moi juste un peu de temps... Je vais le faire... Je vais le faire...", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 400, FALSE );
+	ModFadeOutBGM( 0, 400, FALSE, 0 );
 	DrawScene("black", 400 );
-	PlayBGM( 0, "semi_r", 56, 0 );
+	ModPlayBGM( 0, "semi_r", 56, 0, 0 );
 	SetValidityOfInterface(TRUE);
 	SetValidityOfSaving(TRUE);
 
@@ -2081,7 +2083,8 @@
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	FadeOutBGM( 0, 300, FALSE );
-	PlayBGM( 1, "higurashi_soundscape", 56, 0 );
+	ModPlayBGM( 1, "msys30", 56, 0, 0 );
+	ModPlayBGM( 1, "higurashi_soundscape", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　最後の息を止める。",
@@ -2362,7 +2365,8 @@
 		   NULL, "C'était d'ailleurs ce qui me surprit et me vexa le plus : malgré cette douleur inhumaine, ce con d'appareil n'avait pas réussi à m'arracher un bête ongle de rien du tout.", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 0, "yabaisemi", 56, 0 );
+	ModPlayBGM( 0, "yabaisemi", 56, 0, 0 );
+	ModPlayBGM( 0, "semi_r", 56, 0, 1 );
 	DrawScene("background/aka1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }

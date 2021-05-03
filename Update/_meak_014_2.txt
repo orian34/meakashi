@@ -7,13 +7,13 @@
 	ClearMessage();
 
 	DrawScene("black", 0 );
-	PlayBGM( 0, "higurashi", 56, 0 );
+	ModPlayBGM( 0, "higurashi", 56, 0, 0 );
 	DrawScene("background/sora2", 1000 );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
 	DrawScene("background/sora_01", 1000 );
-	FadeOutBGM( 0, 1000, FALSE );
+	ModFadeOutBGM( 0, 1000, FALSE, 0 );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
@@ -602,6 +602,7 @@
 		   NULL, "Je viens de la prévenir, pourtant. Elle a osé s'excuser encore une fois !", Line_Normal);
 	ClearMessage();
 	DrawScene("background/aka1", 1000 );
+	ModPlayBGM( 2, "semi", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……こいつの首根っこを締め上げてやる…。",
@@ -713,13 +714,15 @@
 
 	FadeOutBGM( 0, 300, FALSE );
 	FadeOutBGM( 1, 300, FALSE );
+	ModFadeOutBGM( 2, 300, FALSE, 1 );
 	PlaySE( 4, "wa_022", 56, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私と同じように、左手の小指から中指の三本の爪が、私と同じように歪な形をしていた。",
 		   NULL, "Ils étaient comme les miens. Son majeur, annulaire et auriculaire de la main gauche portaient des ongles difformes, franchement pas très jolis à regarder.", Line_Normal);
 	ClearMessage();
-	PlayBGM( 0, "hgrs01", 56, 0 );
+	ModPlayBGM( 0, "msys17", 56, 0, 0 );
+	ModPlayBGM( 0, "hgrs01", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601288", 256, TRUE);
@@ -953,10 +956,10 @@
 		   NULL, "Ce ne sont pas les Sonozaki qui ont fait disparaître Satoshi.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 1000, FALSE );
+	ModFadeOutBGM( 0, 1000, FALSE, 0 );
 	DrawScene("background/aka2", 2000 );
 	PlaySE( 4, "wa_025", 56, 64 );
-	PlayBGM( 1, "yabaisemi", 56, 0 );
+	ModPlayBGM( 1, "yabaisemi", 56, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ジャア、…悟史クンハ、オヤシロサマノ祟リデ消エタト、本気デ思ウノカイ？",
@@ -1049,7 +1052,7 @@
 		   NULL, " Et ne remets plus jamais les pieds ici !", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 1, 300, FALSE );
+	ModFadeOutBGM( 1, 300, FALSE, 0 );
 	PlaySE( 4, "s_glass", 56, 64 );
 	DrawScene("black", 2000 );
 
@@ -1067,7 +1070,7 @@
 	PlaySE( 4, "wa_003", 56, 64 );
 	ModDrawCharacter(2, 3, "sprite/me2_yowaki_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask("background/si_g1", "maskup", 1, 0, 300 );
-	PlayBGM( 0, "yoru", 56, 0 );
+	ModPlayBGM( 0, "yoru", 56, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300267", 256, TRUE);
