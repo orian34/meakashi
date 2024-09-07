@@ -376,10 +376,23 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	PlayBGM( 0, "semi_r", 56, 0 );
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("_zmeak_002_vm0x_n01","dialog000");}
-	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("_zmeak_002_vm00_n01","dialog000");}
-	//VoiceMatchingEnd
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "org/mion4000", 256, TRUE);
+	OutputLine(NULL, "「そ、",
+		   NULL, "— Non...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "org/mion4001", 256, TRUE);
+	OutputLine(NULL, "………その声は！！",
+		   NULL, " Cette voix, c'est...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "org/mion4002", 256, TRUE);
+	OutputLine(NULL, "　でもそんなはずは…！",
+		   NULL, " Mais c'est impossible !", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "org/mion4003", 256, TRUE);
+	OutputLine(NULL, "　詩音は聖ルチーア学園に幽閉されてるはず…！！",
+		   NULL, " Shion a été enfermée à Sainte Lucia !!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "org/mion4004", 256, TRUE);
+	OutputLine(NULL, "　そんなはずはない……！」",
+		   NULL, " Comment pourrait-elle...", Line_Normal);
+	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600090", 256, TRUE);
@@ -460,18 +473,16 @@
 	PlayBGM( 0, "mion", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>＆<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Mion</color> & <color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300009", 256, TRUE);
-	ModPlayVoiceLS(5, 6, "ps3/s06/06/150600097", 256, TRUE);
+	ModPlayVoiceLS(4, 3, "org/s06/03/150300009a_org", 256, TRUE);
+	ModPlayVoiceLS(5, 6, "org/s06/06/150600097a_org", 256, TRUE);
 	OutputLine(NULL, "「「ぷ。",
-		   NULL, "— Pkr...", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 1000 );
-	// (backup) SetValidityOfInput( TRUE );
+		   NULL, "— Pkr...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "org/s06/03/150300009b_org", 256, TRUE);
+	ModPlayVoiceLS(5, 6, "org/s06/06/150600097b_org", 256, TRUE);
 	OutputLine(NULL, "………くっくっく、",
-		   NULL, " khhahaha...", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
-	// (backup) SetValidityOfInput( TRUE );
+		   NULL, " khhahaha...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "org/s06/03/150300009c_org", 256, TRUE);
+	ModPlayVoiceLS(5, 6, "org/s06/06/150600097c_org", 256, TRUE);
 	OutputLine(NULL, "…わーっはっはっはっはっはっはっは！！！」」",
 		   NULL, " haHAAAAHAHAHAHAHAHAHA !", Line_Normal);
 	ClearMessage();
@@ -1410,17 +1421,17 @@
 	PlayBGM( 1, "Mati", 24, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps2/06/150600178", 540, TRUE);
+	ModPlayVoiceLS(4, 6, "org/shion4013", 256, TRUE);
 	OutputLine(NULL, "「そう言えば、バラバラ殺人なんてのがありましたよね。",
 		   NULL, "— Eh, mais au fait, il y a eu un meurtre avec démembrement, non ?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps2/06/150600179", 540, TRUE);
+	ModPlayVoiceLS(4, 6, "org/shion4014", 256, TRUE);
 	OutputLine(NULL, "あのクソムカつく現場監督の野郎がバラバラにされたヤツ。",
 		   NULL, " L'autre toquard, là, le chef de chantier ?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600180", 256, TRUE);
+	ModPlayVoiceLS(4, 6, "org/shion4015", 256, TRUE);
 	OutputLine(NULL, "あれ、確か犯人がまだ全員捕まってなかったですよね。",
 		   NULL, " La police avait pas retrouvé le meurtrier, il me semble. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600181", 256, TRUE);
+	ModPlayVoiceLS(4, 6, "org/shion4016", 256, TRUE);
 	OutputLine(NULL, "捕まったんですか？」",
 		   NULL, "Ils ont fini par l'avoir, ou pas ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

@@ -2092,10 +2092,11 @@
 		   NULL, "J'aurais voulu pouvoir être en colère contre lui, mais en fait, ce qui me mit le plus en rogne, c'est de ne jamais avoir réfléchi à son point de vue.", Line_Normal);
 	ClearMessage();
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("_zmeak_008_vm0x_n01","dialog000");}
-	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("_zmeak_008_vm00_n01","dialog000");}
-	//VoiceMatchingEnd
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "org/shion4031", 256, TRUE);
+	OutputLine(NULL, "「……………なんで、……鬼婆は悟史くんの一家を苛めようって言い出したわけ…？！」",
+		   NULL, "— ... Pourquoi... Pourquoi la vieille folle a-t-elle donné l'ordre de persécuter les Hôjô ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300142", 256, TRUE);
@@ -2193,39 +2194,39 @@
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600703", 256, TRUE);
+	ModPlayVoiceLS(4, 6, "org/shion4032", 256, TRUE);
 	OutputLine(NULL, "「なら制裁は北条の親だけで充分じゃない！！",
 		   NULL, "— Tu crois pas que la mort de leurs parents, c'est suffisant ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600704", 256, TRUE);
+	ModPlayVoiceLS(4, 6, "org/shion4033", 256, TRUE);
 	OutputLine(NULL, "　本家の拷問室にでも連れ込んで指の一本も撥ねてやったらいいッ！！",
 		   NULL, "Il aurait d'ailleurs suffit de les convoquer dans la salle de torture", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600705", 256, TRUE);
+	ModPlayVoiceLS(4, 6, "org/shion4034", 256, TRUE);
 	OutputLine(NULL, "　でもそこまでで充分でしょ？！",
 		   NULL, "et de leur prendre un doigt ou deux,", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600706", 256, TRUE);
+	ModPlayVoiceLS(4, 6, "org/shion4035", 256, TRUE);
 	OutputLine(NULL, "　悟史くんは関係ない！！",
 		   NULL, "mais c'était pas la peine d'en faire plus que ça !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600707", 256, TRUE);
+	ModPlayVoiceLS(4, 6, "org/shion4036", 256, TRUE);
 	OutputLine(NULL, "　悟史くんには何の関係もないッ！！",
 		   NULL, "Satoshi n'a rien à voir là-dedans ! Alors foutez-lui la paix ! ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600708", 256, TRUE);
+	ModPlayVoiceLS(4, 6, "org/shion4037", 256, TRUE);
 	OutputLine(NULL, "　悟史くんが何をしたって言うの？！",
 		   NULL, "Qu'est-ce qu'il vous a fait, hein ?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600709", 256, TRUE);
+	ModPlayVoiceLS(4, 6, "org/shion4038", 256, TRUE);
 	OutputLine(NULL, "　悟史くんに何の罪があるって言うの？！",
 		   NULL, " Dis-moi donc quelle faute grave il aurait commise !", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600710", 256, TRUE);
+	ModPlayVoiceLS(4, 6, "org/shion4039", 256, TRUE);
 	OutputLine(NULL, "　答えてよ！！",
 		   NULL, " Alors, Mion, j'attends !", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600711", 256, TRUE);
+	ModPlayVoiceLS(4, 6, "org/shion4040", 256, TRUE);
 	OutputLine(NULL, "　答えてよ魅音！！",
 		   NULL, " Tu vas répondre, oui ou merde ?! Mion !", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600712", 256, TRUE);
+	ModPlayVoiceLS(4, 6, "org/shion4041", 256, TRUE);
 	OutputLine(NULL, "　魅音んん！！！」",
 		   NULL, " Mion !!!", Line_Normal);
 	ClearMessage();

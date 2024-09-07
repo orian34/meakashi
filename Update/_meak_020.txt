@@ -3961,15 +3961,15 @@
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601886", 256, TRUE);
+	ModPlayVoiceLS(4, 6, "org/shion4130_150601886", 256, TRUE);
 	OutputLine(NULL, "「………今ね、村中でおじいちゃんの姿が見えなくなったって大騒ぎしてますよ？",
 		   NULL, "— ... En ce moment, le village est sens dessus-dessous, vous savez ? Parce que vous n'êtes nulle part.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601887", 256, TRUE);
+	ModPlayVoiceLS(4, 6, "org/shion4130_150601887", 256, TRUE);
 	OutputLine(NULL, "　おじいちゃんの家から相談が来たので、青年団を召集して捜索を行なうことにしました。",
 		   NULL, "Ils m'ont demandé quoi faire, alors on a décidé de prendre les jeunes et de faire une battue.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601888", 256, TRUE);
+	ModPlayVoiceLS(4, 6, "org/shion4130_150601888", 256, TRUE);
 	OutputLine(NULL, "これから行って来るところです。」",
 		   NULL, "Je vais aller les accompagner.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -3986,15 +3986,15 @@
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps2/06/150601889", 540, TRUE);
+	ModPlayVoiceLS(4, 6, "org/shion4144", 256, TRUE);
 	OutputLine(NULL, "「鎖、少し長くしてあげましょうか？",
 		   NULL, "— Ah, je vous la rallonge un peu quand même, peut-être ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps2/06/150601890", 540, TRUE);
+	ModPlayVoiceLS(4, 6, "org/shion4145", 256, TRUE);
 	OutputLine(NULL, "　私の質問にちゃんと答えてくれる度に、そうですね、鎖の輪っか、１個分長くしてあげます。",
 		   NULL, "Disons un maillon de plus par question à laquelle vous répondrez.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps2/06/150601891", 540, TRUE);
+	ModPlayVoiceLS(4, 6, "org/shion4146", 256, TRUE);
 	OutputLine(NULL, "…あと３個も長くなれば、だいぶ楽になると思うんですけどね？」",
 		   NULL, "Je pense qu'avec trois maillons de plus, vous devriez avoir nettement moins de mal à respirer. Qu'est-ce que vous en dites ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

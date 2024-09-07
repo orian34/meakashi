@@ -4,14 +4,6 @@
 
 void dialog000()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600025", 256, TRUE);
-	OutputLine(NULL, "「そっか、お姉はもう実家じゃないんだったね。",
-		   NULL, "— Ah, c'est vrai, elle n'habite plus à la maison.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600026", 256, TRUE);
-	OutputLine(NULL, "雛見沢のバァさんのとこだっけ？」",
-		   NULL, " Elle vit chez la vieille folle à Hinamizawa, alors ?", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
 void dialog001()
@@ -75,13 +67,4 @@ void dialog004()
 
 void dialog005()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600068", 256, TRUE);
-	OutputLine(NULL, "「バァさんはあれこれ余計なこと考えすぎて、正常な思考なんか出来なくなってんの！",
-		   NULL, "— La vieille folle est complètement sénile, depuis un moment d'ailleurs. Elle ne pense plus droit.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600069", 256, TRUE);
-	OutputLine(NULL, "　あのダム戦争で神経張り詰めっぱなしだったから、まだその時の興奮が抜け切ってないんじゃないかな。ったく！」",
-		   NULL, "Depuis les affrontements avec le barrage, elle se sent plus pisser, elle a pas encore compris que c'était fini depuis belle lurette. Elle débloque complètement !", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
